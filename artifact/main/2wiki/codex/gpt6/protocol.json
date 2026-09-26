@@ -1,0 +1,8 @@
+{
+  "inference_protocol_counts": {
+    "tool_lookup_v1": 1471,
+    "full_graph_v2": 2545
+  },
+  "merge_authorization": "User: 前两项组合，和旧结果合并吧。因为本身三元组就很少",
+  "protocol": "Model-selected path triple union; frozen v08 required-triple coverage; original four answer statuses."
+}

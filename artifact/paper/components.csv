@@ -1,0 +1,13 @@
+model,condition,Hit@1,EvidenceHit@1,OAR_S,CAR_I,EBA,artifact
+qwen,no_plan_structure,78.2,52.23,17.09,86.29,68.07,ablation/components/qwen/no_plan_structure
+qwen,no_domain_range_types,79.39,57.24,14.83,87.05,71.1,ablation/components/qwen/no_domain_range_types
+qwen,without_binding_joins,74.39,53.72,15.37,86.57,68.99,ablation/components/qwen/without_binding_joins
+qwen,full,81.3,58.96,12.92,85.74,71.41,main/cwq/grasp/qwen
+llama,no_plan_structure,78.98,49.97,15.9,86.36,66.89,ablation/components/llama/no_plan_structure
+llama,no_domain_range_types,78.62,56.76,15.31,86.36,70.52,ablation/components/llama/no_domain_range_types
+llama,without_binding_joins,75.4,51.94,14.77,85.54,67.56,ablation/components/llama/without_binding_joins
+llama,full,81.3,57.3,13.22,87.11,71.16,main/cwq/grasp/llama
+gemma,no_plan_structure,77.07,49.49,18.11,87.39,67.11,ablation/components/gemma/no_plan_structure
+gemma,no_domain_range_types,77.78,55.99,15.9,88.14,70.94,ablation/components/gemma/no_domain_range_types
+gemma,without_binding_joins,68.37,47.89,19.89,86.63,65.9,ablation/components/gemma/without_binding_joins
+gemma,full,79.21,57.06,15.01,88.01,71.45,main/cwq/grasp/gemma

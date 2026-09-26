@@ -1,0 +1,258 @@
+{
+  "protocol": {
+    "name": "cwq-rq1-k-evidence-gap",
+    "population": "Curated CWQ K only: 1,679 questions",
+    "formula": "EvidenceGap (%) = 100 * (Hit - EvidenceHit) / Hit",
+    "interpretation": "proportion of Hit rows whose system-reported evidence fails the frozen benchmark replay",
+    "point_denominator": "Hit rows within each stratum",
+    "systems": [
+      "cot",
+      "gcr_multi",
+      "dog",
+      "codex"
+    ],
+    "gold_query_size": "maximum distinct positive triple-pattern count over gold-SPARQL UNION branches; FILTER, ORDER BY, and NOT EXISTS add no count",
+    "contract_structure": {
+      "overlapping": true,
+      "chain": "every UNION alternative is a connected acyclic positive-pattern graph with maximum undirected degree at most two",
+      "branching_dag": "at least one UNION alternative is a connected acyclic positive-pattern graph with maximum undirected degree at least three",
+      "intersection": "the frozen original CWQ compositionality_type is conjunction"
+    },
+    "evidence_hit": "Hit AND returned-evidence replay; frozen source fields mapped below",
+    "selection": "Final curation no labels only; original K labels and frozen decisions retained",
+    "undefined": "No Hit denominator gives null; no mark is drawn"
+  },
+  "gold_query_size": {
+    "order": [
+      "2",
+      "3",
+      "4",
+      "5+"
+    ],
+    "strata": {
+      "2": {
+        "rows": 796,
+        "systems": {
+          "cot": {
+            "count": 271,
+            "denominator": 545,
+            "rate": 0.4972477064220184
+          },
+          "gcr_multi": {
+            "count": 287,
+            "denominator": 600,
+            "rate": 0.47833333333333333
+          },
+          "dog": {
+            "count": 184,
+            "denominator": 492,
+            "rate": 0.37398373983739835
+          },
+          "codex": {
+            "count": 144,
+            "denominator": 691,
+            "rate": 0.20839363241678727
+          }
+        }
+      },
+      "3": {
+        "rows": 580,
+        "systems": {
+          "cot": {
+            "count": 202,
+            "denominator": 339,
+            "rate": 0.5958702064896755
+          },
+          "gcr_multi": {
+            "count": 232,
+            "denominator": 386,
+            "rate": 0.6010362694300518
+          },
+          "dog": {
+            "count": 183,
+            "denominator": 346,
+            "rate": 0.5289017341040463
+          },
+          "codex": {
+            "count": 101,
+            "denominator": 533,
+            "rate": 0.1894934333958724
+          }
+        }
+      },
+      "4": {
+        "rows": 201,
+        "systems": {
+          "cot": {
+            "count": 76,
+            "denominator": 127,
+            "rate": 0.5984251968503937
+          },
+          "gcr_multi": {
+            "count": 92,
+            "denominator": 147,
+            "rate": 0.6258503401360545
+          },
+          "dog": {
+            "count": 87,
+            "denominator": 130,
+            "rate": 0.6692307692307692
+          },
+          "codex": {
+            "count": 61,
+            "denominator": 181,
+            "rate": 0.3370165745856354
+          }
+        }
+      },
+      "5+": {
+        "rows": 102,
+        "systems": {
+          "cot": {
+            "count": 51,
+            "denominator": 59,
+            "rate": 0.864406779661017
+          },
+          "gcr_multi": {
+            "count": 74,
+            "denominator": 78,
+            "rate": 0.9487179487179487
+          },
+          "dog": {
+            "count": 70,
+            "denominator": 72,
+            "rate": 0.9722222222222222
+          },
+          "codex": {
+            "count": 67,
+            "denominator": 98,
+            "rate": 0.6836734693877551
+          }
+        }
+      }
+    }
+  },
+  "contract_structure": {
+    "order": [
+      "chain",
+      "branching_dag",
+      "intersection"
+    ],
+    "display_names": {
+      "chain": "Chain",
+      "branching_dag": "Branching DAG",
+      "intersection": "Intersection"
+    },
+    "strata": {
+      "chain": {
+        "rows": 1433,
+        "systems": {
+          "cot": {
+            "count": 491,
+            "denominator": 907,
+            "rate": 0.5413450937155457
+          },
+          "gcr_multi": {
+            "count": 533,
+            "denominator": 1022,
+            "rate": 0.5215264187866928
+          },
+          "dog": {
+            "count": 372,
+            "denominator": 864,
+            "rate": 0.4305555555555556
+          },
+          "codex": {
+            "count": 260,
+            "denominator": 1265,
+            "rate": 0.20553359683794467
+          }
+        }
+      },
+      "branching_dag": {
+        "rows": 244,
+        "systems": {
+          "cot": {
+            "count": 107,
+            "denominator": 161,
+            "rate": 0.6645962732919255
+          },
+          "gcr_multi": {
+            "count": 151,
+            "denominator": 187,
+            "rate": 0.8074866310160428
+          },
+          "dog": {
+            "count": 150,
+            "denominator": 174,
+            "rate": 0.8620689655172413
+          },
+          "codex": {
+            "count": 111,
+            "denominator": 236,
+            "rate": 0.4703389830508475
+          }
+        }
+      },
+      "intersection": {
+        "rows": 956,
+        "systems": {
+          "cot": {
+            "count": 338,
+            "denominator": 574,
+            "rate": 0.5888501742160279
+          },
+          "gcr_multi": {
+            "count": 379,
+            "denominator": 629,
+            "rate": 0.6025437201907791
+          },
+          "dog": {
+            "count": 314,
+            "denominator": 579,
+            "rate": 0.542314335060449
+          },
+          "codex": {
+            "count": 171,
+            "denominator": 878,
+            "rate": 0.1947608200455581
+          }
+        }
+      }
+    }
+  },
+  "sources": {
+    "fixed_query_size_labels": "Frozen evaluation-only constraint-count labels used for the stratum counts in this file.",
+    "partition_summary": "splits/populations.json",
+    "partition_index": "splits/cwq/partition_index.jsonl",
+    "original_gold_queries": "External CWQ test annotations; see docs/data.md.",
+    "source_population": 3531,
+    "curation": "splits/cwq/curation.jsonl",
+    "retained_population": 3138,
+    "selected_k_population": 1679,
+    "system_outcomes": {
+      "cot": {
+        "path": "main/cwq/cot/qwen/details.jsonl",
+        "evidence_hit_field": "certified_hit"
+      },
+      "gcr_multi": {
+        "path": "main/cwq/gcr_multi/qwen/details.jsonl",
+        "evidence_hit_field": "certified_hit"
+      },
+      "dog": {
+        "path": "main/cwq/dog/qwen/details.jsonl",
+        "evidence_hit_field": "supported_hit"
+      },
+      "codex": {
+        "path": "main/cwq/codex/gpt6/details.jsonl",
+        "evidence_hit_field": "certified_hit"
+      }
+    },
+    "reporting_conditions": {
+      "cot": "main-table KG-CoT Qwen2.5-7B",
+      "gcr_multi": "main-table GCR* Qwen2.5-7B with shared answer normalization",
+      "dog": "main-table official-source DoG Qwen2.5-7B",
+      "codex": "main-table Codex GPT-6 xhigh; independent agent reference"
+    }
+  }
+}

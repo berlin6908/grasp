@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grasp-kgqa"
+version = "0.1.0"
+description = "Grasp knowledge-graph question-answering research pipeline"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch",
+    "transformers==4.51.3",
+    "safetensors",
+    "openai",
+    "datasets==4.7.0",
+    "huggingface-hub",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*", "dataset_split*", "eva*"]
+namespaces = false

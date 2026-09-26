@@ -1,0 +1,62 @@
+{
+  "denominator": 268,
+  "levels": {
+    "0": {
+      "apr": {
+        "count": 268
+      },
+      "transitions": {
+        "same_answer": {
+          "count": 268
+        },
+        "other_answer": {
+          "count": 0
+        },
+        "abstention": {
+          "count": 0
+        },
+        "error": {
+          "count": 0
+        }
+      }
+    },
+    "1": {
+      "apr": {
+        "count": 124
+      },
+      "transitions": {
+        "same_answer": {
+          "count": 124
+        },
+        "other_answer": {
+          "count": 143
+        },
+        "abstention": {
+          "count": 1
+        },
+        "error": {
+          "count": 0
+        }
+      }
+    },
+    "2": {
+      "apr": {
+        "count": 61
+      },
+      "transitions": {
+        "same_answer": {
+          "count": 61
+        },
+        "other_answer": {
+          "count": 207
+        },
+        "abstention": {
+          "count": 0
+        },
+        "error": {
+          "count": 0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "N": 120,
+  "counts": {
+    "same_answer": 66,
+    "other_answer": 53,
+    "abstention": 0,
+    "error": 1
+  },
+  "APR": {
+    "count": 66,
+    "denominator": 120,
+    "percent": 55.0
+  },
+  "ATR_Same": {
+    "count": 66,
+    "denominator": 120,
+    "percent": 55.0
+  },
+  "ATR_Other": {
+    "count": 53,
+    "denominator": 120,
+    "percent": 44.166666666666664
+  },
+  "ATR_Unknown": {
+    "count": 0,
+    "denominator": 120,
+    "percent": 0.0
+  },
+  "Error": {
+    "count": 1,
+    "denominator": 120,
+    "percent": 0.8333333333333334
+  }
+}

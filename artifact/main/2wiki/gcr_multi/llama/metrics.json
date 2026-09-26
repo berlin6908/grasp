@@ -1,0 +1,22 @@
+{
+  "population": {
+    "total": 3997,
+    "S": 1383,
+    "I": 2614,
+    "excluded": 0
+  },
+  "counts": {
+    "correct_S": 1052,
+    "correct_supported_S": 483,
+    "Unknown_S": 114,
+    "Unknown_I": 691
+  },
+  "metrics": {
+    "Hit@1": 0.7606652205350687,
+    "EvidenceHit@1": 0.3492407809110629,
+    "EvidenceGap": 0.5408745247148289,
+    "CAR_I": 0.26434583014537105,
+    "OAR_S": 0.0824295010845987,
+    "EBA": 0.29372029021766327
+  }
+}

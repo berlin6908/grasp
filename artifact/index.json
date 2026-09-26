@@ -1,0 +1,1224 @@
+{
+  "scope": "Current paper-selected results for Grasp and comparison systems, with one retained result per condition.",
+  "manuscript": "Grounding Is Not Enough: Testing Evidence Sufficiency in LLM Reasoning over Knowledge Graphs",
+  "selection_date": "2026-09-26",
+  "systems": {
+    "cot": "CoT",
+    "gcr_multi": "GCR*",
+    "dog": "DoG",
+    "grasp": "Grasp",
+    "codex": "Codex"
+  },
+  "population_policy": "CWQ final mismatch=no; WebQSP and 2WikiMultiHopQA resolved S/I only. Curation labels retain the full original population for the appendix audit.",
+  "runs": [
+    {
+      "directory": "main/cwq/cot/qwen",
+      "benchmark": "cwq",
+      "system": "cot",
+      "model": "qwen",
+      "condition": "full",
+      "evaluation_rows": 3138,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:unmodified-support-gap",
+        "tab:evidence-bounded-decisions",
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "main/cwq/gcr_multi/qwen",
+      "benchmark": "cwq",
+      "system": "gcr_multi",
+      "model": "qwen",
+      "condition": "full",
+      "evaluation_rows": 3138,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:unmodified-support-gap",
+        "tab:evidence-bounded-decisions",
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "main/cwq/dog/qwen",
+      "benchmark": "cwq",
+      "system": "dog",
+      "model": "qwen",
+      "condition": "full",
+      "evaluation_rows": 3138,
+      "evidence_hit_field": "supported_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:unmodified-support-gap",
+        "tab:evidence-bounded-decisions",
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "main/cwq/cot/gemma",
+      "benchmark": "cwq",
+      "system": "cot",
+      "model": "gemma",
+      "condition": "full",
+      "evaluation_rows": 3138,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:unmodified-support-gap",
+        "tab:evidence-bounded-decisions",
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "main/cwq/gcr_multi/gemma",
+      "benchmark": "cwq",
+      "system": "gcr_multi",
+      "model": "gemma",
+      "condition": "full",
+      "evaluation_rows": 3138,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:unmodified-support-gap",
+        "tab:evidence-bounded-decisions",
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "main/cwq/dog/gemma",
+      "benchmark": "cwq",
+      "system": "dog",
+      "model": "gemma",
+      "condition": "full",
+      "evaluation_rows": 3138,
+      "evidence_hit_field": "supported_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:unmodified-support-gap",
+        "tab:evidence-bounded-decisions",
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "main/cwq/cot/llama",
+      "benchmark": "cwq",
+      "system": "cot",
+      "model": "llama",
+      "condition": "full",
+      "evaluation_rows": 3138,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:unmodified-support-gap",
+        "tab:evidence-bounded-decisions",
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "main/cwq/gcr_multi/llama",
+      "benchmark": "cwq",
+      "system": "gcr_multi",
+      "model": "llama",
+      "condition": "full",
+      "evaluation_rows": 3138,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:unmodified-support-gap",
+        "tab:evidence-bounded-decisions",
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "main/cwq/dog/llama",
+      "benchmark": "cwq",
+      "system": "dog",
+      "model": "llama",
+      "condition": "full",
+      "evaluation_rows": 3138,
+      "evidence_hit_field": "supported_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:unmodified-support-gap",
+        "tab:evidence-bounded-decisions",
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "main/cwq/grasp/qwen",
+      "benchmark": "cwq",
+      "system": "grasp",
+      "model": "qwen",
+      "condition": "full",
+      "evaluation_rows": 3138,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "fig:rq3-radar",
+        "fig:app-radar",
+        "tab:method-effectiveness",
+        "tab:relation-scorer-size"
+      ],
+      "final": {
+        "included": true,
+        "rows": 3138
+      }
+    },
+    {
+      "directory": "ablation/components/qwen/no_plan_structure",
+      "benchmark": "cwq",
+      "system": "grasp",
+      "model": "qwen",
+      "condition": "no_plan_structure",
+      "evaluation_rows": 3138,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:method-effectiveness"
+      ],
+      "final": {
+        "included": true,
+        "rows": 3138
+      }
+    },
+    {
+      "directory": "ablation/components/qwen/no_domain_range_types",
+      "benchmark": "cwq",
+      "system": "grasp",
+      "model": "qwen",
+      "condition": "no_domain_range_types",
+      "evaluation_rows": 3138,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:method-effectiveness"
+      ],
+      "final": {
+        "included": true,
+        "rows": 3138
+      }
+    },
+    {
+      "directory": "ablation/components/qwen/without_binding_joins",
+      "benchmark": "cwq",
+      "system": "grasp",
+      "model": "qwen",
+      "condition": "without_binding_joins",
+      "evaluation_rows": 3138,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:method-effectiveness"
+      ],
+      "final": {
+        "included": true,
+        "rows": 3138
+      }
+    },
+    {
+      "directory": "main/cwq/grasp/llama",
+      "benchmark": "cwq",
+      "system": "grasp",
+      "model": "llama",
+      "condition": "full",
+      "evaluation_rows": 3138,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "fig:rq3-radar",
+        "fig:app-radar",
+        "tab:method-effectiveness"
+      ],
+      "final": {
+        "included": true,
+        "rows": 3138
+      }
+    },
+    {
+      "directory": "ablation/components/llama/no_plan_structure",
+      "benchmark": "cwq",
+      "system": "grasp",
+      "model": "llama",
+      "condition": "no_plan_structure",
+      "evaluation_rows": 3138,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:method-effectiveness"
+      ],
+      "final": {
+        "included": true,
+        "rows": 3138
+      },
+      "protocol_note": "This component uses JSON object mode with an inline schema; the full reference uses strict JSON Schema."
+    },
+    {
+      "directory": "ablation/components/llama/no_domain_range_types",
+      "benchmark": "cwq",
+      "system": "grasp",
+      "model": "llama",
+      "condition": "no_domain_range_types",
+      "evaluation_rows": 3138,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:method-effectiveness"
+      ],
+      "final": {
+        "included": true,
+        "rows": 3138
+      },
+      "protocol_note": "This component uses JSON object mode with an inline schema; the full reference uses strict JSON Schema."
+    },
+    {
+      "directory": "ablation/components/llama/without_binding_joins",
+      "benchmark": "cwq",
+      "system": "grasp",
+      "model": "llama",
+      "condition": "without_binding_joins",
+      "evaluation_rows": 3138,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:method-effectiveness"
+      ],
+      "final": {
+        "included": true,
+        "rows": 3138
+      },
+      "protocol_note": "This component uses JSON object mode with an inline schema; the full reference uses strict JSON Schema."
+    },
+    {
+      "directory": "main/cwq/grasp/gemma",
+      "benchmark": "cwq",
+      "system": "grasp",
+      "model": "gemma",
+      "condition": "full",
+      "evaluation_rows": 3138,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "fig:rq3-radar",
+        "fig:app-radar",
+        "tab:method-effectiveness"
+      ],
+      "final": {
+        "included": true,
+        "rows": 3138
+      }
+    },
+    {
+      "directory": "ablation/components/gemma/no_plan_structure",
+      "benchmark": "cwq",
+      "system": "grasp",
+      "model": "gemma",
+      "condition": "no_plan_structure",
+      "evaluation_rows": 3138,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:method-effectiveness"
+      ],
+      "final": {
+        "included": true,
+        "rows": 3138
+      },
+      "protocol_note": "This component uses JSON object mode with an inline schema; the full reference uses strict JSON Schema."
+    },
+    {
+      "directory": "ablation/components/gemma/no_domain_range_types",
+      "benchmark": "cwq",
+      "system": "grasp",
+      "model": "gemma",
+      "condition": "no_domain_range_types",
+      "evaluation_rows": 3138,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:method-effectiveness"
+      ],
+      "final": {
+        "included": true,
+        "rows": 3138
+      },
+      "protocol_note": "This component uses JSON object mode with an inline schema; the full reference uses strict JSON Schema."
+    },
+    {
+      "directory": "ablation/components/gemma/without_binding_joins",
+      "benchmark": "cwq",
+      "system": "grasp",
+      "model": "gemma",
+      "condition": "without_binding_joins",
+      "evaluation_rows": 3138,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:method-effectiveness"
+      ],
+      "final": {
+        "included": true,
+        "rows": 3138
+      },
+      "protocol_note": "This component uses JSON object mode with an inline schema; the full reference uses strict JSON Schema."
+    },
+    {
+      "directory": "ablation/scorer_size/1_5b",
+      "benchmark": "cwq",
+      "system": "grasp",
+      "model": "1_5b",
+      "condition": "scorer_size",
+      "evaluation_rows": 3138,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:relation-scorer-size"
+      ],
+      "final": {
+        "included": false,
+        "note": "Final predictions are not included; complete evaluation records are available."
+      }
+    },
+    {
+      "directory": "ablation/scorer_size/32b",
+      "benchmark": "cwq",
+      "system": "grasp",
+      "model": "32b",
+      "condition": "scorer_size",
+      "evaluation_rows": 3138,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:relation-scorer-size"
+      ],
+      "final": {
+        "included": false,
+        "note": "Final predictions are not included; complete evaluation records are available."
+      }
+    },
+    {
+      "directory": "main/cwq/codex/gpt6",
+      "benchmark": "cwq",
+      "system": "codex",
+      "model": "gpt6",
+      "condition": "full",
+      "evaluation_rows": 3138,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:unmodified-support-gap",
+        "tab:evidence-bounded-decisions",
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "main/webqsp/cot/qwen",
+      "benchmark": "webqsp",
+      "system": "cot",
+      "model": "qwen",
+      "condition": "full",
+      "evaluation_rows": 1621,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:unmodified-support-gap",
+        "tab:evidence-bounded-decisions",
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "main/webqsp/gcr_multi/qwen",
+      "benchmark": "webqsp",
+      "system": "gcr_multi",
+      "model": "qwen",
+      "condition": "full",
+      "evaluation_rows": 1621,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:unmodified-support-gap",
+        "tab:evidence-bounded-decisions",
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "main/webqsp/dog/qwen",
+      "benchmark": "webqsp",
+      "system": "dog",
+      "model": "qwen",
+      "condition": "full",
+      "evaluation_rows": 1621,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:unmodified-support-gap",
+        "tab:evidence-bounded-decisions",
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "main/webqsp/cot/gemma",
+      "benchmark": "webqsp",
+      "system": "cot",
+      "model": "gemma",
+      "condition": "full",
+      "evaluation_rows": 1621,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:unmodified-support-gap",
+        "tab:evidence-bounded-decisions",
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "main/webqsp/gcr_multi/gemma",
+      "benchmark": "webqsp",
+      "system": "gcr_multi",
+      "model": "gemma",
+      "condition": "full",
+      "evaluation_rows": 1621,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:unmodified-support-gap",
+        "tab:evidence-bounded-decisions",
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "main/webqsp/dog/gemma",
+      "benchmark": "webqsp",
+      "system": "dog",
+      "model": "gemma",
+      "condition": "full",
+      "evaluation_rows": 1621,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:unmodified-support-gap",
+        "tab:evidence-bounded-decisions",
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "main/webqsp/cot/llama",
+      "benchmark": "webqsp",
+      "system": "cot",
+      "model": "llama",
+      "condition": "full",
+      "evaluation_rows": 1621,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:unmodified-support-gap",
+        "tab:evidence-bounded-decisions",
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "main/webqsp/gcr_multi/llama",
+      "benchmark": "webqsp",
+      "system": "gcr_multi",
+      "model": "llama",
+      "condition": "full",
+      "evaluation_rows": 1621,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:unmodified-support-gap",
+        "tab:evidence-bounded-decisions",
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "main/webqsp/dog/llama",
+      "benchmark": "webqsp",
+      "system": "dog",
+      "model": "llama",
+      "condition": "full",
+      "evaluation_rows": 1621,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:unmodified-support-gap",
+        "tab:evidence-bounded-decisions",
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "main/webqsp/grasp/qwen",
+      "benchmark": "webqsp",
+      "system": "grasp",
+      "model": "qwen",
+      "condition": "full",
+      "evaluation_rows": 1621,
+      "availability": "support_rows_and_recorded_display_counts",
+      "paper_refs": [
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "main/2wiki/cot/qwen",
+      "benchmark": "2wiki",
+      "system": "cot",
+      "model": "qwen",
+      "condition": "full",
+      "evaluation_rows": 3997,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:unmodified-support-gap",
+        "tab:evidence-bounded-decisions",
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "main/2wiki/gcr_multi/qwen",
+      "benchmark": "2wiki",
+      "system": "gcr_multi",
+      "model": "qwen",
+      "condition": "full",
+      "evaluation_rows": 3997,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:unmodified-support-gap",
+        "tab:evidence-bounded-decisions",
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "main/2wiki/cot/gemma",
+      "benchmark": "2wiki",
+      "system": "cot",
+      "model": "gemma",
+      "condition": "full",
+      "evaluation_rows": 3997,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:unmodified-support-gap",
+        "tab:evidence-bounded-decisions",
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "main/2wiki/gcr_multi/gemma",
+      "benchmark": "2wiki",
+      "system": "gcr_multi",
+      "model": "gemma",
+      "condition": "full",
+      "evaluation_rows": 3997,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:unmodified-support-gap",
+        "tab:evidence-bounded-decisions",
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "main/2wiki/cot/llama",
+      "benchmark": "2wiki",
+      "system": "cot",
+      "model": "llama",
+      "condition": "full",
+      "evaluation_rows": 3997,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:unmodified-support-gap",
+        "tab:evidence-bounded-decisions",
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "main/2wiki/gcr_multi/llama",
+      "benchmark": "2wiki",
+      "system": "gcr_multi",
+      "model": "llama",
+      "condition": "full",
+      "evaluation_rows": 3997,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:unmodified-support-gap",
+        "tab:evidence-bounded-decisions",
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "main/2wiki/grasp/qwen",
+      "benchmark": "2wiki",
+      "system": "grasp",
+      "model": "qwen",
+      "condition": "full",
+      "evaluation_rows": 3997,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "fig:app-radar"
+      ],
+      "final": {
+        "included": true,
+        "rows": 3997
+      }
+    },
+    {
+      "directory": "main/webqsp/codex/gpt6",
+      "benchmark": "webqsp",
+      "system": "codex",
+      "model": "gpt6",
+      "condition": "full",
+      "evaluation_rows": 1621,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:unmodified-support-gap",
+        "tab:evidence-bounded-decisions",
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "main/2wiki/codex/gpt6",
+      "benchmark": "2wiki",
+      "system": "codex",
+      "model": "gpt6",
+      "condition": "full",
+      "evaluation_rows": 3997,
+      "evidence_hit_field": "certified_hit",
+      "availability": "per_question_evaluation",
+      "paper_refs": [
+        "tab:unmodified-support-gap",
+        "tab:evidence-bounded-decisions",
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "main/webqsp/grasp/gemma",
+      "benchmark": "webqsp",
+      "system": "grasp",
+      "model": "gemma",
+      "condition": "full",
+      "evaluation_rows": 0,
+      "availability": "recorded_paper_aggregate",
+      "paper_refs": [
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "main/2wiki/grasp/gemma",
+      "benchmark": "2wiki",
+      "system": "grasp",
+      "model": "gemma",
+      "condition": "full",
+      "evaluation_rows": 0,
+      "availability": "recorded_paper_aggregate",
+      "paper_refs": [
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "main/webqsp/grasp/llama",
+      "benchmark": "webqsp",
+      "system": "grasp",
+      "model": "llama",
+      "condition": "full",
+      "evaluation_rows": 0,
+      "availability": "recorded_paper_aggregate",
+      "paper_refs": [
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "main/2wiki/grasp/llama",
+      "benchmark": "2wiki",
+      "system": "grasp",
+      "model": "llama",
+      "condition": "full",
+      "evaluation_rows": 0,
+      "availability": "recorded_paper_aggregate",
+      "paper_refs": [
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "main/2wiki/dog/qwen",
+      "benchmark": "2wiki",
+      "system": "dog",
+      "model": "qwen",
+      "condition": "full",
+      "evaluation_rows": 0,
+      "prediction_rows": 3997,
+      "availability": "native_predictions_and_evaluator_counts",
+      "paper_refs": [
+        "tab:unmodified-support-gap",
+        "tab:evidence-bounded-decisions",
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "main/2wiki/dog/gemma",
+      "benchmark": "2wiki",
+      "system": "dog",
+      "model": "gemma",
+      "condition": "full",
+      "evaluation_rows": 0,
+      "prediction_rows": 3997,
+      "availability": "native_predictions_and_evaluator_counts",
+      "paper_refs": [
+        "tab:unmodified-support-gap",
+        "tab:evidence-bounded-decisions",
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "main/2wiki/dog/llama",
+      "benchmark": "2wiki",
+      "system": "dog",
+      "model": "llama",
+      "condition": "full",
+      "evaluation_rows": 0,
+      "prediction_rows": 3997,
+      "availability": "native_predictions_and_evaluator_counts",
+      "paper_refs": [
+        "tab:unmodified-support-gap",
+        "tab:evidence-bounded-decisions",
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "interventions/condition_loss/cot/qwen",
+      "benchmark": "cwq",
+      "system": "cot",
+      "model": "qwen",
+      "condition": "missing_condition",
+      "evaluation_rows": 295,
+      "availability": "per_question_outcomes",
+      "paper_refs": [
+        "tab:counterfactual-transitions"
+      ]
+    },
+    {
+      "directory": "interventions/condition_loss/gcr_multi/qwen",
+      "benchmark": "cwq",
+      "system": "gcr_multi",
+      "model": "qwen",
+      "condition": "missing_condition",
+      "evaluation_rows": 295,
+      "availability": "per_question_outcomes",
+      "paper_refs": [
+        "tab:counterfactual-transitions"
+      ]
+    },
+    {
+      "directory": "interventions/condition_loss/cot/gemma",
+      "benchmark": "cwq",
+      "system": "cot",
+      "model": "gemma",
+      "condition": "missing_condition",
+      "evaluation_rows": 295,
+      "availability": "per_question_outcomes",
+      "paper_refs": [
+        "tab:counterfactual-transitions"
+      ]
+    },
+    {
+      "directory": "interventions/condition_loss/gcr_multi/gemma",
+      "benchmark": "cwq",
+      "system": "gcr_multi",
+      "model": "gemma",
+      "condition": "missing_condition",
+      "evaluation_rows": 295,
+      "availability": "per_question_outcomes",
+      "paper_refs": [
+        "tab:counterfactual-transitions"
+      ]
+    },
+    {
+      "directory": "interventions/condition_loss/cot/llama",
+      "benchmark": "cwq",
+      "system": "cot",
+      "model": "llama",
+      "condition": "missing_condition",
+      "evaluation_rows": 295,
+      "availability": "per_question_outcomes",
+      "paper_refs": [
+        "tab:counterfactual-transitions"
+      ]
+    },
+    {
+      "directory": "interventions/condition_loss/gcr_multi/llama",
+      "benchmark": "cwq",
+      "system": "gcr_multi",
+      "model": "llama",
+      "condition": "missing_condition",
+      "evaluation_rows": 295,
+      "availability": "per_question_outcomes",
+      "paper_refs": [
+        "tab:counterfactual-transitions"
+      ]
+    },
+    {
+      "directory": "interventions/condition_loss/grasp/qwen",
+      "benchmark": "cwq",
+      "system": "grasp",
+      "model": "qwen",
+      "condition": "missing_condition",
+      "evaluation_rows": 295,
+      "availability": "per_question_outcomes",
+      "paper_refs": [
+        "fig:rq3-radar",
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "interventions/condition_loss/grasp/gemma",
+      "benchmark": "cwq",
+      "system": "grasp",
+      "model": "gemma",
+      "condition": "missing_condition",
+      "evaluation_rows": 295,
+      "availability": "per_question_outcomes",
+      "paper_refs": [
+        "fig:rq3-radar",
+        "fig:app-radar"
+      ],
+      "final": {
+        "included": true,
+        "rows": 295
+      }
+    },
+    {
+      "directory": "interventions/condition_loss/grasp/llama",
+      "benchmark": "cwq",
+      "system": "grasp",
+      "model": "llama",
+      "condition": "missing_condition",
+      "evaluation_rows": 295,
+      "availability": "per_question_outcomes",
+      "paper_refs": [
+        "fig:rq3-radar",
+        "fig:app-radar"
+      ],
+      "final": {
+        "included": true,
+        "rows": 295
+      }
+    },
+    {
+      "directory": "interventions/condition_loss/dog/qwen",
+      "benchmark": "cwq",
+      "system": "dog",
+      "model": "qwen",
+      "condition": "missing_condition",
+      "evaluation_rows": 295,
+      "availability": "per_question_outcomes",
+      "paper_refs": [
+        "tab:counterfactual-transitions"
+      ]
+    },
+    {
+      "directory": "interventions/condition_loss/dog/gemma",
+      "benchmark": "cwq",
+      "system": "dog",
+      "model": "gemma",
+      "condition": "missing_condition",
+      "evaluation_rows": 295,
+      "availability": "per_question_outcomes",
+      "paper_refs": [
+        "tab:counterfactual-transitions"
+      ]
+    },
+    {
+      "directory": "interventions/condition_loss/dog/llama",
+      "benchmark": "cwq",
+      "system": "dog",
+      "model": "llama",
+      "condition": "missing_condition",
+      "evaluation_rows": 295,
+      "availability": "per_question_outcomes",
+      "paper_refs": [
+        "tab:counterfactual-transitions"
+      ]
+    },
+    {
+      "directory": "interventions/condition_loss/codex/gpt6",
+      "benchmark": "cwq",
+      "system": "codex",
+      "model": "gpt6",
+      "condition": "missing_condition",
+      "evaluation_rows": 295,
+      "availability": "per_question_outcomes",
+      "paper_refs": [
+        "tab:counterfactual-transitions"
+      ]
+    },
+    {
+      "directory": "interventions/binding_mismatch/cot/qwen",
+      "benchmark": "cwq",
+      "system": "cot",
+      "model": "qwen",
+      "condition": "binding_conflict",
+      "evaluation_rows": 120,
+      "availability": "per_question_outcomes",
+      "paper_refs": [
+        "tab:counterfactual-transitions"
+      ]
+    },
+    {
+      "directory": "interventions/binding_mismatch/gcr_multi/qwen",
+      "benchmark": "cwq",
+      "system": "gcr_multi",
+      "model": "qwen",
+      "condition": "binding_conflict",
+      "evaluation_rows": 120,
+      "availability": "per_question_outcomes",
+      "paper_refs": [
+        "tab:counterfactual-transitions"
+      ]
+    },
+    {
+      "directory": "interventions/binding_mismatch/cot/gemma",
+      "benchmark": "cwq",
+      "system": "cot",
+      "model": "gemma",
+      "condition": "binding_conflict",
+      "evaluation_rows": 120,
+      "availability": "per_question_outcomes",
+      "paper_refs": [
+        "tab:counterfactual-transitions"
+      ]
+    },
+    {
+      "directory": "interventions/binding_mismatch/gcr_multi/gemma",
+      "benchmark": "cwq",
+      "system": "gcr_multi",
+      "model": "gemma",
+      "condition": "binding_conflict",
+      "evaluation_rows": 120,
+      "availability": "per_question_outcomes",
+      "paper_refs": [
+        "tab:counterfactual-transitions"
+      ]
+    },
+    {
+      "directory": "interventions/binding_mismatch/cot/llama",
+      "benchmark": "cwq",
+      "system": "cot",
+      "model": "llama",
+      "condition": "binding_conflict",
+      "evaluation_rows": 120,
+      "availability": "per_question_outcomes",
+      "paper_refs": [
+        "tab:counterfactual-transitions"
+      ]
+    },
+    {
+      "directory": "interventions/binding_mismatch/gcr_multi/llama",
+      "benchmark": "cwq",
+      "system": "gcr_multi",
+      "model": "llama",
+      "condition": "binding_conflict",
+      "evaluation_rows": 120,
+      "availability": "per_question_outcomes",
+      "paper_refs": [
+        "tab:counterfactual-transitions"
+      ]
+    },
+    {
+      "directory": "interventions/binding_mismatch/grasp/qwen",
+      "benchmark": "cwq",
+      "system": "grasp",
+      "model": "qwen",
+      "condition": "binding_conflict",
+      "evaluation_rows": 120,
+      "availability": "per_question_outcomes",
+      "paper_refs": [
+        "fig:rq3-radar",
+        "fig:app-radar"
+      ]
+    },
+    {
+      "directory": "interventions/binding_mismatch/grasp/gemma",
+      "benchmark": "cwq",
+      "system": "grasp",
+      "model": "gemma",
+      "condition": "binding_conflict",
+      "evaluation_rows": 120,
+      "availability": "per_question_outcomes",
+      "paper_refs": [
+        "fig:rq3-radar",
+        "fig:app-radar"
+      ],
+      "final": {
+        "included": true,
+        "rows": 120
+      }
+    },
+    {
+      "directory": "interventions/binding_mismatch/grasp/llama",
+      "benchmark": "cwq",
+      "system": "grasp",
+      "model": "llama",
+      "condition": "binding_conflict",
+      "evaluation_rows": 120,
+      "availability": "per_question_outcomes",
+      "paper_refs": [
+        "fig:rq3-radar",
+        "fig:app-radar"
+      ],
+      "final": {
+        "included": true,
+        "rows": 120
+      }
+    },
+    {
+      "directory": "interventions/binding_mismatch/dog/qwen",
+      "benchmark": "cwq",
+      "system": "dog",
+      "model": "qwen",
+      "condition": "binding_conflict",
+      "evaluation_rows": 120,
+      "availability": "per_question_outcomes",
+      "paper_refs": [
+        "tab:counterfactual-transitions"
+      ]
+    },
+    {
+      "directory": "interventions/binding_mismatch/dog/gemma",
+      "benchmark": "cwq",
+      "system": "dog",
+      "model": "gemma",
+      "condition": "binding_conflict",
+      "evaluation_rows": 120,
+      "availability": "per_question_outcomes",
+      "paper_refs": [
+        "tab:counterfactual-transitions"
+      ]
+    },
+    {
+      "directory": "interventions/binding_mismatch/dog/llama",
+      "benchmark": "cwq",
+      "system": "dog",
+      "model": "llama",
+      "condition": "binding_conflict",
+      "evaluation_rows": 120,
+      "availability": "per_question_outcomes",
+      "paper_refs": [
+        "tab:counterfactual-transitions"
+      ]
+    },
+    {
+      "directory": "interventions/binding_mismatch/codex/gpt6",
+      "benchmark": "cwq",
+      "system": "codex",
+      "model": "gpt6",
+      "condition": "binding_conflict",
+      "evaluation_rows": 120,
+      "availability": "per_question_outcomes",
+      "paper_refs": [
+        "tab:counterfactual-transitions"
+      ]
+    },
+    {
+      "directory": "interventions/progressive/cot",
+      "benchmark": "cwq",
+      "system": "cot",
+      "model": "qwen",
+      "condition": "progressive",
+      "evaluation_rows": 268,
+      "availability": "per_question_outcomes",
+      "paper_refs": [
+        "fig:progressive-support-removal"
+      ]
+    },
+    {
+      "directory": "interventions/progressive/gcr_multi",
+      "benchmark": "cwq",
+      "system": "gcr_multi",
+      "model": "qwen",
+      "condition": "progressive",
+      "evaluation_rows": 268,
+      "availability": "per_question_outcomes",
+      "paper_refs": [
+        "fig:progressive-support-removal"
+      ]
+    },
+    {
+      "directory": "interventions/progressive/dog",
+      "benchmark": "cwq",
+      "system": "dog",
+      "model": "qwen",
+      "condition": "progressive",
+      "evaluation_rows": 268,
+      "availability": "per_question_outcomes",
+      "paper_refs": [
+        "fig:progressive-support-removal"
+      ]
+    },
+    {
+      "directory": "interventions/progressive/codex",
+      "benchmark": "cwq",
+      "system": "codex",
+      "model": "gpt6",
+      "condition": "progressive",
+      "evaluation_rows": 268,
+      "availability": "per_question_outcomes",
+      "paper_refs": [
+        "fig:progressive-support-removal"
+      ]
+    }
+  ],
+  "analysis": {
+    "rq1_strata": "paper/rq1_gap_data.json",
+    "semantic_relaxation": "analysis/semantic_relaxation",
+    "partition_relaxation": "analysis/partition_relaxation",
+    "radars": [
+      "paper/rq3_radar_data.json",
+      "paper/rq3_appendix_data.json"
+    ]
+  },
+  "verification": {
+    "status": "passed",
+    "conditions": 80,
+    "cwq_radar_panels_using_current_main_values": 3,
+    "plotted_structure_groups": 3,
+    "semantic_relaxation_curve_points": 80,
+    "semantic_relaxation_S_rows": 134320,
+    "progressive_figure_rows": 12,
+    "primary_table_rows": 10,
+    "selected_result_counts_preserved": true,
+    "source_mappings": 288
+  },
+  "reporting_notes": [
+    "CWQ radar values use the current main-table conditions, including corrected Gemma-CoT.",
+    "WebQSP Grasp/Qwen follows the author-selected support and abstention sources; matching support rows and published aggregate counts are included.",
+    "The current DoG support-removal table includes error rows in its displayed Other total. Per-question error states remain distinct.",
+    "Reviewed intervention classifications are the selected paper view; sources.tsv identifies the corresponding recorded decisions."
+  ],
+  "storage": {
+    "compressed_jsonl": [
+      "ablation/components/gemma/no_domain_range_types/final.jsonl.gz",
+      "ablation/components/gemma/no_plan_structure/final.jsonl.gz",
+      "ablation/components/gemma/without_binding_joins/final.jsonl.gz",
+      "ablation/components/llama/no_domain_range_types/final.jsonl.gz",
+      "ablation/components/llama/no_plan_structure/final.jsonl.gz",
+      "ablation/components/llama/without_binding_joins/final.jsonl.gz",
+      "ablation/components/qwen/no_domain_range_types/final.jsonl.gz",
+      "ablation/components/qwen/no_plan_structure/final.jsonl.gz",
+      "ablation/components/qwen/without_binding_joins/final.jsonl.gz",
+      "analysis/partition_relaxation/partitions.jsonl.gz",
+      "analysis/semantic_relaxation/details.jsonl.gz",
+      "main/2wiki/dog/qwen/predictions.jsonl.gz",
+      "main/2wiki/grasp/qwen/final.jsonl.gz",
+      "main/cwq/grasp/gemma/final.jsonl.gz",
+      "main/cwq/grasp/llama/final.jsonl.gz",
+      "main/cwq/grasp/qwen/final.jsonl.gz",
+      "splits/2wiki/partition_index.jsonl.gz"
+    ],
+    "format": "Standard gzip; decompress before passing a compressed file to the JSONL command-line tools. The results notebook reads the uncompressed summaries and tables."
+  }
+}

@@ -1,0 +1,11 @@
+[
+  {
+    "configuration": {
+      "final_result_version": 13,
+      "input": "question_and_flat_packed_triples",
+      "model": "gpt-oss:120b",
+      "model_revision": "a951a23b46a1f6093dafee2ea481d634b4e31ac720a8a16f3f91e04f5a40ecd9",
+      "output": "sufficient_answers_and_triple_grounded_reason"
+    }
+  }
+]

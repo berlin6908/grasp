@@ -1,0 +1,3 @@
+{"example_id":"s1","status":"answered","answers":["London"],"reason":"Ada was born in London [s1.t1].","decision":"Return the birthplace.","step_evidence":{"s1":{"op":"retrieve","triples":[["Ada","birthplace","London"]]}}}
+{"example_id":"i1","status":"insufficient","answers":[],"reason":null,"decision":"Return the birthplace.","step_evidence":{}}
+{"example_id":"x1","status":"answered","answers":["London"],"reason":"Ada was born in London [s1.t1].","decision":"Return the birthplace.","step_evidence":{"s1":{"op":"retrieve","triples":[["Ada","birthplace","London"]]}}}

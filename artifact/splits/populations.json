@@ -1,0 +1,50 @@
+{
+  "cwq": {
+    "original": {
+      "S": 1855,
+      "I": 1676,
+      "X": 0
+    },
+    "paper": {
+      "S": 1679,
+      "I": 1459
+    },
+    "excluded": 393
+  },
+  "webqsp": {
+    "original": {
+      "S": 1335,
+      "I": 286,
+      "X": 7
+    },
+    "paper": {
+      "S": 1335,
+      "I": 286
+    },
+    "excluded": 7
+  },
+  "2wiki": {
+    "original": {
+      "S": 1383,
+      "I": 2614,
+      "X": 19
+    },
+    "paper": {
+      "S": 1383,
+      "I": 2614
+    },
+    "excluded": 19
+  },
+  "cwq_interventions": {
+    "original": {
+      "condition_loss": 302,
+      "binding_mismatch": 122,
+      "progressive": 275
+    },
+    "paper": {
+      "condition_loss": 295,
+      "binding_mismatch": 120,
+      "progressive": 268
+    }
+  }
+}

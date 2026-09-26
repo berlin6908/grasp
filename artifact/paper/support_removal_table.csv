@@ -1,0 +1,11 @@
+model,system,APR_condition_loss,APR_binding_mismatch,ATR_Same,ATR_Unknown,ATR_Other
+qwen,CoT,46.1,63.33,51.08,0.24,48.67
+qwen,GCR*,55.25,50.83,53.98,18.31,27.71
+qwen,DoG,53.56,50.0,52.53,3.37,44.1
+gemma,CoT,63.39,62.5,63.13,0.0,36.87
+gemma,GCR*,52.54,47.5,51.08,18.31,30.6
+gemma,DoG,59.66,61.67,60.24,5.78,33.98
+llama,CoT,61.36,72.5,64.58,0.0,35.42
+llama,GCR*,55.59,49.17,53.73,16.39,29.88
+llama,DoG,51.86,55.0,52.77,0.72,46.51
+gpt6,Codex,8.81,20.83,12.29,85.3,2.41

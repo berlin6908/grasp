@@ -1,0 +1,289 @@
+artifact	source	operation
+splits/cwq/partition_index.jsonl	source-001	select the paper S/I population; retain original schema and labels
+splits/webqsp/partition_index.jsonl	source-002	select the paper S/I population; retain original schema and labels
+splits/2wiki/partition_index.jsonl.gz	source-003	select the paper S/I population; retain original schema and labels
+splits/cwq/curation.jsonl	source-030	copy unchanged
+splits/populations.json	source-016	select recorded paper result
+splits/populations.json	source-015	select recorded paper result
+paper/main_tables.csv	source-013	extract active numeric cells; percentages, no counts inferred
+paper/main_tables.csv	source-014	extract active numeric cells; percentages, no counts inferred
+paper/support_removal_table.csv	source-010	extract active numeric cells; percentages
+main/cwq/cot/qwen/details.jsonl	source-029	select paper-population IDs; retain recorded fields
+main/cwq/cot/qwen/metrics.json	source-029	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+main/cwq/gcr_multi/qwen/details.jsonl	source-179	select paper-population IDs; retain recorded fields
+main/cwq/gcr_multi/qwen/metrics.json	source-179	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+main/cwq/dog/qwen/details.jsonl	source-050	select paper-population IDs; retain recorded fields
+main/cwq/dog/qwen/metrics.json	source-050	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+main/cwq/cot/gemma/details.jsonl	source-027	select paper-population IDs; retain recorded fields
+main/cwq/cot/gemma/metrics.json	source-027	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+main/cwq/gcr_multi/gemma/details.jsonl	source-175	select paper-population IDs; retain recorded fields
+main/cwq/gcr_multi/gemma/metrics.json	source-175	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+main/cwq/dog/gemma/details.jsonl	source-048	select paper-population IDs; retain recorded fields
+main/cwq/dog/gemma/metrics.json	source-048	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+main/cwq/cot/llama/details.jsonl	source-028	select paper-population IDs; retain recorded fields
+main/cwq/cot/llama/metrics.json	source-028	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+main/cwq/gcr_multi/llama/details.jsonl	source-181	select paper-population IDs; retain recorded fields
+main/cwq/gcr_multi/llama/metrics.json	source-181	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+main/cwq/dog/llama/details.jsonl	source-049	select paper-population IDs; retain recorded fields
+main/cwq/dog/llama/metrics.json	source-049	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+main/cwq/grasp/qwen/details.jsonl	source-104	select paper-population IDs; retain recorded fields
+main/cwq/grasp/qwen/metrics.json	source-104	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+main/cwq/grasp/qwen/final.jsonl.gz	source-184	concatenate named source segments; retain only paper IDs and every Final field
+main/cwq/grasp/qwen/final.jsonl.gz	source-186	concatenate named source segments; retain only paper IDs and every Final field
+main/cwq/grasp/qwen/configuration.json	source-185	select unique recorded configurations; omit stage totals and timestamps
+main/cwq/grasp/qwen/configuration.json	source-187	select unique recorded configurations; omit stage totals and timestamps
+ablation/components/qwen/no_plan_structure/details.jsonl	source-106	select paper-population IDs; retain recorded fields
+ablation/components/qwen/no_plan_structure/metrics.json	source-106	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+ablation/components/qwen/no_plan_structure/final.jsonl.gz	source-078	concatenate named source segments; retain only paper IDs and every Final field
+ablation/components/qwen/no_plan_structure/final.jsonl.gz	source-082	concatenate named source segments; retain only paper IDs and every Final field
+ablation/components/qwen/no_plan_structure/configuration.json	source-079	select unique recorded configurations; omit stage totals and timestamps
+ablation/components/qwen/no_plan_structure/configuration.json	source-083	select unique recorded configurations; omit stage totals and timestamps
+ablation/components/qwen/no_domain_range_types/details.jsonl	source-105	select paper-population IDs; retain recorded fields
+ablation/components/qwen/no_domain_range_types/metrics.json	source-105	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+ablation/components/qwen/no_domain_range_types/final.jsonl.gz	source-080	concatenate named source segments; retain only paper IDs and every Final field
+ablation/components/qwen/no_domain_range_types/final.jsonl.gz	source-084	concatenate named source segments; retain only paper IDs and every Final field
+ablation/components/qwen/no_domain_range_types/configuration.json	source-081	select unique recorded configurations; omit stage totals and timestamps
+ablation/components/qwen/no_domain_range_types/configuration.json	source-085	select unique recorded configurations; omit stage totals and timestamps
+ablation/components/qwen/without_binding_joins/details.jsonl	source-111	select paper-population IDs; retain recorded fields
+ablation/components/qwen/without_binding_joins/metrics.json	source-111	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+ablation/components/qwen/without_binding_joins/final.jsonl.gz	source-107	concatenate named source segments; retain only paper IDs and every Final field
+ablation/components/qwen/without_binding_joins/final.jsonl.gz	source-109	concatenate named source segments; retain only paper IDs and every Final field
+ablation/components/qwen/without_binding_joins/configuration.json	source-108	select unique recorded configurations; omit stage totals and timestamps
+ablation/components/qwen/without_binding_joins/configuration.json	source-110	select unique recorded configurations; omit stage totals and timestamps
+main/cwq/grasp/llama/details.jsonl	source-103	select paper-population IDs; retain recorded fields
+main/cwq/grasp/llama/metrics.json	source-103	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+main/cwq/grasp/llama/final.jsonl.gz	source-094	concatenate named source segments; retain only paper IDs and every Final field
+main/cwq/grasp/llama/final.jsonl.gz	source-096	concatenate named source segments; retain only paper IDs and every Final field
+main/cwq/grasp/llama/final.jsonl.gz	source-098	concatenate named source segments; retain only paper IDs and every Final field
+main/cwq/grasp/llama/final.jsonl.gz	source-100	concatenate named source segments; retain only paper IDs and every Final field
+main/cwq/grasp/llama/configuration.json	source-095	select unique recorded configurations; omit stage totals and timestamps
+main/cwq/grasp/llama/configuration.json	source-097	select unique recorded configurations; omit stage totals and timestamps
+main/cwq/grasp/llama/configuration.json	source-099	select unique recorded configurations; omit stage totals and timestamps
+main/cwq/grasp/llama/configuration.json	source-101	select unique recorded configurations; omit stage totals and timestamps
+ablation/components/llama/no_plan_structure/details.jsonl	source-132	select paper-population IDs; retain recorded fields
+ablation/components/llama/no_plan_structure/metrics.json	source-132	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+ablation/components/llama/no_plan_structure/final.jsonl.gz	source-136	concatenate named source segments; retain only paper IDs and every Final field
+ablation/components/llama/no_plan_structure/final.jsonl.gz	source-138	concatenate named source segments; retain only paper IDs and every Final field
+ablation/components/llama/no_plan_structure/final.jsonl.gz	source-140	concatenate named source segments; retain only paper IDs and every Final field
+ablation/components/llama/no_plan_structure/final.jsonl.gz	source-142	concatenate named source segments; retain only paper IDs and every Final field
+ablation/components/llama/no_plan_structure/configuration.json	source-137	select unique recorded configurations; omit stage totals and timestamps
+ablation/components/llama/no_plan_structure/configuration.json	source-139	select unique recorded configurations; omit stage totals and timestamps
+ablation/components/llama/no_plan_structure/configuration.json	source-141	select unique recorded configurations; omit stage totals and timestamps
+ablation/components/llama/no_plan_structure/configuration.json	source-143	select unique recorded configurations; omit stage totals and timestamps
+ablation/components/llama/no_domain_range_types/details.jsonl	source-131	select paper-population IDs; retain recorded fields
+ablation/components/llama/no_domain_range_types/metrics.json	source-131	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+ablation/components/llama/no_domain_range_types/final.jsonl.gz	source-154	concatenate named source segments; retain only paper IDs and every Final field
+ablation/components/llama/no_domain_range_types/final.jsonl.gz	source-156	concatenate named source segments; retain only paper IDs and every Final field
+ablation/components/llama/no_domain_range_types/configuration.json	source-155	select unique recorded configurations; omit stage totals and timestamps
+ablation/components/llama/no_domain_range_types/configuration.json	source-157	select unique recorded configurations; omit stage totals and timestamps
+ablation/components/llama/without_binding_joins/details.jsonl	source-119	select paper-population IDs; retain recorded fields
+ablation/components/llama/without_binding_joins/metrics.json	source-119	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+ablation/components/llama/without_binding_joins/final.jsonl.gz	source-124	concatenate named source segments; retain only paper IDs and every Final field
+ablation/components/llama/without_binding_joins/final.jsonl.gz	source-126	concatenate named source segments; retain only paper IDs and every Final field
+ablation/components/llama/without_binding_joins/final.jsonl.gz	source-127	concatenate named source segments; retain only paper IDs and every Final field
+ablation/components/llama/without_binding_joins/configuration.json	source-125	select unique recorded configurations; omit stage totals and timestamps
+ablation/components/llama/without_binding_joins/configuration.json	source-128	select unique recorded configurations; omit stage totals and timestamps
+main/cwq/grasp/gemma/details.jsonl	source-102	select paper-population IDs; retain recorded fields
+main/cwq/grasp/gemma/metrics.json	source-102	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+main/cwq/grasp/gemma/final.jsonl.gz	source-086	concatenate named source segments; retain only paper IDs and every Final field
+main/cwq/grasp/gemma/final.jsonl.gz	source-088	concatenate named source segments; retain only paper IDs and every Final field
+main/cwq/grasp/gemma/final.jsonl.gz	source-090	concatenate named source segments; retain only paper IDs and every Final field
+main/cwq/grasp/gemma/final.jsonl.gz	source-092	concatenate named source segments; retain only paper IDs and every Final field
+main/cwq/grasp/gemma/configuration.json	source-087	select unique recorded configurations; omit stage totals and timestamps
+main/cwq/grasp/gemma/configuration.json	source-089	select unique recorded configurations; omit stage totals and timestamps
+main/cwq/grasp/gemma/configuration.json	source-091	select unique recorded configurations; omit stage totals and timestamps
+main/cwq/grasp/gemma/configuration.json	source-093	select unique recorded configurations; omit stage totals and timestamps
+ablation/components/gemma/no_plan_structure/details.jsonl	source-130	select paper-population IDs; retain recorded fields
+ablation/components/gemma/no_plan_structure/metrics.json	source-130	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+ablation/components/gemma/no_plan_structure/final.jsonl.gz	source-133	concatenate named source segments; retain only paper IDs and every Final field
+ablation/components/gemma/no_plan_structure/final.jsonl.gz	source-135	concatenate named source segments; retain only paper IDs and every Final field
+ablation/components/gemma/no_plan_structure/final.jsonl.gz	source-144	concatenate named source segments; retain only paper IDs and every Final field
+ablation/components/gemma/no_plan_structure/final.jsonl.gz	source-146	concatenate named source segments; retain only paper IDs and every Final field
+ablation/components/gemma/no_plan_structure/final.jsonl.gz	source-148	concatenate named source segments; retain only paper IDs and every Final field
+ablation/components/gemma/no_plan_structure/configuration.json	source-134	select unique recorded configurations; omit stage totals and timestamps
+ablation/components/gemma/no_plan_structure/configuration.json	source-145	select unique recorded configurations; omit stage totals and timestamps
+ablation/components/gemma/no_plan_structure/configuration.json	source-147	select unique recorded configurations; omit stage totals and timestamps
+ablation/components/gemma/no_plan_structure/configuration.json	source-149	select unique recorded configurations; omit stage totals and timestamps
+ablation/components/gemma/no_domain_range_types/details.jsonl	source-129	select paper-population IDs; retain recorded fields
+ablation/components/gemma/no_domain_range_types/metrics.json	source-129	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+ablation/components/gemma/no_domain_range_types/final.jsonl.gz	source-150	concatenate named source segments; retain only paper IDs and every Final field
+ablation/components/gemma/no_domain_range_types/final.jsonl.gz	source-152	concatenate named source segments; retain only paper IDs and every Final field
+ablation/components/gemma/no_domain_range_types/configuration.json	source-151	select unique recorded configurations; omit stage totals and timestamps
+ablation/components/gemma/no_domain_range_types/configuration.json	source-153	select unique recorded configurations; omit stage totals and timestamps
+ablation/components/gemma/without_binding_joins/details.jsonl	source-118	select paper-population IDs; retain recorded fields
+ablation/components/gemma/without_binding_joins/metrics.json	source-118	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+ablation/components/gemma/without_binding_joins/final.jsonl.gz	source-120	concatenate named source segments; retain only paper IDs and every Final field
+ablation/components/gemma/without_binding_joins/final.jsonl.gz	source-122	concatenate named source segments; retain only paper IDs and every Final field
+ablation/components/gemma/without_binding_joins/configuration.json	source-121	select unique recorded configurations; omit stage totals and timestamps
+ablation/components/gemma/without_binding_joins/configuration.json	source-123	select unique recorded configurations; omit stage totals and timestamps
+ablation/scorer_size/1_5b/details.jsonl	source-159	select paper-population IDs; retain recorded fields
+ablation/scorer_size/1_5b/metrics.json	source-159	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+ablation/scorer_size/1_5b/configuration.json	source-158	select unique recorded configurations; omit stage totals and timestamps
+ablation/scorer_size/1_5b/configuration.json	source-160	select unique recorded configurations; omit stage totals and timestamps
+ablation/scorer_size/1_5b/configuration.json	source-161	select unique recorded configurations; omit stage totals and timestamps
+ablation/scorer_size/32b/details.jsonl	source-163	select paper-population IDs; retain recorded fields
+ablation/scorer_size/32b/metrics.json	source-163	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+ablation/scorer_size/32b/configuration.json	source-162	select unique recorded configurations; omit stage totals and timestamps
+ablation/scorer_size/32b/configuration.json	source-164	select unique recorded configurations; omit stage totals and timestamps
+ablation/scorer_size/32b/configuration.json	source-165	select unique recorded configurations; omit stage totals and timestamps
+main/cwq/codex/gpt6/details.jsonl	source-174	select paper-population IDs; retain recorded fields
+main/cwq/codex/gpt6/metrics.json	source-174	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+main/webqsp/cot/qwen/details.jsonl	source-026	select paper-population IDs; retain recorded fields
+main/webqsp/cot/qwen/metrics.json	source-026	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+main/webqsp/gcr_multi/qwen/details.jsonl	source-180	select paper-population IDs; retain recorded fields
+main/webqsp/gcr_multi/qwen/metrics.json	source-180	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+main/webqsp/dog/qwen/details.jsonl	source-190	select paper-population IDs; retain recorded fields
+main/webqsp/dog/qwen/metrics.json	source-190	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+main/webqsp/cot/gemma/details.jsonl	source-024	select paper-population IDs; retain recorded fields
+main/webqsp/cot/gemma/metrics.json	source-024	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+main/webqsp/gcr_multi/gemma/details.jsonl	source-176	select paper-population IDs; retain recorded fields
+main/webqsp/gcr_multi/gemma/metrics.json	source-176	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+main/webqsp/dog/gemma/details.jsonl	source-188	select paper-population IDs; retain recorded fields
+main/webqsp/dog/gemma/metrics.json	source-188	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+main/webqsp/cot/llama/details.jsonl	source-025	select paper-population IDs; retain recorded fields
+main/webqsp/cot/llama/metrics.json	source-025	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+main/webqsp/gcr_multi/llama/details.jsonl	source-037	select paper-population IDs; retain recorded fields
+main/webqsp/gcr_multi/llama/metrics.json	source-037	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+main/webqsp/dog/llama/details.jsonl	source-189	select paper-population IDs; retain recorded fields
+main/webqsp/dog/llama/metrics.json	source-189	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+main/webqsp/grasp/qwen/support_details.jsonl	source-183	select paper IDs and the support metrics used by the paper; omit the differing abstention view
+main/2wiki/cot/qwen/details.jsonl	source-023	select paper-population IDs; retain recorded fields
+main/2wiki/cot/qwen/metrics.json	source-023	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+main/2wiki/gcr_multi/qwen/details.jsonl	source-178	select paper-population IDs; retain recorded fields
+main/2wiki/gcr_multi/qwen/metrics.json	source-178	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+main/2wiki/cot/gemma/details.jsonl	source-021	select paper-population IDs; retain recorded fields
+main/2wiki/cot/gemma/metrics.json	source-021	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+main/2wiki/gcr_multi/gemma/details.jsonl	source-036	select paper-population IDs; retain recorded fields
+main/2wiki/gcr_multi/gemma/metrics.json	source-036	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+main/2wiki/cot/llama/details.jsonl	source-022	select paper-population IDs; retain recorded fields
+main/2wiki/cot/llama/metrics.json	source-022	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+main/2wiki/gcr_multi/llama/details.jsonl	source-177	select paper-population IDs; retain recorded fields
+main/2wiki/gcr_multi/llama/metrics.json	source-177	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+main/2wiki/grasp/qwen/details.jsonl	source-117	select paper-population IDs; retain recorded fields
+main/2wiki/grasp/qwen/metrics.json	source-117	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+main/2wiki/grasp/qwen/final.jsonl.gz	source-004	concatenate named source segments; retain only paper IDs and every Final field
+main/webqsp/codex/gpt6/details.jsonl	source-182	select paper-population IDs; retain recorded fields
+main/webqsp/codex/gpt6/metrics.json	source-182	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+main/2wiki/codex/gpt6/details.jsonl	source-017	select paper-population IDs; retain recorded fields
+main/2wiki/codex/gpt6/metrics.json	source-017	aggregate frozen per-question decisions using eva.metrics.summarize_paper_metrics
+main/2wiki/codex/gpt6/protocol.json	source-018	select recorded paper result
+main/webqsp/grasp/qwen/metrics.json	source-008	retain current paper metrics and selected counts; omit duplicate display fields
+main/webqsp/grasp/qwen/metrics.json	source-035	retain current paper metrics and selected counts; omit duplicate display fields
+main/webqsp/grasp/gemma/metrics.json	source-008	retain current paper metrics and selected counts; omit duplicate display fields
+main/webqsp/grasp/gemma/metrics.json	source-035	retain current paper metrics and selected counts; omit duplicate display fields
+main/2wiki/grasp/gemma/metrics.json	source-008	retain current paper metrics and selected counts; omit duplicate display fields
+main/2wiki/grasp/gemma/metrics.json	source-035	retain current paper metrics and selected counts; omit duplicate display fields
+main/webqsp/grasp/llama/metrics.json	source-008	retain current paper metrics and selected counts; omit duplicate display fields
+main/webqsp/grasp/llama/metrics.json	source-035	retain current paper metrics and selected counts; omit duplicate display fields
+main/2wiki/grasp/llama/metrics.json	source-008	retain current paper metrics and selected counts; omit duplicate display fields
+main/2wiki/grasp/llama/metrics.json	source-035	retain current paper metrics and selected counts; omit duplicate display fields
+main/2wiki/dog/qwen/metrics.json	source-076	derive the six paper measures from recorded exact evaluator counts
+main/2wiki/dog/qwen/predictions.jsonl.gz	source-077	select paper IDs; retain native prediction fields; omit duplicate input graph payload
+main/2wiki/dog/gemma/metrics.json	source-072	derive the six paper measures from recorded exact evaluator counts
+main/2wiki/dog/gemma/predictions.jsonl	source-073	select paper IDs; retain native prediction fields; omit duplicate input graph payload
+main/2wiki/dog/llama/metrics.json	source-074	derive the six paper measures from recorded exact evaluator counts
+main/2wiki/dog/llama/predictions.jsonl	source-075	select paper IDs; retain native prediction fields; omit duplicate input graph payload
+interventions/condition_loss/cohort.jsonl	source-171	retain paper cohort and critical edits; omit unreported sham controls
+interventions/condition_loss/cot/qwen/outcomes.jsonl	source-058	select paper IDs and critical/original results; apply only previously recorded display decisions
+interventions/condition_loss/cot/qwen/metrics.json	source-032	select the paper critical-edit counts; errors remain in the denominator
+interventions/condition_loss/gcr_multi/qwen/outcomes.jsonl	source-043	select paper IDs and critical/original results; apply only previously recorded display decisions
+interventions/condition_loss/gcr_multi/qwen/metrics.json	source-032	select the paper critical-edit counts; errors remain in the denominator
+interventions/condition_loss/cot/gemma/outcomes.jsonl	source-054	select paper IDs and critical/original results; apply only previously recorded display decisions
+interventions/condition_loss/cot/gemma/metrics.json	source-032	select the paper critical-edit counts; errors remain in the denominator
+interventions/condition_loss/gcr_multi/gemma/outcomes.jsonl	source-039	select paper IDs and critical/original results; apply only previously recorded display decisions
+interventions/condition_loss/gcr_multi/gemma/metrics.json	source-032	select the paper critical-edit counts; errors remain in the denominator
+interventions/condition_loss/cot/llama/outcomes.jsonl	source-056	select paper IDs and critical/original results; apply only previously recorded display decisions
+interventions/condition_loss/cot/llama/metrics.json	source-032	select the paper critical-edit counts; errors remain in the denominator
+interventions/condition_loss/gcr_multi/llama/outcomes.jsonl	source-041	select paper IDs and critical/original results; apply only previously recorded display decisions
+interventions/condition_loss/gcr_multi/llama/metrics.json	source-032	select the paper critical-edit counts; errors remain in the denominator
+interventions/condition_loss/grasp/qwen/outcomes.jsonl	source-170	select paper IDs and critical/original results; apply only previously recorded display decisions
+interventions/condition_loss/grasp/qwen/metrics.json	source-032	select the paper critical-edit counts; errors remain in the denominator
+interventions/condition_loss/grasp/gemma/outcomes.jsonl	source-061	select paper IDs and critical/original results; apply only previously recorded display decisions
+interventions/condition_loss/grasp/gemma/metrics.json	source-032	select the paper critical-edit counts; errors remain in the denominator
+interventions/condition_loss/grasp/gemma/final.jsonl	source-066	concatenate named source segments; retain only paper IDs and every Final field
+interventions/condition_loss/grasp/gemma/configuration.json	source-067	select unique recorded configurations; omit stage totals and timestamps
+interventions/condition_loss/grasp/llama/outcomes.jsonl	source-063	select paper IDs and critical/original results; apply only previously recorded display decisions
+interventions/condition_loss/grasp/llama/metrics.json	source-032	select the paper critical-edit counts; errors remain in the denominator
+interventions/condition_loss/grasp/llama/final.jsonl	source-070	concatenate named source segments; retain only paper IDs and every Final field
+interventions/condition_loss/grasp/llama/configuration.json	source-071	select unique recorded configurations; omit stage totals and timestamps
+interventions/condition_loss/dog/qwen/outcomes.jsonl	source-168	select paper IDs and critical/original results; apply only previously recorded display decisions
+interventions/condition_loss/dog/qwen/metrics.json	source-032	select the paper critical-edit counts; errors remain in the denominator
+interventions/condition_loss/dog/gemma/outcomes.jsonl	source-052	select paper IDs and critical/original results; apply only previously recorded display decisions
+interventions/condition_loss/dog/gemma/metrics.json	source-032	select the paper critical-edit counts; errors remain in the denominator
+interventions/condition_loss/dog/llama/outcomes.jsonl	source-034	select paper IDs and critical/original results; apply only previously recorded display decisions
+interventions/condition_loss/dog/llama/metrics.json	source-032	select the paper critical-edit counts; errors remain in the denominator
+interventions/condition_loss/codex/gpt6/outcomes.jsonl	source-020	select paper IDs and critical/original results; apply only previously recorded display decisions
+interventions/condition_loss/codex/gpt6/metrics.json	source-032	select the paper critical-edit counts; errors remain in the denominator
+interventions/binding_mismatch/cohort.jsonl	source-166	retain paper cohort and critical edits; omit unreported sham controls
+interventions/binding_mismatch/cot/qwen/outcomes.jsonl	source-057	select paper IDs and critical/original results; apply only previously recorded display decisions
+interventions/binding_mismatch/cot/qwen/metrics.json	source-032	select the paper critical-edit counts; errors remain in the denominator
+interventions/binding_mismatch/gcr_multi/qwen/outcomes.jsonl	source-042	select paper IDs and critical/original results; apply only previously recorded display decisions
+interventions/binding_mismatch/gcr_multi/qwen/metrics.json	source-032	select the paper critical-edit counts; errors remain in the denominator
+interventions/binding_mismatch/cot/gemma/outcomes.jsonl	source-053	select paper IDs and critical/original results; apply only previously recorded display decisions
+interventions/binding_mismatch/cot/gemma/metrics.json	source-032	select the paper critical-edit counts; errors remain in the denominator
+interventions/binding_mismatch/gcr_multi/gemma/outcomes.jsonl	source-038	select paper IDs and critical/original results; apply only previously recorded display decisions
+interventions/binding_mismatch/gcr_multi/gemma/metrics.json	source-032	select the paper critical-edit counts; errors remain in the denominator
+interventions/binding_mismatch/cot/llama/outcomes.jsonl	source-055	select paper IDs and critical/original results; apply only previously recorded display decisions
+interventions/binding_mismatch/cot/llama/metrics.json	source-032	select the paper critical-edit counts; errors remain in the denominator
+interventions/binding_mismatch/gcr_multi/llama/outcomes.jsonl	source-040	select paper IDs and critical/original results; apply only previously recorded display decisions
+interventions/binding_mismatch/gcr_multi/llama/metrics.json	source-032	select the paper critical-edit counts; errors remain in the denominator
+interventions/binding_mismatch/grasp/qwen/outcomes.jsonl	source-169	select paper IDs and critical/original results; apply only previously recorded display decisions
+interventions/binding_mismatch/grasp/qwen/metrics.json	source-032	select the paper critical-edit counts; errors remain in the denominator
+interventions/binding_mismatch/grasp/gemma/outcomes.jsonl	source-060	select paper IDs and critical/original results; apply only previously recorded display decisions
+interventions/binding_mismatch/grasp/gemma/metrics.json	source-032	select the paper critical-edit counts; errors remain in the denominator
+interventions/binding_mismatch/grasp/gemma/final.jsonl	source-064	concatenate named source segments; retain only paper IDs and every Final field
+interventions/binding_mismatch/grasp/gemma/configuration.json	source-065	select unique recorded configurations; omit stage totals and timestamps
+interventions/binding_mismatch/grasp/llama/outcomes.jsonl	source-062	select paper IDs and critical/original results; apply only previously recorded display decisions
+interventions/binding_mismatch/grasp/llama/metrics.json	source-032	select the paper critical-edit counts; errors remain in the denominator
+interventions/binding_mismatch/grasp/llama/final.jsonl	source-068	concatenate named source segments; retain only paper IDs and every Final field
+interventions/binding_mismatch/grasp/llama/configuration.json	source-069	select unique recorded configurations; omit stage totals and timestamps
+interventions/binding_mismatch/dog/qwen/outcomes.jsonl	source-167	select paper IDs and critical/original results; apply only previously recorded display decisions
+interventions/binding_mismatch/dog/qwen/metrics.json	source-032	select the paper critical-edit counts; errors remain in the denominator
+interventions/binding_mismatch/dog/gemma/outcomes.jsonl	source-051	select paper IDs and critical/original results; apply only previously recorded display decisions
+interventions/binding_mismatch/dog/gemma/metrics.json	source-032	select the paper critical-edit counts; errors remain in the denominator
+interventions/binding_mismatch/dog/llama/outcomes.jsonl	source-033	select paper IDs and critical/original results; apply only previously recorded display decisions
+interventions/binding_mismatch/dog/llama/metrics.json	source-032	select the paper critical-edit counts; errors remain in the denominator
+interventions/binding_mismatch/codex/gpt6/outcomes.jsonl	source-020	select paper IDs and critical/original results; apply only previously recorded display decisions
+interventions/binding_mismatch/codex/gpt6/metrics.json	source-032	select the paper critical-edit counts; errors remain in the denominator
+interventions/progressive/cot/outcomes.jsonl	source-059	select paper IDs; apply only recorded plotting decisions
+interventions/progressive/cot/metrics.json	source-031	select recorded paper result
+interventions/progressive/gcr_multi/outcomes.jsonl	source-044	select paper IDs; apply only recorded plotting decisions
+interventions/progressive/gcr_multi/metrics.json	source-031	retain the current reviewed figure counts
+interventions/progressive/dog/outcomes.jsonl	source-172	select paper IDs; apply only recorded plotting decisions
+interventions/progressive/dog/metrics.json	source-031	select recorded paper result
+interventions/progressive/codex/outcomes.jsonl	source-019	select paper IDs; apply only recorded plotting decisions
+interventions/progressive/codex/metrics.json	source-031	select recorded paper result
+interventions/progressive/cohort.jsonl	source-173	select paper IDs and only systems plotted in the progressive experiment
+paper/rq1_gap_data.json	source-006	retain plotted constraint-count and structure groups; omit unplotted diagnostics and intervals
+paper/rq3_radar_data.json	source-009	retain panel metadata; replace natural metric cells with current main-table counts
+paper/rq3_appendix_data.json	source-008	copy unchanged
+paper/rq2_figure_data.csv	source-007	retain current plotted counts and percentages only
+analysis/semantic_relaxation/metrics.csv	source-113	select fixed-S curve points and supporting Hit/EvidenceHit counts
+analysis/semantic_relaxation/details.jsonl.gz	source-116	retain the ten plotted conditions and eight settings on the fixed paper S population
+analysis/semantic_relaxation/details.jsonl.gz	source-114	retain the ten plotted conditions and eight settings on the fixed paper S population
+analysis/partition_relaxation/metrics.csv	source-112	copy unchanged
+analysis/partition_relaxation/partitions.jsonl.gz	source-115	select paper-population IDs; retain recorded fields
+index.json	source-005	index the selected current-paper artifacts and their actual availability
+index.json	source-032	index the selected current-paper artifacts and their actual availability
+paper/components.csv	source-011	extract active numeric cells; percentages; verify against exported counts
+paper/scorer_size.csv	source-012	extract active numeric cells; percentages; reuse main Qwen 7B reference
+paper/rq3_radar_data.json	source-174	retain panel metadata; replace natural metric cells with current main-table counts
+paper/rq3_radar_data.json	source-027	retain panel metadata; replace natural metric cells with current main-table counts
+paper/rq3_radar_data.json	source-028	retain panel metadata; replace natural metric cells with current main-table counts
+paper/rq3_radar_data.json	source-029	retain panel metadata; replace natural metric cells with current main-table counts
+paper/rq3_radar_data.json	source-048	retain panel metadata; replace natural metric cells with current main-table counts
+paper/rq3_radar_data.json	source-049	retain panel metadata; replace natural metric cells with current main-table counts
+paper/rq3_radar_data.json	source-050	retain panel metadata; replace natural metric cells with current main-table counts
+paper/rq3_radar_data.json	source-175	retain panel metadata; replace natural metric cells with current main-table counts
+paper/rq3_radar_data.json	source-181	retain panel metadata; replace natural metric cells with current main-table counts
+paper/rq3_radar_data.json	source-179	retain panel metadata; replace natural metric cells with current main-table counts
+paper/rq3_radar_data.json	source-102	retain panel metadata; replace natural metric cells with current main-table counts
+paper/rq3_radar_data.json	source-103	retain panel metadata; replace natural metric cells with current main-table counts
+paper/rq3_radar_data.json	source-104	retain panel metadata; replace natural metric cells with current main-table counts
+interventions/condition_loss/gcr_multi/qwen/outcomes.jsonl	source-047	apply the recorded reviewed classifications used by the paper
+interventions/condition_loss/gcr_multi/gemma/outcomes.jsonl	source-045	apply the recorded reviewed classifications used by the paper
+interventions/condition_loss/gcr_multi/llama/outcomes.jsonl	source-046	apply the recorded reviewed classifications used by the paper
+interventions/binding_mismatch/gcr_multi/qwen/outcomes.jsonl	source-047	apply the recorded reviewed classifications used by the paper
+interventions/binding_mismatch/gcr_multi/gemma/outcomes.jsonl	source-045	apply the recorded reviewed classifications used by the paper
+interventions/binding_mismatch/gcr_multi/llama/outcomes.jsonl	source-046	apply the recorded reviewed classifications used by the paper
+interventions/progressive/gcr_multi/outcomes.jsonl	source-047	apply the recorded reviewed classifications used by the paper

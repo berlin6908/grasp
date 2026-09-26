@@ -1,0 +1,55 @@
+[
+  {
+    "configuration": {
+      "final_result_version": 13,
+      "input": "question_decision_hint_and_plan_step_evidence",
+      "model": "gpt-oss:120b",
+      "model_revision": "a951a23b46a1f6093dafee2ea481d634b4e31ac720a8a16f3f91e04f5a40ecd9",
+      "output": "sufficient_answers_and_triple_grounded_reason"
+    }
+  },
+  {
+    "configuration": {
+      "input_token_budget": 4096,
+      "judge_tokenizer_model": "openai/gpt-oss-120b",
+      "judge_tokenizer_revision": "b5c939de8f754692c1647ca79fbf85e8c1e70f8a",
+      "packing_result_version": 14
+    }
+  },
+  {
+    "configuration": {
+      "result_version": 29,
+      "assignment_scoring": "full_dag_relation_log_yes_probability_sum",
+      "dag_search": "role_dag_binding_conditioned_single_relation_beam",
+      "state_beam_size": 8,
+      "terminal_output_policy": "ranked_complete_assignments_with_factorized_grounded_programs",
+      "pipeline_output": "factorized_grounded_program_frames",
+      "plan_generation_configs": [
+        {
+          "max_tokens": 4096,
+          "planner_calls": 1,
+          "reasoning_effort": "medium",
+          "sdk_max_retries": 0,
+          "seed": 0,
+          "strict_json": true,
+          "temperature": 0.0
+        }
+      ],
+      "relation_discovery_graph": "full_question_graph",
+      "relation_execution_graph": "full_question_graph",
+      "retrieve_unit": "single_directed_graph_relation",
+      "retrieval_treatment": "full_dag",
+      "relation_signature_mode": "with",
+      "relation_search": "signature_known_executable_then_typed_output_aware_scoring"
+    },
+    "runtime": {
+      "device": "cuda",
+      "dtype": "bfloat16",
+      "qwen_model": "Qwen/Qwen2.5-1.5B-Instruct",
+      "qwen_model_configured_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "scoring_batch_size": 1,
+      "qwen_model_loaded_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "output_value_context_limit": 32
+    }
+  }
+]

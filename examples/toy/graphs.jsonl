@@ -1,0 +1,3 @@
+{"id":"s1","question":"Where was Ada born?","q_entity":["Ada"],"graph":[["Ada","birthplace","London"]],"answer":"London","ground_truth":["London"]}
+{"id":"i1","question":"Where was Ada born?","q_entity":["Ada"],"graph":[["Ada","visited","London"]],"answer":"London","ground_truth":["London"]}
+{"id":"x1","question":"Where was Ada born?","q_entity":["Ada"],"graph":[["Ada","birthplace","London"]],"answer":"London","ground_truth":["London"]}

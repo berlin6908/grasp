@@ -1,0 +1,25 @@
+{
+  "availability": "recorded_paper_aggregate",
+  "units": "percent",
+  "population": {
+    "S": 1335,
+    "I": 286
+  },
+  "paper_metrics": {
+    "Hit@1": 79.4,
+    "EvidenceHit@1": 68.54,
+    "EvidenceGap": 13.68,
+    "CAR_I": 58.39,
+    "OAR_S": 14.76,
+    "EBA": 66.75
+  },
+  "recorded_counts": {
+    "K_OAR_count": 197,
+    "k_certified_hit_count": 915,
+    "u_abstention_count": 167,
+    "count": 1082,
+    "denominator": 1621
+  },
+  "count_provenance": "Each integer count is uniquely determined by its original two-decimal paper percentage and frozen denominator; no rounded-percentage weighted average is used.",
+  "source_policy": "Paper-selected support and abstention counts; anonymous source identifiers are recorded in sources.tsv."
+}

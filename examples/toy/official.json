@@ -1,0 +1,5 @@
+[
+  {"_id":"s1","type":"toy","entity_ids":"Q1_Q2_Q9","answer_id":"Q2","evidences":[["Ada","birthplace","London"]],"evidences_id":[["Q1","birthplace","Q2"]]},
+  {"_id":"i1","type":"toy","entity_ids":"Q1_Q2_Q9","answer_id":"Q2","evidences":[["Ada","birthplace","London"]],"evidences_id":[["Q1","birthplace","Q2"]]},
+  {"_id":"x1","type":"toy","entity_ids":"Q1_Q2_Q9","answer_id":"Q2","evidences":[["Other","birthplace","London"]],"evidences_id":[["Q1","birthplace","Q2"]]}
+]

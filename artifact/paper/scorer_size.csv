@@ -1,0 +1,4 @@
+grounding_model,Hit@1,EvidenceHit@1,EvidenceGap,CAR_I,OAR_S,EBA,artifact
+Qwen2.5-1.5B,68.08,47.17,30.71,88.42,26.03,66.35,ablation/scorer_size/1_5b
+Qwen2.5-7B,81.3,58.96,27.47,85.74,12.92,71.41,main/cwq/grasp/qwen
+Qwen2.5-32B,84.46,60.51,28.35,85.47,10.84,72.12,ablation/scorer_size/32b

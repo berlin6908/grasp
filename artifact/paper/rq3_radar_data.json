@@ -1,0 +1,200 @@
+{
+  "dataset": "CWQ",
+  "units": "percent",
+  "sources": {
+    "natural": "../main/cwq/{system}/{model}/metrics.json",
+    "interventions": "../interventions/{condition_loss,binding_mismatch}/{system}/{model}/metrics.json"
+  },
+  "denominators": {
+    "K": 1679,
+    "U": 1459,
+    "condition_loss": 295,
+    "binding_mismatch": 120
+  },
+  "pooling": "APR = 100 * (Same_condition_loss + Same_binding_mismatch) / 415; retained intervention pairs, with errors in the denominator.",
+  "configuration_note": "Grasp varies the retriever model; support specification induction and evidence-bounded answering use GPT-OSS-120B. Codex retains GPT-6 xhigh in every panel. Its APR includes changed prompts, contexts and tools relative to the original-answer reference.",
+  "missing_values": "All five methods have CWQ values. Codex is the same independent GPT-6 xhigh reference in each panel.",
+  "models": {
+    "qwen": {
+      "label": "Qwen2.5-7B",
+      "systems": {
+        "cot": {
+          "label": "CoT",
+          "hit": 63.72840976771889,
+          "evidence_hit": 27.99285288862418,
+          "normalized_gap": 56.074766355140184,
+          "eba": 14.977692797960485,
+          "oar": 0.0,
+          "car": 0.0,
+          "same_condition_loss": 136,
+          "same_binding_mismatch": 76
+        },
+        "gcr_multi": {
+          "label": "GCR*",
+          "hit": 72.12626563430614,
+          "evidence_hit": 31.32817153067302,
+          "normalized_gap": 56.56482246077622,
+          "eba": 22.147864882090502,
+          "oar": 12.62656343061346,
+          "car": 11.583276216586704,
+          "same_condition_loss": 163,
+          "same_binding_mismatch": 61
+        },
+        "dog": {
+          "label": "DoG",
+          "hit": 61.94163192376414,
+          "evidence_hit": 30.732578916021442,
+          "normalized_gap": 50.38461538461539,
+          "eba": 16.794136392606756,
+          "oar": 0.11911852293031568,
+          "car": 0.7539410555174777,
+          "same_condition_loss": 158,
+          "same_binding_mismatch": 60
+        },
+        "ours": {
+          "label": "Grasp",
+          "hit": 81.29839189994044,
+          "evidence_hit": 58.96366885050626,
+          "normalized_gap": 27.472527472527474,
+          "eba": 71.41491395793498,
+          "oar": 12.92435973793925,
+          "car": 85.74366004112406,
+          "same_condition_loss": 27,
+          "same_binding_mismatch": 13
+        },
+        "codex": {
+          "label": "Codex",
+          "hit": 89.51756998213222,
+          "evidence_hit": 67.30196545562835,
+          "normalized_gap": 24.81703260146374,
+          "eba": 76.99171446781389,
+          "oar": 7.504466944609887,
+          "car": 88.14256339958875,
+          "same_condition_loss": 26,
+          "same_binding_mismatch": 25
+        }
+      }
+    },
+    "gemma": {
+      "label": "Gemma-2-9B",
+      "systems": {
+        "cot": {
+          "label": "CoT",
+          "hit": 49.97022036926742,
+          "evidence_hit": 13.698630136986301,
+          "normalized_gap": 72.58641239570917,
+          "eba": 7.32950924155513,
+          "oar": 0.0,
+          "car": 0.0,
+          "same_condition_loss": 187,
+          "same_binding_mismatch": 75
+        },
+        "gcr_multi": {
+          "label": "GCR*",
+          "hit": 72.24538415723644,
+          "evidence_hit": 32.99583085169744,
+          "normalized_gap": 54.32811211871393,
+          "eba": 23.19949012109624,
+          "oar": 13.519952352590828,
+          "car": 11.925976696367375,
+          "same_condition_loss": 155,
+          "same_binding_mismatch": 57
+        },
+        "dog": {
+          "label": "DoG",
+          "hit": 58.6063132817153,
+          "evidence_hit": 30.732578916021442,
+          "normalized_gap": 47.5609756097561,
+          "eba": 16.475462077756532,
+          "oar": 0.0,
+          "car": 0.06854009595613435,
+          "same_condition_loss": 176,
+          "same_binding_mismatch": 74
+        },
+        "ours": {
+          "label": "Grasp",
+          "hit": 79.21381774865992,
+          "evidence_hit": 57.05777248362121,
+          "normalized_gap": 27.969924812030072,
+          "eba": 71.44678138942001,
+          "oar": 15.008933889219774,
+          "car": 88.00548320767649,
+          "same_condition_loss": 34,
+          "same_binding_mismatch": 13
+        },
+        "codex": {
+          "label": "Codex",
+          "hit": 89.51756998213222,
+          "evidence_hit": 67.30196545562835,
+          "normalized_gap": 24.81703260146374,
+          "eba": 76.99171446781389,
+          "oar": 7.504466944609887,
+          "car": 88.14256339958875,
+          "same_condition_loss": 26,
+          "same_binding_mismatch": 25
+        }
+      }
+    },
+    "llama": {
+      "label": "Llama-3.1-8B",
+      "systems": {
+        "cot": {
+          "label": "CoT",
+          "hit": 46.81357951161406,
+          "evidence_hit": 25.134008338296603,
+          "normalized_gap": 46.31043256997455,
+          "eba": 13.448056086679413,
+          "oar": 0.0,
+          "car": 0.0,
+          "same_condition_loss": 181,
+          "same_binding_mismatch": 87
+        },
+        "gcr_multi": {
+          "label": "GCR*",
+          "hit": 73.3174508636093,
+          "evidence_hit": 34.18701608100059,
+          "normalized_gap": 53.37124289195776,
+          "eba": 23.61376673040153,
+          "oar": 12.68612269207862,
+          "car": 11.446196024674435,
+          "same_condition_loss": 164,
+          "same_binding_mismatch": 59
+        },
+        "dog": {
+          "label": "DoG",
+          "hit": 57.41512805241214,
+          "evidence_hit": 26.14651578320429,
+          "normalized_gap": 54.460580912863065,
+          "eba": 13.989802421924793,
+          "oar": 0.0,
+          "car": 0.0,
+          "same_condition_loss": 153,
+          "same_binding_mismatch": 66
+        },
+        "ours": {
+          "label": "Grasp",
+          "hit": 81.29839189994044,
+          "evidence_hit": 57.296009529481836,
+          "normalized_gap": 29.523809523809526,
+          "eba": 71.15997450605481,
+          "oar": 13.222156045265038,
+          "car": 87.11446196024674,
+          "same_condition_loss": 30,
+          "same_binding_mismatch": 13
+        },
+        "codex": {
+          "label": "Codex",
+          "hit": 89.51756998213222,
+          "evidence_hit": 67.30196545562835,
+          "normalized_gap": 24.81703260146374,
+          "eba": 76.99171446781389,
+          "oar": 7.504466944609887,
+          "car": 88.14256339958875,
+          "same_condition_loss": 26,
+          "same_binding_mismatch": 25
+        }
+      }
+    }
+  },
+  "selection": "Use the current main-table result once per condition, including corrected Gemma-CoT."
+}

@@ -1,0 +1,389 @@
+{
+  "sources": [
+    "misc/table_unmodified_support_gap.tex",
+    "misc/table_unmodified_unknown_behavior.tex",
+    "../output/eba_update_20260911/eba_metrics.csv"
+  ],
+  "input_policy": "Use the current table values, including the explicitly stored Grasp rows; retain the accepted source selection.",
+  "units": "percent",
+  "missing_values": "null denotes unavailable; no APR experiment is reported for these two datasets.",
+  "normalized_gap": "EvidenceGap (Delta) in percent, copied from the manuscript tables; plotted as 100 - Delta.",
+  "datasets": {
+    "webqsp": {
+      "label": "WebQSP",
+      "K": 1335,
+      "U": 286,
+      "models": {
+        "qwen": {
+          "label": "Qwen-2.5-7B",
+          "systems": {
+            "cot": {
+              "label": "CoT",
+              "hit": 59.1,
+              "evidence_hit": 15.43,
+              "normalized_gap": 73.89,
+              "eba": 12.77,
+              "oar": 0.15,
+              "car": 0.35,
+              "same_condition_loss": null,
+              "same_binding_mismatch": null
+            },
+            "gcr_multi": {
+              "label": "GCR*",
+              "hit": 86.37,
+              "evidence_hit": 66.44,
+              "normalized_gap": 23.07,
+              "eba": 55.71,
+              "oar": 1.35,
+              "car": 5.59,
+              "same_condition_loss": null,
+              "same_binding_mismatch": null
+            },
+            "dog": {
+              "label": "DoG",
+              "hit": 73.11,
+              "evidence_hit": 56.1,
+              "normalized_gap": 23.26,
+              "eba": 47.07,
+              "oar": 0.37,
+              "car": 4.9,
+              "same_condition_loss": null,
+              "same_binding_mismatch": null
+            },
+            "ours": {
+              "label": "Grasp",
+              "hit": 80.52,
+              "evidence_hit": 68.46,
+              "normalized_gap": 14.98,
+              "eba": 66.26,
+              "oar": 12.66,
+              "car": 55.94,
+              "same_condition_loss": null,
+              "same_binding_mismatch": null
+            },
+            "codex": {
+              "label": "Codex",
+              "hit": 84.12,
+              "evidence_hit": 74.76,
+              "normalized_gap": 11.13,
+              "eba": 69.52,
+              "oar": 9.21,
+              "car": 45.1,
+              "same_condition_loss": null,
+              "same_binding_mismatch": null
+            }
+          }
+        },
+        "gemma": {
+          "label": "Gemma-2-9B",
+          "systems": {
+            "cot": {
+              "label": "CoT",
+              "hit": 43.52,
+              "evidence_hit": 11.01,
+              "normalized_gap": 74.7,
+              "eba": 9.19,
+              "oar": 0.15,
+              "car": 0.7,
+              "same_condition_loss": null,
+              "same_binding_mismatch": null
+            },
+            "gcr_multi": {
+              "label": "GCR*",
+              "hit": 86.59,
+              "evidence_hit": 66.22,
+              "normalized_gap": 23.53,
+              "eba": 55.52,
+              "oar": 0.82,
+              "car": 5.59,
+              "same_condition_loss": null,
+              "same_binding_mismatch": null
+            },
+            "dog": {
+              "label": "DoG",
+              "hit": 62.77,
+              "evidence_hit": 49.06,
+              "normalized_gap": 21.84,
+              "eba": 42.38,
+              "oar": 0.97,
+              "car": 11.19,
+              "same_condition_loss": null,
+              "same_binding_mismatch": null
+            },
+            "ours": {
+              "label": "Grasp",
+              "hit": 79.4,
+              "evidence_hit": 68.54,
+              "normalized_gap": 13.68,
+              "eba": 66.75,
+              "oar": 14.76,
+              "car": 58.39,
+              "same_condition_loss": null,
+              "same_binding_mismatch": null
+            },
+            "codex": {
+              "label": "Codex",
+              "hit": 84.12,
+              "evidence_hit": 74.76,
+              "normalized_gap": 11.13,
+              "eba": 69.52,
+              "oar": 9.21,
+              "car": 45.1,
+              "same_condition_loss": null,
+              "same_binding_mismatch": null
+            }
+          }
+        },
+        "llama": {
+          "label": "Llama-3.1-8B",
+          "systems": {
+            "cot": {
+              "label": "CoT",
+              "hit": 54.16,
+              "evidence_hit": 23.9,
+              "normalized_gap": 55.88,
+              "eba": 19.68,
+              "oar": 0.0,
+              "car": 0.0,
+              "same_condition_loss": null,
+              "same_binding_mismatch": null
+            },
+            "gcr_multi": {
+              "label": "GCR*",
+              "hit": 88.54,
+              "evidence_hit": 67.79,
+              "normalized_gap": 23.43,
+              "eba": 56.88,
+              "oar": 1.2,
+              "car": 5.94,
+              "same_condition_loss": null,
+              "same_binding_mismatch": null
+            },
+            "dog": {
+              "label": "DoG",
+              "hit": 66.22,
+              "evidence_hit": 53.71,
+              "normalized_gap": 18.89,
+              "eba": 44.29,
+              "oar": 0.0,
+              "car": 0.35,
+              "same_condition_loss": null,
+              "same_binding_mismatch": null
+            },
+            "ours": {
+              "label": "Grasp",
+              "hit": 80.07,
+              "evidence_hit": 67.42,
+              "normalized_gap": 15.81,
+              "eba": 66.13,
+              "oar": 14.16,
+              "car": 60.14,
+              "same_condition_loss": null,
+              "same_binding_mismatch": null
+            },
+            "codex": {
+              "label": "Codex",
+              "hit": 84.12,
+              "evidence_hit": 74.76,
+              "normalized_gap": 11.13,
+              "eba": 69.52,
+              "oar": 9.21,
+              "car": 45.1,
+              "same_condition_loss": null,
+              "same_binding_mismatch": null
+            }
+          }
+        }
+      }
+    },
+    "2wiki": {
+      "label": "2WikiMultiHopQA",
+      "K": 1383,
+      "U": 2614,
+      "models": {
+        "qwen": {
+          "label": "Qwen-2.5-7B",
+          "systems": {
+            "cot": {
+              "label": "CoT",
+              "hit": 46.49,
+              "evidence_hit": 14.03,
+              "normalized_gap": 69.83,
+              "eba": 5.13,
+              "oar": 0.0,
+              "car": 0.42,
+              "same_condition_loss": null,
+              "same_binding_mismatch": null
+            },
+            "gcr_multi": {
+              "label": "GCR*",
+              "hit": 75.2,
+              "evidence_hit": 36.59,
+              "normalized_gap": 51.35,
+              "eba": 30.52,
+              "oar": 7.52,
+              "car": 27.31,
+              "same_condition_loss": null,
+              "same_binding_mismatch": null
+            },
+            "dog": {
+              "label": "DoG",
+              "hit": 87.13,
+              "evidence_hit": 79.68,
+              "normalized_gap": 8.55,
+              "eba": 33.73,
+              "oar": 0.0,
+              "car": 9.41,
+              "same_condition_loss": null,
+              "same_binding_mismatch": null
+            },
+            "ours": {
+              "label": "Grasp",
+              "hit": 90.67,
+              "evidence_hit": 85.18,
+              "normalized_gap": 6.06,
+              "eba": 75.28,
+              "oar": 6.94,
+              "car": 70.05,
+              "same_condition_loss": null,
+              "same_binding_mismatch": null
+            },
+            "codex": {
+              "label": "Codex",
+              "hit": 97.47,
+              "evidence_hit": 96.75,
+              "normalized_gap": 0.74,
+              "eba": 74.33,
+              "oar": 0.43,
+              "car": 62.47,
+              "same_condition_loss": null,
+              "same_binding_mismatch": null
+            }
+          }
+        },
+        "gemma": {
+          "label": "Gemma-2-9B",
+          "systems": {
+            "cot": {
+              "label": "CoT",
+              "hit": 32.68,
+              "evidence_hit": 7.59,
+              "normalized_gap": 76.77,
+              "eba": 3.05,
+              "oar": 0.0,
+              "car": 0.65,
+              "same_condition_loss": null,
+              "same_binding_mismatch": null
+            },
+            "gcr_multi": {
+              "label": "GCR*",
+              "hit": 73.9,
+              "evidence_hit": 31.16,
+              "normalized_gap": 57.83,
+              "eba": 30.75,
+              "oar": 9.91,
+              "car": 30.53,
+              "same_condition_loss": null,
+              "same_binding_mismatch": null
+            },
+            "dog": {
+              "label": "DoG",
+              "hit": 83.73,
+              "evidence_hit": 70.93,
+              "normalized_gap": 15.28,
+              "eba": 36.9,
+              "oar": 0.43,
+              "car": 18.9,
+              "same_condition_loss": null,
+              "same_binding_mismatch": null
+            },
+            "ours": {
+              "label": "Grasp",
+              "hit": 90.46,
+              "evidence_hit": 85.83,
+              "normalized_gap": 5.12,
+              "eba": 75.83,
+              "oar": 7.23,
+              "car": 70.54,
+              "same_condition_loss": null,
+              "same_binding_mismatch": null
+            },
+            "codex": {
+              "label": "Codex",
+              "hit": 97.47,
+              "evidence_hit": 96.75,
+              "normalized_gap": 0.74,
+              "eba": 74.33,
+              "oar": 0.43,
+              "car": 62.47,
+              "same_condition_loss": null,
+              "same_binding_mismatch": null
+            }
+          }
+        },
+        "llama": {
+          "label": "Llama-3.1-8B",
+          "systems": {
+            "cot": {
+              "label": "CoT",
+              "hit": 39.91,
+              "evidence_hit": 15.11,
+              "normalized_gap": 62.14,
+              "eba": 5.25,
+              "oar": 0.0,
+              "car": 0.04,
+              "same_condition_loss": null,
+              "same_binding_mismatch": null
+            },
+            "gcr_multi": {
+              "label": "GCR*",
+              "hit": 76.07,
+              "evidence_hit": 34.92,
+              "normalized_gap": 54.09,
+              "eba": 29.37,
+              "oar": 8.24,
+              "car": 26.43,
+              "same_condition_loss": null,
+              "same_binding_mismatch": null
+            },
+            "dog": {
+              "label": "DoG",
+              "hit": 84.16,
+              "evidence_hit": 74.91,
+              "normalized_gap": 11.0,
+              "eba": 28.65,
+              "oar": 0.14,
+              "car": 4.17,
+              "same_condition_loss": null,
+              "same_binding_mismatch": null
+            },
+            "ours": {
+              "label": "Grasp",
+              "hit": 91.18,
+              "evidence_hit": 85.47,
+              "normalized_gap": 6.26,
+              "eba": 75.03,
+              "oar": 6.8,
+              "car": 69.51,
+              "same_condition_loss": null,
+              "same_binding_mismatch": null
+            },
+            "codex": {
+              "label": "Codex",
+              "hit": 97.47,
+              "evidence_hit": 96.75,
+              "normalized_gap": 0.74,
+              "eba": 74.33,
+              "oar": 0.43,
+              "car": 62.47,
+              "same_condition_loss": null,
+              "same_binding_mismatch": null
+            }
+          }
+        }
+      }
+    }
+  },
+  "configuration_note": "Codex uses the same GPT-6 xhigh results in every model column within each dataset. Its values come from the Codex rows in the two source tables. APR is not evaluated for WebQSP or 2WikiMultiHopQA.",
+  "evidence_hit": "EvidenceHit@1 on S in percent. CoT, GCR*, DoG and Codex use the current table E-Hit cells; Grasp retains the K_EHit_percent paper-display values in eba_metrics.csv."
+}
