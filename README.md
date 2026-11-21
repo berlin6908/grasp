@@ -47,10 +47,16 @@ eva/                Answer scoring, evidence replay, paper metrics,
                     and RQ2 result normalization
 artifact/           Paper experiment results, splits, plot data, and sources
 scripts/            Bash entry points
+skills/             Project-specific agent workflows and task selection
 local-results.ipynb  Executed notebook for paper tables and statistical figures
 requirements-notebook.txt  CPU-only notebook dependencies
 pyproject.toml      Package dependencies
 ```
+
+For assistant-guided work, [skills/README.md](skills/README.md) selects the
+project workflow for experiments, evaluation, result reporting, figures,
+development or artifact publication. The skills use the files and entrypoints
+in this checkout.
 
 The three main directories follow the paper workflow: construct the input
 graphs and splits, run Grasp, then evaluate its predictions. The system imports
@@ -203,8 +209,9 @@ RQ2 construction and APR/ATR commands are in [docs/interventions.md](docs/interv
 
 ## Paper artifacts
 
-[artifact/README.md](artifact/README.md) indexes the paper results for Grasp,
-CoT, GCR*, DoG, and Codex. It contains 80 experimental conditions, the reported
+[artifact/README.md](artifact/README.md) indexes the original 80 paper-selected
+conditions and 29 supplementary natural-input conditions. Together they cover
+Grasp, CoT, GCR*, DoG, Codex, GNN-RAG, SubgraphRAG and RJE, with the reported
 S/I populations, semantic-relaxation records, and data for the paper figures.
 Available Final and evaluation records use the paper's selected IDs. Each
 condition keeps one selected result, and plot data use the current main-table
