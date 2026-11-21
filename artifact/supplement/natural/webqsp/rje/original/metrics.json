@@ -1,0 +1,45 @@
+{
+  "directory": "supplement/natural/webqsp/rje/original",
+  "benchmark": "webqsp",
+  "system": "RJE",
+  "model": "GPT-OSS-120B",
+  "condition": "Original",
+  "evaluation_rows": 1621,
+  "source_rows": 1628,
+  "availability": "per_question_evaluation",
+  "evidence_hit_field": "certified_hit",
+  "source": "supp-source-091",
+  "note": "Recorded native retrieval and answer interface.",
+  "metrics": {
+    "Hit@1": {
+      "count": 1156,
+      "denominator": 1335,
+      "rate": 0.8659176029962546
+    },
+    "EvidenceHit@1": {
+      "count": 909,
+      "denominator": 1335,
+      "rate": 0.6808988764044944
+    },
+    "EvidenceGap": {
+      "count": 247,
+      "denominator": 1156,
+      "rate": 0.21366782006920415
+    },
+    "CAR_I": {
+      "count": 0,
+      "denominator": 286,
+      "rate": 0.0
+    },
+    "OAR_S": {
+      "count": 1,
+      "denominator": 1335,
+      "rate": 0.000749063670411985
+    },
+    "EBA": {
+      "count": 909,
+      "denominator": 1621,
+      "rate": 0.5607649599012955
+    }
+  }
+}

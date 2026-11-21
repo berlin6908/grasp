@@ -1,0 +1,45 @@
+{
+  "directory": "supplement/natural/2wiki/cot/unknown",
+  "benchmark": "2wiki",
+  "system": "CoT",
+  "model": "GPT-OSS-120B",
+  "condition": "Unknown",
+  "evaluation_rows": 3997,
+  "source_rows": 4016,
+  "availability": "per_question_evaluation",
+  "evidence_hit_field": "certified_hit",
+  "source": "supp-source-117",
+  "note": "Method-specific native retrieval and output budgets; see supplement/README.md.",
+  "metrics": {
+    "Hit@1": {
+      "count": 667,
+      "denominator": 1383,
+      "rate": 0.4822848879248012
+    },
+    "EvidenceHit@1": {
+      "count": 649,
+      "denominator": 1383,
+      "rate": 0.4692697035430224
+    },
+    "EvidenceGap": {
+      "count": 18,
+      "denominator": 667,
+      "rate": 0.026986506746626688
+    },
+    "CAR_I": {
+      "count": 1763,
+      "denominator": 2614,
+      "rate": 0.6744452945677123
+    },
+    "OAR_S": {
+      "count": 593,
+      "denominator": 1383,
+      "rate": 0.4287780187997108
+    },
+    "EBA": {
+      "count": 2412,
+      "denominator": 3997,
+      "rate": 0.6034525894420816
+    }
+  }
+}

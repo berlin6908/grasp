@@ -1,0 +1,45 @@
+{
+  "directory": "supplement/natural/cwq/subgraphrag/unknown",
+  "benchmark": "cwq",
+  "system": "SubgraphRAG",
+  "model": "GPT-OSS-120B",
+  "condition": "Unknown",
+  "evaluation_rows": 3138,
+  "source_rows": 3531,
+  "availability": "per_question_evaluation",
+  "evidence_hit_field": "certified_hit",
+  "source": "supp-source-057",
+  "note": "Author-cached graphs; inherited S/I grouping is supplementary.",
+  "metrics": {
+    "Hit@1": {
+      "count": 1213,
+      "denominator": 1679,
+      "rate": 0.7224538415723645
+    },
+    "EvidenceHit@1": {
+      "count": 767,
+      "denominator": 1679,
+      "rate": 0.45681953543776055
+    },
+    "EvidenceGap": {
+      "count": 446,
+      "denominator": 1213,
+      "rate": 0.3676834295136026
+    },
+    "CAR_I": {
+      "count": 268,
+      "denominator": 1459,
+      "rate": 0.18368745716244003
+    },
+    "OAR_S": {
+      "count": 41,
+      "denominator": 1679,
+      "rate": 0.024419297200714712
+    },
+    "EBA": {
+      "count": 1035,
+      "denominator": 3138,
+      "rate": 0.3298279158699809
+    }
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "alignment": {
+    "gold_answer_differences": 0,
+    "missing_ids": [],
+    "prediction_rows": 1628,
+    "question_differences": 7
+  },
+  "condition": "WebQSP full test, author cached scored_100; GPT-OSS-120B selected-triple extension with native sys_icl_dc trigger",
+  "denominator": 1628,
+  "evidence": {
+    "background": "Shared semantic_evidence rule over cached user_query graph only; no triples imported from frozen local graph",
+    "evaluated_evidence_triples": 9236,
+    "parse_errors": 0,
+    "rows_with_triples_outside_frozen_graph": 1527,
+    "scope": "selected_triples",
+    "serialized_triples": 162413,
+    "triples_outside_frozen_graph": 81951
+  },
+  "finished_at": "2026-09-14T12:45:46.068965+00:00",
+  "metrics": {
+    "abstention": {
+      "count": 97,
+      "rate": 0.05958230958230958
+    },
+    "certification_gap": {
+      "count": 407,
+      "rate": 0.25
+    },
+    "certified_hit": {
+      "count": 945,
+      "rate": 0.5804668304668305
+    },
+    "complete_witness_rate": {
+      "count": 945,
+      "denominator": 1529,
+      "rate": 0.618051013734467
+    },
+    "f1": 0.7154773384575996,
+    "hit": {
+      "count": 1352,
+      "rate": 0.8304668304668305
+    }
+  },
+  "model": "gpt-oss:120b",
+  "paper_metrics": {
+    "CAR_U": 0.1993006993006993,
+    "EBA": 0.6169031462060457,
+    "EvidenceGap": 0.2062289562289562,
+    "EvidenceHit_at_1": 0.7063670411985019,
+    "Hit_at_1": 0.8898876404494382,
+    "K_Unknown": 40,
+    "K_correct": 1188,
+    "K_correct_supported": 943,
+    "N_K": 1335,
+    "N_U": 286,
+    "N_X": 7,
+    "OAR_K": 0.0299625468164794,
+    "U_Unknown": 57,
+    "U_correct": 157,
+    "U_correct_supported": 2
+  },
+  "partitions": {
+    "evidence_bounded_accuracy": {
+      "SubgraphRAG": {
+        "count": 1000,
+        "denominator": 1621,
+        "k_certified_hit_count": 943,
+        "rate": 0.6169031462060457,
+        "u_abstention_count": 57
+      }
+    },
+    "partitions": {
+      "K": {
+        "denominator": 1335,
+        "metrics": {
+          "SubgraphRAG": {
+            "abstention": {
+              "count": 40,
+              "rate": 0.0299625468164794
+            },
+            "certification_gap": {
+              "count": 245,
+              "rate": 0.18352059925093633
+            },
+            "certified_hit": {
+              "count": 943,
+              "rate": 0.7063670411985019
+            },
+            "complete_witness_rate": {
+              "count": 943,
+              "denominator": 1294,
+              "rate": 0.7287480680061824
+            },
+            "f1": 0.7723510066764853,
+            "hit": {
+              "count": 1188,
+              "rate": 0.8898876404494382
+            }
+          }
+        }
+      },
+      "U": {
+        "denominator": 286,
+        "metrics": {
+          "SubgraphRAG": {
+            "abstention": {
+              "count": 57,
+              "rate": 0.1993006993006993
+            },
+            "certification_gap": {
+              "count": 155,
+              "rate": 0.541958041958042
+            },
+            "certified_hit": {
+              "count": 2,
+              "rate": 0.006993006993006993
+            },
+            "complete_witness_rate": {
+              "count": 2,
+              "denominator": 228,
+              "rate": 0.008771929824561403
+            },
+            "f1": 0.4495217270998787,
+            "hit": {
+              "count": 157,
+              "rate": 0.548951048951049
+            }
+          }
+        }
+      }
+    },
+    "population": {
+      "partitions": {
+        "K": 1335,
+        "U": 286,
+        "unresolved": 7
+      },
+      "total": 1628
+    },
+    "protocol": {
+      "eba_rule": "(K CertifiedHit count + U explicit abstention count) / (K + U); unresolved/X excluded",
+      "evaluator_branching": false,
+      "interpretation": "Author-cached-graph evaluation. Frozen local K/U grouping is supplementary and does not classify the actual retrieval subgraphs.",
+      "metric_order": [
+        "Hit",
+        "F1",
+        "CertifiedHit",
+        "Certification Gap",
+        "Complete Witness Rate",
+        "Abstention"
+      ],
+      "rule": "post-hoc join of frozen row-level outputs to a frozen partition index"
+    }
+  },
+  "protocol": {
+    "answer_extraction": "Frozen CWQ SubgraphRAG parse_answer: unique ans: lines, shared explicit Unknown parsing; concrete answers take precedence over accompanying refusals",
+    "answer_scorer": "pipeline_optimized.eva.answer_metrics.score_prediction against registered WebQSP answers",
+    "comparison_scope": "Author-cached-graph evaluation. Frozen local K/U grouping is supplementary and does not classify the actual retrieval subgraphs.",
+    "errors": "Runtime errors and unparsed outputs retain fixed denominator with zero correctness, support, and Unknown credit",
+    "evidence": "Only valid selected_triple_ids resolved against the numbered cached user_query; invalid selections receive zero support credit",
+    "population": "All registered IDs scored uniformly before post-hoc K/U grouping; X excluded only from partition metrics",
+    "replay": "eva.evaluate.build_replay(webqsp); any supported official Complete parse"
+  },
+  "replay_status_counts": {
+    "invalid_selection": 2,
+    "no_evidence": 1,
+    "no_witness": 397,
+    "not_hit": 276,
+    "success": 945,
+    "unresolved": 7
+  },
+  "selection_status_counts": {
+    "missing_or_repeated_selection": 3,
+    "valid": 1625
+  },
+  "smoke": false,
+  "sources": {
+    "cached_inputs": "supp-source-078",
+    "dataset": "supp-source-079",
+    "evaluator": "supp-source-080",
+    "frozen_source": "supp-source-081",
+    "partition_index": "supp-source-082",
+    "predictions": "supp-source-083",
+    "registration": "supp-source-084"
+  },
+  "status": "completed",
+  "status_counts": {
+    "abstention": 97,
+    "answer": 1529,
+    "error": 2
+  },
+  "system": "SubgraphRAG"
+}

@@ -1,0 +1,45 @@
+{
+  "directory": "supplement/prompt_controls/cwq/gcr/default",
+  "benchmark": "cwq",
+  "system": "GCR*",
+  "model": "Qwen2.5-7B paths / GPT-OSS-120B answers",
+  "condition": "Default",
+  "evaluation_rows": 3138,
+  "source_rows": 3138,
+  "availability": "per_question_evaluation",
+  "evidence_hit_field": "certified_hit",
+  "source": "supp-source-029",
+  "note": "Matched prompt comparison. References are the same arm's paired G+ and progressive k=0 outputs, not its separate natural-input predictions. See supplement/README.md.",
+  "metrics": {
+    "Hit@1": {
+      "count": 1211,
+      "denominator": 1679,
+      "rate": 0.7212626563430613
+    },
+    "EvidenceHit@1": {
+      "count": 526,
+      "denominator": 1679,
+      "rate": 0.3132817153067302
+    },
+    "EvidenceGap": {
+      "count": 685,
+      "denominator": 1211,
+      "rate": 0.5656482246077622
+    },
+    "CAR_I": {
+      "count": 169,
+      "denominator": 1459,
+      "rate": 0.11583276216586703
+    },
+    "OAR_S": {
+      "count": 212,
+      "denominator": 1679,
+      "rate": 0.1262656343061346
+    },
+    "EBA": {
+      "count": 695,
+      "denominator": 3138,
+      "rate": 0.22147864882090504
+    }
+  }
+}

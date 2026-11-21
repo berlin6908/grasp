@@ -1,0 +1,83 @@
+{
+  "type": "object",
+  "properties": {
+    "audits": {"type": "array", "items": {"$ref": "#/$defs/audit"}}
+  },
+  "required": ["audits"],
+  "additionalProperties": false,
+  "$defs": {
+    "constraint": {
+      "type": "object",
+      "properties": {
+        "id": {"type": "string"},
+        "kind": {"type": "string", "enum": ["relation", "type", "filter"]},
+        "text": {"type": "string"},
+        "source": {"type": "string"}
+      },
+      "required": ["id", "kind", "text", "source"],
+      "additionalProperties": false
+    },
+    "match": {
+      "type": "object",
+      "properties": {
+        "gold_id": {"type": "string"},
+        "predicted_id": {"type": "string"},
+        "reason": {"type": "string"}
+      },
+      "required": ["gold_id", "predicted_id", "reason"],
+      "additionalProperties": false
+    },
+    "uncertain_alignment": {
+      "type": "object",
+      "properties": {
+        "gold_ids": {"type": "array", "items": {"type": "string"}},
+        "predicted_ids": {"type": "array", "items": {"type": "string"}},
+        "reason": {"type": "string"}
+      },
+      "required": ["gold_ids", "predicted_ids", "reason"],
+      "additionalProperties": false
+    },
+    "dimension": {
+      "type": "object",
+      "properties": {
+        "status": {"type": "string", "enum": ["correct", "incorrect", "uncertain", "not_applicable"]},
+        "reason": {"type": "string"},
+        "gold_sources": {"type": "array", "items": {"type": "string"}},
+        "plan_sources": {"type": "array", "items": {"type": "string"}}
+      },
+      "required": ["status", "reason", "gold_sources", "plan_sources"],
+      "additionalProperties": false
+    },
+    "audit": {
+      "type": "object",
+      "properties": {
+        "dataset": {"type": "string"},
+        "id": {"type": "string"},
+        "plan_valid": {"type": "boolean"},
+        "gold_reference": {"type": "string"},
+        "gold_constraints": {"type": "array", "items": {"$ref": "#/$defs/constraint"}},
+        "predicted_constraints": {"type": "array", "items": {"$ref": "#/$defs/constraint"}},
+        "matches": {"type": "array", "items": {"$ref": "#/$defs/match"}},
+        "missing_gold_ids": {"type": "array", "items": {"type": "string"}},
+        "spurious_predicted_ids": {"type": "array", "items": {"type": "string"}},
+        "uncertain_alignments": {"type": "array", "items": {"$ref": "#/$defs/uncertain_alignment"}},
+        "structure": {"$ref": "#/$defs/dimension"},
+        "binding": {"$ref": "#/$defs/dimension"},
+        "answer_operation": {"$ref": "#/$defs/dimension"},
+        "overall": {"type": "string", "enum": ["correct", "incorrect", "uncertain"]},
+        "confidence_score": {"type": "integer", "minimum": 0, "maximum": 10},
+        "confidence_reason": {"type": "string", "minLength": 1},
+        "error_labels": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": ["invalid_plan", "missing_constraint", "spurious_constraint", "wrong_structure", "wrong_binding", "wrong_answer_operation", "wrong_anchor"]
+          }
+        },
+        "notes": {"type": "array", "items": {"type": "string"}}
+      },
+      "required": ["dataset", "id", "plan_valid", "gold_reference", "gold_constraints", "predicted_constraints", "matches", "missing_gold_ids", "spurious_predicted_ids", "uncertain_alignments", "structure", "binding", "answer_operation", "overall", "confidence_score", "confidence_reason", "error_labels", "notes"],
+      "additionalProperties": false
+    }
+  }
+}

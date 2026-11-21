@@ -1,0 +1,165 @@
+{
+  "status": "reused_evaluated",
+  "dataset": "webqsp",
+  "method": "grasp",
+  "denominator": 1628,
+  "prediction_rows": 1628,
+  "paper_metrics": {
+    "Hit@1": {
+      "count": 1075,
+      "rate": 0.8052434456928839,
+      "denominator": 1335
+    },
+    "EvidenceHit@1": {
+      "count": 914,
+      "rate": 0.6846441947565544,
+      "denominator": 1335
+    },
+    "EvidenceGap": {
+      "count": 161,
+      "denominator": 1075,
+      "rate": 0.1497674418604651
+    },
+    "CAR_I": {
+      "count": 158,
+      "rate": 0.5524475524475524,
+      "denominator": 286
+    },
+    "OAR_S": {
+      "count": 163,
+      "rate": 0.12209737827715356,
+      "denominator": 1335
+    },
+    "EBA": {
+      "count": 1072,
+      "denominator": 1621,
+      "rate": 0.6613201727328809,
+      "k_certified_hit_count": 914,
+      "u_abstention_count": 158
+    }
+  },
+  "full_population_diagnostics": {
+    "hit": {
+      "count": 1178,
+      "rate": 0.7235872235872236
+    },
+    "f1": 0.6514738199293183,
+    "certified_hit": {
+      "count": 914,
+      "rate": 0.5614250614250614
+    },
+    "certification_gap": {
+      "count": 264,
+      "rate": 0.16216216216216217
+    },
+    "complete_witness_rate": {
+      "count": 914,
+      "denominator": 1293,
+      "rate": 0.7068832173240526
+    },
+    "abstention": {
+      "count": 321,
+      "rate": 0.19717444717444718
+    }
+  },
+  "partitions": {
+    "protocol": {
+      "metric_order": [
+        "Hit",
+        "F1",
+        "CertifiedHit",
+        "Certification Gap",
+        "Complete Witness Rate",
+        "Abstention"
+      ],
+      "rule": "post-hoc join of frozen row-level outputs to a frozen partition index",
+      "evaluator_branching": false,
+      "eba_rule": "(K CertifiedHit count + U explicit abstention count) / (K + U); unresolved/X excluded"
+    },
+    "population": {
+      "total": 1628,
+      "partitions": {
+        "K": 1335,
+        "U": 286,
+        "unresolved": 7
+      }
+    },
+    "partitions": {
+      "K": {
+        "denominator": 1335,
+        "metrics": {
+          "grasp": {
+            "hit": {
+              "count": 1075,
+              "rate": 0.8052434456928839
+            },
+            "f1": 0.7338654055502785,
+            "certified_hit": {
+              "count": 914,
+              "rate": 0.6846441947565544
+            },
+            "certification_gap": {
+              "count": 161,
+              "rate": 0.12059925093632959
+            },
+            "complete_witness_rate": {
+              "count": 914,
+              "denominator": 1165,
+              "rate": 0.784549356223176
+            },
+            "abstention": {
+              "count": 163,
+              "rate": 0.12209737827715356
+            }
+          }
+        }
+      },
+      "U": {
+        "denominator": 286,
+        "metrics": {
+          "grasp": {
+            "hit": {
+              "count": 103,
+              "rate": 0.36013986013986016
+            },
+            "f1": 0.28282888963394764,
+            "certified_hit": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "certification_gap": {
+              "count": 103,
+              "rate": 0.36013986013986016
+            },
+            "complete_witness_rate": {
+              "count": 0,
+              "denominator": 128,
+              "rate": 0.0
+            },
+            "abstention": {
+              "count": 158,
+              "rate": 0.5524475524475524
+            }
+          }
+        }
+      }
+    },
+    "evidence_bounded_accuracy": {
+      "grasp": {
+        "count": 1072,
+        "denominator": 1621,
+        "rate": 0.6613201727328809,
+        "k_certified_hit_count": 914,
+        "u_abstention_count": 158
+      }
+    }
+  },
+  "sources": {
+    "method": "Grasp (full)",
+    "details_source": "supp-source-227",
+    "model": "gpt-oss:120b",
+    "model_digest": "a951a23b46a1f6093dafee2ea481d634b4e31ac720a8a16f3f91e04f5a40ecd9",
+    "answer_contract": "sufficient=false returns empty answers (Unknown)",
+    "state": "existing_evaluated_results"
+  }
+}

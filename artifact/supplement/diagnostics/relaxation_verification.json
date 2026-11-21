@@ -1,0 +1,286 @@
+{
+  "status": "complete",
+  "population": "fixed original curated CWQ-S, N=1679",
+  "sources": {
+    "gnn_original": {
+      "details": "supp-source-049",
+      "prediction_source": null,
+      "evidence_field": "selected_triples",
+      "model": "ReaRev + GPT-OSS-120B",
+      "method": "GNN-RAG",
+      "condition": "Original",
+      "summary": "supp-source-050",
+      "H_K": 1311,
+      "C_K": 771,
+      "background": "common.topic.notable_types from the frozen original input graph"
+    },
+    "subgraph_original": {
+      "details": "supp-source-054",
+      "prediction_source": "supp-source-253",
+      "evidence_field": "triple_selection.ids resolved in native user_query",
+      "model": "MLP + GPT-OSS-120B",
+      "method": "SubgraphRAG",
+      "condition": "Original",
+      "summary": "supp-source-050",
+      "H_K": 1357,
+      "C_K": 807,
+      "limitation": "Author cached graphs differ from the matched input graph; fixed-S grouping is supplementary.",
+      "background": "common.topic.notable_types from its actual user_query only"
+    },
+    "rje_original": {
+      "details": "supp-source-059",
+      "prediction_source": null,
+      "evidence_field": "returned_evidence",
+      "model": "RoBERTa + GPT-OSS-120B",
+      "method": "RJE",
+      "condition": "Original",
+      "summary": "supp-source-067",
+      "H_K": 1355,
+      "C_K": 926,
+      "background": "common.topic.notable_types from the frozen original input graph"
+    },
+    "cot_unknown": {
+      "details": "supp-source-044",
+      "prediction_source": null,
+      "evidence_field": "selected_triples",
+      "model": "GPT-OSS-120B",
+      "method": "CoT",
+      "condition": "Unknown",
+      "summary": "supp-source-045",
+      "H_K": 1159,
+      "C_K": 765,
+      "background": "common.topic.notable_types from the frozen original input graph"
+    },
+    "gcr_unknown": {
+      "details": "supp-source-033",
+      "prediction_source": "supp-source-254",
+      "evidence_field": "selected_triples",
+      "model": "Qwen2.5-7B + GPT-OSS-120B",
+      "method": "GCR*",
+      "condition": "Unknown",
+      "summary": "supp-source-034",
+      "H_K": 1012,
+      "C_K": 535,
+      "background": "common.topic.notable_types from the frozen original input graph"
+    },
+    "dog_unknown": {
+      "details": "supp-source-121",
+      "prediction_source": null,
+      "evidence_field": "emitted_trace",
+      "model": "GPT-OSS-120B",
+      "method": "DoG",
+      "condition": "Unknown",
+      "summary": "supp-source-155",
+      "H_K": 969,
+      "C_K": 492,
+      "background": "common.topic.notable_types from the official-source DoG frozen capped input",
+      "graph_source": "supp-source-255"
+    },
+    "gnn_unknown": {
+      "details": "supp-source-051",
+      "prediction_source": null,
+      "evidence_field": "selected_triples",
+      "model": "ReaRev + GPT-OSS-120B",
+      "method": "GNN-RAG",
+      "condition": "Unknown",
+      "summary": "supp-source-053",
+      "H_K": 1246,
+      "C_K": 774,
+      "background": "common.topic.notable_types from the frozen original input graph"
+    },
+    "subgraph_unknown": {
+      "details": "supp-source-055",
+      "prediction_source": "supp-source-256",
+      "evidence_field": "triple_selection.ids resolved in native user_query",
+      "model": "MLP + GPT-OSS-120B",
+      "method": "SubgraphRAG",
+      "condition": "Unknown",
+      "summary": "supp-source-057",
+      "H_K": 1213,
+      "C_K": 767,
+      "limitation": "Author cached graphs differ from the matched input graph; fixed-S grouping is supplementary.",
+      "background": "common.topic.notable_types from its actual user_query only"
+    },
+    "rje_unknown": {
+      "details": "supp-source-068",
+      "prediction_source": null,
+      "evidence_field": "returned_evidence",
+      "model": "RoBERTa + GPT-OSS-120B",
+      "method": "RJE",
+      "condition": "Unknown",
+      "summary": "supp-source-070",
+      "H_K": 1157,
+      "C_K": 932,
+      "background": "common.topic.notable_types from the frozen original input graph"
+    },
+    "relation_cache": {
+      "path": "supp-source-257",
+      "atomic_vocabulary": 5183,
+      "evidence_and_background_atomic_relations": 994,
+      "missing_query_relations": [],
+      "missing_evidence_relations": [],
+      "metadata": {
+        "model": "Alibaba-NLP/gte-large-en-v1.5",
+        "revision": "104333d6af6f97649377c2afbde10a7704870c7b",
+        "code_revision": "40ced75c3017eb27626c9d4ea981bde21a2662f4",
+        "text": "raw atomic Freebase relation",
+        "pooling": "CLS",
+        "normalization": "L2",
+        "dtype": "float32",
+        "tf32": false,
+        "device": "cuda",
+        "batch_size": 32,
+        "relations": 5183,
+        "dimensions": 1024,
+        "seconds": 9.610892676049843,
+        "python": "3.12.8",
+        "torch": "2.13.0+cu129",
+        "transformers": "4.47.1",
+        "numpy": "2.0.2"
+      }
+    },
+    "evaluation_inputs": {
+      "cwq.jsonl.gz": "supp-source-258",
+      "ComplexWebQuestions_test.json": "supp-source-259",
+      "witness_details.jsonl": "supp-source-260",
+      "reverse_properties": "supp-source-261",
+      "cwq_membership.jsonl": "supp-source-262"
+    },
+    "qwen_full": {
+      "counts": "supp-source-263",
+      "view": "fixed_original_KU",
+      "N_S": 1679,
+      "H": 1365,
+      "exact_C": 990,
+      "endpoint_C": 1161,
+      "model": "Qwen2.5-7B relation scorer + GPT-OSS-120B planner/answer",
+      "condition": "Full reference repeated in both panels"
+    }
+  },
+  "reused_original_source": "supp-source-263",
+  "reused_systems": [
+    "qwen_cot",
+    "qwen_gcr",
+    "qwen_dog",
+    "gpt6_individual",
+    "qwen_full"
+  ],
+  "settings": {
+    "exact": null,
+    "tau_095": 0.95,
+    "tau_090": 0.9,
+    "tau_085": 0.85,
+    "tau_080": 0.8,
+    "tau_075": 0.75,
+    "tau_070": 0.7,
+    "tau_060": 0.6
+  },
+  "verification": {
+    "fixed_hit_counts": true,
+    "monotonic_supported_counts": {
+      "subgraph_original": true,
+      "rje_unknown": true,
+      "gnn_original": true,
+      "rje_original": true,
+      "dog_unknown": true,
+      "gnn_unknown": true,
+      "qwen_cot": true,
+      "gcr_unknown": true,
+      "gpt6_individual": true,
+      "qwen_gcr": true,
+      "subgraph_unknown": true,
+      "qwen_dog": true,
+      "cot_unknown": true,
+      "qwen_full": true
+    },
+    "baseline_exact_canonical_row_support_matches": true,
+    "Grasp_exact_H_C_matches_canonical": true,
+    "baseline_replay_errors": 0
+  },
+  "scope": "Existing 104 baseline rows and 8 frozen Grasp rows are reused; no replay or model requests in this integration.",
+  "baseline_replay_replayed_systems": [
+    "gnn_original",
+    "subgraph_original",
+    "rje_original",
+    "cot_unknown",
+    "gcr_unknown",
+    "dog_unknown",
+    "gnn_unknown",
+    "subgraph_unknown",
+    "rje_unknown"
+  ],
+  "baseline_replay_seconds": 119.04525920000742,
+  "baseline_replay_receipts": {
+    "exact": {
+      "setting": "exact",
+      "seconds": 22.161911299990606,
+      "errors": [],
+      "exact_mismatches": [],
+      "eligible_rows": 10667
+    },
+    "tau_095": {
+      "setting": "tau_095",
+      "seconds": 23.309687900007702,
+      "errors": [],
+      "exact_mismatches": [],
+      "eligible_rows": 10667
+    },
+    "tau_090": {
+      "setting": "tau_090",
+      "seconds": 23.682570599994506,
+      "errors": [],
+      "exact_mismatches": [],
+      "eligible_rows": 10667
+    },
+    "tau_085": {
+      "setting": "tau_085",
+      "seconds": 24.232007200000226,
+      "errors": [],
+      "exact_mismatches": [],
+      "eligible_rows": 10667
+    },
+    "tau_080": {
+      "setting": "tau_080",
+      "seconds": 24.377521899994463,
+      "errors": [],
+      "exact_mismatches": [],
+      "eligible_rows": 10667
+    },
+    "tau_075": {
+      "setting": "tau_075",
+      "seconds": 24.25002140000288,
+      "errors": [],
+      "exact_mismatches": [],
+      "eligible_rows": 10667
+    },
+    "tau_070": {
+      "setting": "tau_070",
+      "seconds": 23.978374900005292,
+      "errors": [],
+      "exact_mismatches": [],
+      "eligible_rows": 10667
+    },
+    "tau_060": {
+      "setting": "tau_060",
+      "seconds": 39.25073610000254,
+      "errors": [],
+      "exact_mismatches": [],
+      "eligible_rows": 10667
+    }
+  },
+  "baseline_replay_runtime": {
+    "executable": "supp-source-264",
+    "python": "3.14.0",
+    "numpy": "2.4.0",
+    "workers": 4,
+    "command": "python -m notebooks.replay_thesis_relation_relaxation"
+  },
+  "integration": {
+    "previous_report": "supp-source-265",
+    "retained_baseline_rows": 104,
+    "added_Grasp_rows": 8,
+    "total_rows": 112,
+    "independent_configurations": 14,
+    "scope": "Reused existing fixed-S counts only; no new replay or model requests."
+  }
+}

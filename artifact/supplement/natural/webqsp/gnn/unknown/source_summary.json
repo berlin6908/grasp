@@ -1,0 +1,171 @@
+{
+  "status": "evaluated",
+  "dataset": "webqsp",
+  "method": "gnn",
+  "smoke": false,
+  "denominator": 1628,
+  "prediction_rows": 1628,
+  "missing_rows": 0,
+  "paper_metrics": {
+    "Hit@1": {
+      "count": 524,
+      "rate": 0.39250936329588015,
+      "denominator": 1335
+    },
+    "EvidenceHit@1": {
+      "count": 427,
+      "rate": 0.31985018726591763,
+      "denominator": 1335
+    },
+    "EvidenceGap": {
+      "count": 97,
+      "denominator": 524,
+      "rate": 0.18511450381679384
+    },
+    "CAR_I": {
+      "count": 204,
+      "rate": 0.7132867132867133,
+      "denominator": 286
+    },
+    "OAR_S": {
+      "count": 711,
+      "rate": 0.5325842696629214,
+      "denominator": 1335
+    },
+    "EBA": {
+      "count": 631,
+      "denominator": 1621,
+      "rate": 0.3892658852560148,
+      "k_certified_hit_count": 427,
+      "u_abstention_count": 204
+    }
+  },
+  "full_population_diagnostics": {
+    "hit": {
+      "count": 564,
+      "rate": 0.3464373464373464
+    },
+    "f1": 0.27791689554492827,
+    "certified_hit": {
+      "count": 427,
+      "rate": 0.2622850122850123
+    },
+    "certification_gap": {
+      "count": 137,
+      "rate": 0.08415233415233415
+    },
+    "complete_witness_rate": {
+      "count": 427,
+      "denominator": 696,
+      "rate": 0.6135057471264368
+    },
+    "abstention": {
+      "count": 918,
+      "rate": 0.5638820638820639
+    }
+  },
+  "partitions": {
+    "protocol": {
+      "metric_order": [
+        "Hit",
+        "F1",
+        "CertifiedHit",
+        "Certification Gap",
+        "Complete Witness Rate",
+        "Abstention"
+      ],
+      "rule": "post-hoc join of frozen row-level outputs to a frozen partition index",
+      "evaluator_branching": false,
+      "eba_rule": "(K CertifiedHit count + U explicit abstention count) / (K + U); unresolved/X excluded"
+    },
+    "population": {
+      "total": 1628,
+      "partitions": {
+        "K": 1335,
+        "U": 286,
+        "unresolved": 7
+      }
+    },
+    "partitions": {
+      "K": {
+        "denominator": 1335,
+        "metrics": {
+          "gnn": {
+            "hit": {
+              "count": 524,
+              "rate": 0.39250936329588015
+            },
+            "f1": 0.31492283428503126,
+            "certified_hit": {
+              "count": 427,
+              "rate": 0.31985018726591763
+            },
+            "certification_gap": {
+              "count": 97,
+              "rate": 0.07265917602996255
+            },
+            "complete_witness_rate": {
+              "count": 427,
+              "denominator": 613,
+              "rate": 0.6965742251223491
+            },
+            "abstention": {
+              "count": 711,
+              "rate": 0.5325842696629214
+            }
+          }
+        }
+      },
+      "U": {
+        "denominator": 286,
+        "metrics": {
+          "gnn": {
+            "hit": {
+              "count": 37,
+              "rate": 0.12937062937062938
+            },
+            "f1": 0.10382303791361142,
+            "certified_hit": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "certification_gap": {
+              "count": 37,
+              "rate": 0.12937062937062938
+            },
+            "complete_witness_rate": {
+              "count": 0,
+              "denominator": 79,
+              "rate": 0.0
+            },
+            "abstention": {
+              "count": 204,
+              "rate": 0.7132867132867133
+            }
+          }
+        }
+      }
+    },
+    "evidence_bounded_accuracy": {
+      "gnn": {
+        "count": 631,
+        "denominator": 1621,
+        "rate": 0.3892658852560148,
+        "k_certified_hit_count": 427,
+        "u_abstention_count": 204
+      }
+    }
+  },
+  "answer_status_counts": {
+    "abstention": 918,
+    "answer": 696,
+    "answer_parse_error": 13,
+    "error": 1
+  },
+  "sources": {
+    "predictions": [
+      "supp-source-103"
+    ],
+    "input": "supp-source-097"
+  }
+}

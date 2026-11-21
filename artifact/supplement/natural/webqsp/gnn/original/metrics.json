@@ -1,0 +1,45 @@
+{
+  "directory": "supplement/natural/webqsp/gnn/original",
+  "benchmark": "webqsp",
+  "system": "GNN-RAG",
+  "model": "GPT-OSS-120B",
+  "condition": "Original",
+  "evaluation_rows": 1621,
+  "source_rows": 1628,
+  "availability": "per_question_evaluation",
+  "evidence_hit_field": "certified_hit",
+  "source": "supp-source-076",
+  "note": "Recorded native retrieval and answer interface.",
+  "metrics": {
+    "Hit@1": {
+      "count": 811,
+      "denominator": 1335,
+      "rate": 0.6074906367041198
+    },
+    "EvidenceHit@1": {
+      "count": 424,
+      "denominator": 1335,
+      "rate": 0.31760299625468164
+    },
+    "EvidenceGap": {
+      "count": 387,
+      "denominator": 811,
+      "rate": 0.47718865598027127
+    },
+    "CAR_I": {
+      "count": 70,
+      "denominator": 286,
+      "rate": 0.24475524475524477
+    },
+    "OAR_S": {
+      "count": 175,
+      "denominator": 1335,
+      "rate": 0.13108614232209737
+    },
+    "EBA": {
+      "count": 494,
+      "denominator": 1621,
+      "rate": 0.30475015422578655
+    }
+  }
+}

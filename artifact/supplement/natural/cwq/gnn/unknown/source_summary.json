@@ -1,0 +1,139 @@
+{
+  "system": "GNN-RAG",
+  "condition": "control",
+  "N": 3138,
+  "N_S": 1679,
+  "N_I": 1459,
+  "metrics": {
+    "Hit_at_1": {
+      "count": 1246,
+      "rate": 0.7421083978558666,
+      "denominator": 1679
+    },
+    "EvidenceHit_at_1": {
+      "count": 774,
+      "rate": 0.46098868374032165,
+      "denominator": 1679
+    },
+    "EvidenceGap": {
+      "count": 472,
+      "denominator": 1246,
+      "rate": 0.3788121990369181
+    },
+    "CAR_I": {
+      "count": 1141,
+      "rate": 0.7820424948594928,
+      "denominator": 1459
+    },
+    "OAR_S": {
+      "count": 237,
+      "rate": 0.14115544967242405,
+      "denominator": 1679
+    },
+    "EBA": {
+      "count": 1915,
+      "denominator": 3138,
+      "rate": 0.6102613129381772,
+      "k_certified_hit_count": 774,
+      "u_abstention_count": 1141
+    }
+  },
+  "partitions": {
+    "protocol": {
+      "metric_order": [
+        "Hit",
+        "F1",
+        "CertifiedHit",
+        "Certification Gap",
+        "Complete Witness Rate",
+        "Abstention"
+      ],
+      "rule": "post-hoc join of frozen row-level outputs to a frozen partition index",
+      "evaluator_branching": false,
+      "eba_rule": "(K CertifiedHit count + U explicit abstention count) / (K + U); unresolved/X excluded"
+    },
+    "population": {
+      "total": 3138,
+      "partitions": {
+        "K": 1679,
+        "U": 1459
+      }
+    },
+    "partitions": {
+      "K": {
+        "denominator": 1679,
+        "metrics": {
+          "GNN-RAG": {
+            "hit": {
+              "count": 1246,
+              "rate": 0.7421083978558666
+            },
+            "f1": 0.677762629114859,
+            "certified_hit": {
+              "count": 774,
+              "rate": 0.46098868374032165
+            },
+            "certification_gap": {
+              "count": 472,
+              "rate": 0.281119714115545
+            },
+            "complete_witness_rate": {
+              "count": 774,
+              "denominator": 1438,
+              "rate": 0.5382475660639777
+            },
+            "abstention": {
+              "count": 237,
+              "rate": 0.14115544967242405
+            }
+          }
+        }
+      },
+      "U": {
+        "denominator": 1459,
+        "metrics": {
+          "GNN-RAG": {
+            "hit": {
+              "count": 156,
+              "rate": 0.10692254969156957
+            },
+            "f1": 0.09803610628919227,
+            "certified_hit": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "certification_gap": {
+              "count": 156,
+              "rate": 0.10692254969156957
+            },
+            "complete_witness_rate": {
+              "count": 0,
+              "denominator": 317,
+              "rate": 0.0
+            },
+            "abstention": {
+              "count": 1141,
+              "rate": 0.7820424948594928
+            }
+          }
+        }
+      }
+    },
+    "evidence_bounded_accuracy": {
+      "GNN-RAG": {
+        "count": 1915,
+        "denominator": 3138,
+        "rate": 0.6102613129381772,
+        "k_certified_hit_count": 774,
+        "u_abstention_count": 1141
+      }
+    }
+  },
+  "source": "supp-source-052",
+  "status_counts": {
+    "answer": 1755,
+    "abstention": 1378,
+    "answer_parse_error": 2,
+    "error": 3
+  }
+}

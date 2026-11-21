@@ -1,0 +1,45 @@
+{
+  "directory": "supplement/natural/webqsp/grasp/reused_reference",
+  "benchmark": "webqsp",
+  "system": "Grasp",
+  "model": "Qwen2.5-7B scorer / GPT-OSS-120B answers",
+  "condition": "Reused reference",
+  "evaluation_rows": 1621,
+  "source_rows": 1628,
+  "availability": "per_question_evaluation",
+  "evidence_hit_field": "certified_hit",
+  "source": "supp-source-228",
+  "note": "Existing evaluation reused by the supplementary comparison; no new Grasp inference. WebQSP uses the recorded 163 S and 158 I abstentions, separately from the September paper-selected display.",
+  "metrics": {
+    "Hit@1": {
+      "count": 1075,
+      "denominator": 1335,
+      "rate": 0.8052434456928839
+    },
+    "EvidenceHit@1": {
+      "count": 914,
+      "denominator": 1335,
+      "rate": 0.6846441947565544
+    },
+    "EvidenceGap": {
+      "count": 161,
+      "denominator": 1075,
+      "rate": 0.14976744186046512
+    },
+    "CAR_I": {
+      "count": 158,
+      "denominator": 286,
+      "rate": 0.5524475524475524
+    },
+    "OAR_S": {
+      "count": 163,
+      "denominator": 1335,
+      "rate": 0.12209737827715356
+    },
+    "EBA": {
+      "count": 1072,
+      "denominator": 1621,
+      "rate": 0.6613201727328809
+    }
+  }
+}

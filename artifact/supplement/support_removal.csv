@@ -1,0 +1,33 @@
+system,model,condition,artifact,family,treatment,N,same_answer,other_answer,abstention,error
+CoT,Qwen2.5-7B,Default,supplement/prompt_controls/cwq/cot_qwen/default,missing_condition,critical,295,101,141,0,53
+CoT,Qwen2.5-7B,Default,supplement/prompt_controls/cwq/cot_qwen/default,missing_condition,sham,295,233,25,0,37
+CoT,Qwen2.5-7B,Default,supplement/prompt_controls/cwq/cot_qwen/default,binding_conflict,critical,120,51,38,0,31
+CoT,Qwen2.5-7B,Default,supplement/prompt_controls/cwq/cot_qwen/default,binding_conflict,sham,120,96,1,0,23
+CoT,Qwen2.5-7B,Unknown,supplement/prompt_controls/cwq/cot_qwen/control,missing_condition,critical,295,108,95,53,39
+CoT,Qwen2.5-7B,Unknown,supplement/prompt_controls/cwq/cot_qwen/control,missing_condition,sham,295,232,17,17,29
+CoT,Qwen2.5-7B,Unknown,supplement/prompt_controls/cwq/cot_qwen/control,binding_conflict,critical,120,49,29,14,28
+CoT,Qwen2.5-7B,Unknown,supplement/prompt_controls/cwq/cot_qwen/control,binding_conflict,sham,120,94,1,9,16
+DoG,Qwen2.5-7B,Default,supplement/prompt_controls/cwq/dog_qwen/default,missing_condition,critical,295,157,121,11,6
+DoG,Qwen2.5-7B,Default,supplement/prompt_controls/cwq/dog_qwen/default,missing_condition,sham,295,290,4,0,1
+DoG,Qwen2.5-7B,Default,supplement/prompt_controls/cwq/dog_qwen/default,binding_conflict,critical,120,60,56,0,4
+DoG,Qwen2.5-7B,Default,supplement/prompt_controls/cwq/dog_qwen/default,binding_conflict,sham,120,117,1,0,2
+DoG,Qwen2.5-7B,Unknown,supplement/prompt_controls/cwq/dog_qwen/control,missing_condition,critical,295,148,94,42,11
+DoG,Qwen2.5-7B,Unknown,supplement/prompt_controls/cwq/dog_qwen/control,missing_condition,sham,295,288,5,1,1
+DoG,Qwen2.5-7B,Unknown,supplement/prompt_controls/cwq/dog_qwen/control,binding_conflict,critical,120,51,54,13,2
+DoG,Qwen2.5-7B,Unknown,supplement/prompt_controls/cwq/dog_qwen/control,binding_conflict,sham,120,117,1,1,1
+GCR*,Qwen2.5-7B paths / GPT-OSS-120B answers,Default,supplement/prompt_controls/cwq/gcr/default,missing_condition,critical,295,163,87,36,9
+GCR*,Qwen2.5-7B paths / GPT-OSS-120B answers,Default,supplement/prompt_controls/cwq/gcr/default,missing_condition,sham,295,248,39,6,2
+GCR*,Qwen2.5-7B paths / GPT-OSS-120B answers,Default,supplement/prompt_controls/cwq/gcr/default,binding_conflict,critical,120,61,14,40,5
+GCR*,Qwen2.5-7B paths / GPT-OSS-120B answers,Default,supplement/prompt_controls/cwq/gcr/default,binding_conflict,sham,120,106,6,7,1
+GCR*,Qwen2.5-7B paths / GPT-OSS-120B answers,Unknown,supplement/prompt_controls/cwq/gcr/control,missing_condition,critical,295,70,24,199,2
+GCR*,Qwen2.5-7B paths / GPT-OSS-120B answers,Unknown,supplement/prompt_controls/cwq/gcr/control,missing_condition,sham,295,226,46,21,2
+GCR*,Qwen2.5-7B paths / GPT-OSS-120B answers,Unknown,supplement/prompt_controls/cwq/gcr/control,binding_conflict,critical,120,16,13,90,1
+GCR*,Qwen2.5-7B paths / GPT-OSS-120B answers,Unknown,supplement/prompt_controls/cwq/gcr/control,binding_conflict,sham,120,102,6,11,1
+CoT,GPT-OSS-120B,Default,supplement/prompt_controls/cwq/cot_120b/default,missing_condition,critical,295,192,86,16,1
+CoT,GPT-OSS-120B,Default,supplement/prompt_controls/cwq/cot_120b/default,missing_condition,sham,295,265,30,0,0
+CoT,GPT-OSS-120B,Default,supplement/prompt_controls/cwq/cot_120b/default,binding_conflict,critical,120,76,28,14,2
+CoT,GPT-OSS-120B,Default,supplement/prompt_controls/cwq/cot_120b/default,binding_conflict,sham,120,117,2,0,1
+CoT,GPT-OSS-120B,Unknown,supplement/prompt_controls/cwq/cot_120b/control,missing_condition,critical,295,108,20,167,0
+CoT,GPT-OSS-120B,Unknown,supplement/prompt_controls/cwq/cot_120b/control,missing_condition,sham,295,268,25,2,0
+CoT,GPT-OSS-120B,Unknown,supplement/prompt_controls/cwq/cot_120b/control,binding_conflict,critical,120,38,5,76,1
+CoT,GPT-OSS-120B,Unknown,supplement/prompt_controls/cwq/cot_120b/control,binding_conflict,sham,120,116,3,0,1

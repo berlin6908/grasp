@@ -1,0 +1,45 @@
+{
+  "directory": "supplement/natural/webqsp/cot/unknown",
+  "benchmark": "webqsp",
+  "system": "CoT",
+  "model": "GPT-OSS-120B",
+  "condition": "Unknown",
+  "evaluation_rows": 1621,
+  "source_rows": 1628,
+  "availability": "per_question_evaluation",
+  "evidence_hit_field": "certified_hit",
+  "source": "supp-source-098",
+  "note": "Method-specific native retrieval and output budgets; see supplement/README.md.",
+  "metrics": {
+    "Hit@1": {
+      "count": 1013,
+      "denominator": 1335,
+      "rate": 0.7588014981273409
+    },
+    "EvidenceHit@1": {
+      "count": 611,
+      "denominator": 1335,
+      "rate": 0.45767790262172287
+    },
+    "EvidenceGap": {
+      "count": 402,
+      "denominator": 1013,
+      "rate": 0.39684106614017767
+    },
+    "CAR_I": {
+      "count": 83,
+      "denominator": 286,
+      "rate": 0.2902097902097902
+    },
+    "OAR_S": {
+      "count": 81,
+      "denominator": 1335,
+      "rate": 0.060674157303370786
+    },
+    "EBA": {
+      "count": 694,
+      "denominator": 1621,
+      "rate": 0.4281307834669957
+    }
+  }
+}

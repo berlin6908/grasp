@@ -1,0 +1,45 @@
+{
+  "directory": "supplement/natural/cwq/gnn/unknown",
+  "benchmark": "cwq",
+  "system": "GNN-RAG",
+  "model": "GPT-OSS-120B",
+  "condition": "Unknown",
+  "evaluation_rows": 3138,
+  "source_rows": 3531,
+  "availability": "per_question_evaluation",
+  "evidence_hit_field": "certified_hit",
+  "source": "supp-source-053",
+  "note": "Native ReaRev retrieval; shared evidence-only/Unknown instruction.",
+  "metrics": {
+    "Hit@1": {
+      "count": 1246,
+      "denominator": 1679,
+      "rate": 0.7421083978558666
+    },
+    "EvidenceHit@1": {
+      "count": 774,
+      "denominator": 1679,
+      "rate": 0.46098868374032165
+    },
+    "EvidenceGap": {
+      "count": 472,
+      "denominator": 1246,
+      "rate": 0.37881219903691815
+    },
+    "CAR_I": {
+      "count": 1141,
+      "denominator": 1459,
+      "rate": 0.7820424948594928
+    },
+    "OAR_S": {
+      "count": 237,
+      "denominator": 1679,
+      "rate": 0.14115544967242405
+    },
+    "EBA": {
+      "count": 1915,
+      "denominator": 3138,
+      "rate": 0.6102613129381772
+    }
+  }
+}

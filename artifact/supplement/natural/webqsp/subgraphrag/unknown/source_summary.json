@@ -1,0 +1,169 @@
+{
+  "status": "evaluated",
+  "dataset": "webqsp",
+  "method": "subgraphrag",
+  "smoke": false,
+  "denominator": 1628,
+  "prediction_rows": 1628,
+  "missing_rows": 0,
+  "paper_metrics": {
+    "Hit@1": {
+      "count": 1113,
+      "rate": 0.8337078651685393,
+      "denominator": 1335
+    },
+    "EvidenceHit@1": {
+      "count": 897,
+      "rate": 0.6719101123595506,
+      "denominator": 1335
+    },
+    "EvidenceGap": {
+      "count": 216,
+      "denominator": 1113,
+      "rate": 0.19407008086253374
+    },
+    "CAR_I": {
+      "count": 39,
+      "rate": 0.13636363636363635,
+      "denominator": 286
+    },
+    "OAR_S": {
+      "count": 46,
+      "rate": 0.03445692883895131,
+      "denominator": 1335
+    },
+    "EBA": {
+      "count": 936,
+      "denominator": 1621,
+      "rate": 0.5774213448488588,
+      "k_certified_hit_count": 897,
+      "u_abstention_count": 39
+    }
+  },
+  "full_population_diagnostics": {
+    "hit": {
+      "count": 1237,
+      "rate": 0.7598280098280098
+    },
+    "f1": 0.6706000797264062,
+    "certified_hit": {
+      "count": 899,
+      "rate": 0.5522113022113022
+    },
+    "certification_gap": {
+      "count": 338,
+      "rate": 0.2076167076167076
+    },
+    "complete_witness_rate": {
+      "count": 899,
+      "denominator": 1543,
+      "rate": 0.5826312378483474
+    },
+    "abstention": {
+      "count": 85,
+      "rate": 0.05221130221130221
+    }
+  },
+  "partitions": {
+    "protocol": {
+      "metric_order": [
+        "Hit",
+        "F1",
+        "CertifiedHit",
+        "Certification Gap",
+        "Complete Witness Rate",
+        "Abstention"
+      ],
+      "rule": "post-hoc join of frozen row-level outputs to a frozen partition index",
+      "evaluator_branching": false,
+      "eba_rule": "(K CertifiedHit count + U explicit abstention count) / (K + U); unresolved/X excluded"
+    },
+    "population": {
+      "total": 1628,
+      "partitions": {
+        "K": 1335,
+        "U": 286,
+        "unresolved": 7
+      }
+    },
+    "partitions": {
+      "K": {
+        "denominator": 1335,
+        "metrics": {
+          "subgraphrag": {
+            "hit": {
+              "count": 1113,
+              "rate": 0.8337078651685393
+            },
+            "f1": 0.7411744109853344,
+            "certified_hit": {
+              "count": 897,
+              "rate": 0.6719101123595506
+            },
+            "certification_gap": {
+              "count": 216,
+              "rate": 0.16179775280898875
+            },
+            "complete_witness_rate": {
+              "count": 897,
+              "denominator": 1289,
+              "rate": 0.6958882854926299
+            },
+            "abstention": {
+              "count": 46,
+              "rate": 0.03445692883895131
+            }
+          }
+        }
+      },
+      "U": {
+        "denominator": 286,
+        "metrics": {
+          "subgraphrag": {
+            "hit": {
+              "count": 118,
+              "rate": 0.4125874125874126
+            },
+            "f1": 0.3413967185298504,
+            "certified_hit": {
+              "count": 2,
+              "rate": 0.006993006993006993
+            },
+            "certification_gap": {
+              "count": 116,
+              "rate": 0.40559440559440557
+            },
+            "complete_witness_rate": {
+              "count": 2,
+              "denominator": 247,
+              "rate": 0.008097165991902834
+            },
+            "abstention": {
+              "count": 39,
+              "rate": 0.13636363636363635
+            }
+          }
+        }
+      }
+    },
+    "evidence_bounded_accuracy": {
+      "subgraphrag": {
+        "count": 936,
+        "denominator": 1621,
+        "rate": 0.5774213448488588,
+        "k_certified_hit_count": 897,
+        "u_abstention_count": 39
+      }
+    }
+  },
+  "answer_status_counts": {
+    "answer": 1543,
+    "abstention": 85
+  },
+  "sources": {
+    "predictions": [
+      "supp-source-106"
+    ],
+    "input": "supp-source-097"
+  }
+}

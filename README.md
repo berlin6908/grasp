@@ -8,6 +8,11 @@ contains the S/I split builders, Grasp implementation, support-removal intervent
 paper evaluation. Only Grasp code is included. The accompanying `artifact/`
 directory also contains the comparison-system results used in the paper.
 
+The [supplementary experiments](artifact/supplement/README.md), updated
+2026-11-21, add 29 natural-input conditions, eight matched prompt arms with
+support-removal results, and an 8,756-question specification-quality audit.
+The results notebook includes these comparisons and their recorded protocols.
+
 Start with the executed English
 [results notebook](local-results.ipynb). Its CPU-only setup is described below
 under **Reproduce the paper tables and figures**.

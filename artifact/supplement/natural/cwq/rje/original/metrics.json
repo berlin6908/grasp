@@ -1,0 +1,45 @@
+{
+  "directory": "supplement/natural/cwq/rje/original",
+  "benchmark": "cwq",
+  "system": "RJE",
+  "model": "GPT-OSS-120B",
+  "condition": "Original",
+  "evaluation_rows": 3138,
+  "source_rows": 3531,
+  "availability": "per_question_evaluation",
+  "evidence_hit_field": "certified_hit",
+  "source": "supp-source-067",
+  "note": "Evidence is the terminal displayed graph context. The Unknown condition also removes knowledge-gap permission and changes intermediate sufficiency instructions.",
+  "metrics": {
+    "Hit@1": {
+      "count": 1355,
+      "denominator": 1679,
+      "rate": 0.8070279928528886
+    },
+    "EvidenceHit@1": {
+      "count": 926,
+      "denominator": 1679,
+      "rate": 0.5515187611673615
+    },
+    "EvidenceGap": {
+      "count": 429,
+      "denominator": 1355,
+      "rate": 0.3166051660516605
+    },
+    "CAR_I": {
+      "count": 43,
+      "denominator": 1459,
+      "rate": 0.029472241261137764
+    },
+    "OAR_S": {
+      "count": 112,
+      "denominator": 1679,
+      "rate": 0.06670637284097677
+    },
+    "EBA": {
+      "count": 969,
+      "denominator": 3138,
+      "rate": 0.30879541108986613
+    }
+  }
+}

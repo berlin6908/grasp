@@ -1,0 +1,173 @@
+{
+  "status": "evaluated",
+  "dataset": "2wiki",
+  "method": "cot",
+  "smoke": false,
+  "denominator": 4016,
+  "prediction_rows": 4016,
+  "missing_rows": 0,
+  "paper_metrics": {
+    "Hit@1": {
+      "count": 667,
+      "rate": 0.4822848879248012,
+      "denominator": 1383
+    },
+    "EvidenceHit@1": {
+      "count": 649,
+      "rate": 0.4692697035430224,
+      "denominator": 1383
+    },
+    "EvidenceGap": {
+      "count": 18,
+      "denominator": 667,
+      "rate": 0.026986506746626726
+    },
+    "CAR_I": {
+      "count": 1763,
+      "rate": 0.6744452945677123,
+      "denominator": 2614
+    },
+    "OAR_S": {
+      "count": 593,
+      "rate": 0.4287780187997108,
+      "denominator": 1383
+    },
+    "EBA": {
+      "count": 2412,
+      "denominator": 3997,
+      "rate": 0.6034525894420816,
+      "k_certified_hit_count": 649,
+      "u_abstention_count": 1763
+    }
+  },
+  "full_population_diagnostics": {
+    "hit": {
+      "count": 1080,
+      "rate": 0.2689243027888446
+    },
+    "f1": 0.26834329349269587,
+    "certified_hit": {
+      "count": 649,
+      "rate": 0.1616035856573705
+    },
+    "certification_gap": {
+      "count": 431,
+      "rate": 0.1073207171314741
+    },
+    "complete_witness_rate": {
+      "count": 649,
+      "denominator": 1308,
+      "rate": 0.49617737003058104
+    },
+    "abstention": {
+      "count": 2372,
+      "rate": 0.5906374501992032
+    }
+  },
+  "partitions": {
+    "protocol": {
+      "metric_order": [
+        "Hit",
+        "F1",
+        "CertifiedHit",
+        "Certification Gap",
+        "Complete Witness Rate",
+        "Abstention"
+      ],
+      "rule": "post-hoc join of frozen row-level outputs to a frozen partition index",
+      "evaluator_branching": false,
+      "eba_rule": "(K CertifiedHit count + U explicit abstention count) / (K + U); unresolved/X excluded"
+    },
+    "population": {
+      "total": 4016,
+      "partitions": {
+        "K": 1383,
+        "U": 2614,
+        "X": 19
+      }
+    },
+    "partitions": {
+      "K": {
+        "denominator": 1383,
+        "metrics": {
+          "cot": {
+            "hit": {
+              "count": 667,
+              "rate": 0.4822848879248012
+            },
+            "f1": 0.48083875632682577,
+            "certified_hit": {
+              "count": 649,
+              "rate": 0.4692697035430224
+            },
+            "certification_gap": {
+              "count": 18,
+              "rate": 0.013015184381778741
+            },
+            "complete_witness_rate": {
+              "count": 649,
+              "denominator": 698,
+              "rate": 0.9297994269340975
+            },
+            "abstention": {
+              "count": 593,
+              "rate": 0.4287780187997108
+            }
+          }
+        }
+      },
+      "U": {
+        "denominator": 2614,
+        "metrics": {
+          "cot": {
+            "hit": {
+              "count": 410,
+              "rate": 0.1568477429227238
+            },
+            "f1": 0.15672022443254272,
+            "certified_hit": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "certification_gap": {
+              "count": 410,
+              "rate": 0.1568477429227238
+            },
+            "complete_witness_rate": {
+              "count": 0,
+              "denominator": 607,
+              "rate": 0.0
+            },
+            "abstention": {
+              "count": 1763,
+              "rate": 0.6744452945677123
+            }
+          }
+        }
+      }
+    },
+    "evidence_bounded_accuracy": {
+      "cot": {
+        "count": 2412,
+        "denominator": 3997,
+        "rate": 0.6034525894420816,
+        "k_certified_hit_count": 649,
+        "u_abstention_count": 1763
+      }
+    }
+  },
+  "answer_status_counts": {
+    "error": 336,
+    "abstention": 2372,
+    "answer": 1308
+  },
+  "sources": {
+    "predictions": [
+      "supp-source-112",
+      "supp-source-113",
+      "supp-source-114",
+      "supp-source-115"
+    ],
+    "input": "supp-source-116"
+  }
+}

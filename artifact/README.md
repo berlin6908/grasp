@@ -1,8 +1,10 @@
 # Paper artifacts
 
-Results selected for the current paper, updated on 2026-09-26. The bundle
-contains **Grasp, CoT, GCR*, DoG, and Codex** results. Each condition retains
-one selected result; plot data reuse the current main-table values.
+The original paper-selected bundle is dated 2026-09-26. The
+[supplementary experiments](supplement/README.md), added 2026-11-21, include
+**GNN-RAG, SubgraphRAG and RJE**, additional **CoT/GCR*/DoG** conditions,
+reused **Grasp** references and the specification-quality audit. Each recorded
+condition keeps its own model, protocol and population.
 
 [index.json](index.json) lists the conditions, paper references, and available
 records. [sources.tsv](sources.tsv) records anonymous source identifiers and the
@@ -19,12 +21,19 @@ interventions/  Condition loss, binding mismatch, and progressive removal
 analysis/       Semantic relation relaxation and partition relaxation
 splits/         Paper S/I membership and CWQ curation labels
 paper/          Current table cells and plot data
+supplement/     Completed additional comparisons, plan audit, and diagnostics
 ```
 
-The index contains **80 conditions**: 39 natural-graph conditions, 9 component
+The original bundle contains **80 conditions**: 39 natural-graph conditions, 9 component
 ablations, 2 additional grounding model sizes, 26 primary interventions, and
 4 progressive-removal conditions. The 7B size reference reuses the main Grasp
 result. Codex results are stored once per dataset.
+
+The index now has **109 run entries**: those 80 plus 29 supplementary natural-input
+conditions. Eight supplementary entries also include matched support-removal
+and progressive records. The audit and diagnostic analyses are indexed separately.
+Supplementary record files use the paper S/I populations; their canonical source
+summaries can additionally describe the full registered evaluations.
 
 The analysis files contain the paper's 80 semantic-relaxation curve points
 on the fixed CWQ S split and eight partition-relaxation settings. Structure

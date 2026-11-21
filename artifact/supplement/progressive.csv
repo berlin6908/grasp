@@ -1,0 +1,25 @@
+system,model,condition,artifact,level,N,same_answer,other_answer,abstention,error
+CoT,Qwen2.5-7B,Default,supplement/prompt_controls/cwq/cot_qwen/default,0,268,244,0,0,24
+CoT,Qwen2.5-7B,Default,supplement/prompt_controls/cwq/cot_qwen/default,1,268,97,128,0,43
+CoT,Qwen2.5-7B,Default,supplement/prompt_controls/cwq/cot_qwen/default,2,268,49,180,1,38
+CoT,Qwen2.5-7B,Unknown,supplement/prompt_controls/cwq/cot_qwen/control,0,268,235,0,0,33
+CoT,Qwen2.5-7B,Unknown,supplement/prompt_controls/cwq/cot_qwen/control,1,268,102,85,48,33
+CoT,Qwen2.5-7B,Unknown,supplement/prompt_controls/cwq/cot_qwen/control,2,268,51,104,82,31
+DoG,Qwen2.5-7B,Default,supplement/prompt_controls/cwq/dog_qwen/default,0,268,267,0,0,1
+DoG,Qwen2.5-7B,Default,supplement/prompt_controls/cwq/dog_qwen/default,1,268,147,104,11,6
+DoG,Qwen2.5-7B,Default,supplement/prompt_controls/cwq/dog_qwen/default,2,268,70,166,24,8
+DoG,Qwen2.5-7B,Unknown,supplement/prompt_controls/cwq/dog_qwen/control,0,268,266,0,0,2
+DoG,Qwen2.5-7B,Unknown,supplement/prompt_controls/cwq/dog_qwen/control,1,268,136,83,38,11
+DoG,Qwen2.5-7B,Unknown,supplement/prompt_controls/cwq/dog_qwen/control,2,268,64,109,88,7
+GCR*,Qwen2.5-7B paths / GPT-OSS-120B answers,Default,supplement/prompt_controls/cwq/gcr/default,0,268,262,0,0,6
+GCR*,Qwen2.5-7B paths / GPT-OSS-120B answers,Default,supplement/prompt_controls/cwq/gcr/default,1,268,151,79,30,8
+GCR*,Qwen2.5-7B paths / GPT-OSS-120B answers,Default,supplement/prompt_controls/cwq/gcr/default,2,268,93,119,43,13
+GCR*,Qwen2.5-7B paths / GPT-OSS-120B answers,Unknown,supplement/prompt_controls/cwq/gcr/control,0,268,252,0,0,16
+GCR*,Qwen2.5-7B paths / GPT-OSS-120B answers,Unknown,supplement/prompt_controls/cwq/gcr/control,1,268,63,20,184,1
+GCR*,Qwen2.5-7B paths / GPT-OSS-120B answers,Unknown,supplement/prompt_controls/cwq/gcr/control,2,268,24,14,229,1
+CoT,GPT-OSS-120B,Default,supplement/prompt_controls/cwq/cot_120b/default,0,268,268,0,0,0
+CoT,GPT-OSS-120B,Default,supplement/prompt_controls/cwq/cot_120b/default,1,268,178,75,14,1
+CoT,GPT-OSS-120B,Default,supplement/prompt_controls/cwq/cot_120b/default,2,268,89,160,16,3
+CoT,GPT-OSS-120B,Unknown,supplement/prompt_controls/cwq/cot_120b/control,0,268,268,0,0,0
+CoT,GPT-OSS-120B,Unknown,supplement/prompt_controls/cwq/cot_120b/control,1,268,102,19,147,0
+CoT,GPT-OSS-120B,Unknown,supplement/prompt_controls/cwq/cot_120b/control,2,268,28,29,210,1

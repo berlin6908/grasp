@@ -1,0 +1,175 @@
+{
+  "status": "completed",
+  "finished_at": "2026-09-14T13:45:34.894991+00:00",
+  "smoke": false,
+  "count_per_method": 1628,
+  "paper_metrics": {
+    "gnn": {
+      "N_K": 1335,
+      "N_U": 286,
+      "K_correct": 811,
+      "K_correct_supported": 424,
+      "K_Unknown": 175,
+      "U_Unknown": 70,
+      "Hit_at_1": 0.6074906367041198,
+      "EvidenceHit_at_1": 0.31760299625468164,
+      "EvidenceGap": 0.47718865598027127,
+      "OAR_K": 0.13108614232209737,
+      "CAR_U": 0.24475524475524477,
+      "EBA": 0.30475015422578655,
+      "answer_status_counts": {
+        "answer": 1331,
+        "abstention": 246,
+        "answer_parse_error": 50,
+        "error": 1
+      },
+      "citation_status_counts": {
+        "empty": 756,
+        "valid": 870,
+        "missing": 1,
+        "not_generated": 1
+      },
+      "replay_status_counts": {
+        "empty_evidence": 503,
+        "no_matched_gold_answer": 220,
+        "no_witness": 180,
+        "success": 424,
+        "abstention": 246,
+        "not_generated": 51,
+        "unresolved": 4
+      }
+    }
+  },
+  "partitions": {
+    "protocol": {
+      "metric_order": [
+        "Hit",
+        "F1",
+        "CertifiedHit",
+        "Certification Gap",
+        "Complete Witness Rate",
+        "Abstention"
+      ],
+      "rule": "post-hoc join of frozen row-level outputs to a frozen partition index",
+      "evaluator_branching": false,
+      "eba_rule": "(K CertifiedHit count + U explicit abstention count) / (K + U); unresolved/X excluded"
+    },
+    "population": {
+      "total": 1628,
+      "partitions": {
+        "K": 1335,
+        "U": 286,
+        "X": 7
+      }
+    },
+    "partitions": {
+      "K": {
+        "denominator": 1335,
+        "metrics": {
+          "gnn": {
+            "hit": {
+              "count": 811,
+              "rate": 0.6074906367041198
+            },
+            "f1": 0.49029295086054187,
+            "certified_hit": {
+              "count": 424,
+              "rate": 0.31760299625468164
+            },
+            "certification_gap": {
+              "count": 387,
+              "rate": 0.2898876404494382
+            },
+            "complete_witness_rate": {
+              "count": 424,
+              "denominator": 1117,
+              "rate": 0.37958818263205013
+            },
+            "abstention": {
+              "count": 175,
+              "rate": 0.13108614232209737
+            }
+          }
+        }
+      },
+      "U": {
+        "denominator": 286,
+        "metrics": {
+          "gnn": {
+            "hit": {
+              "count": 99,
+              "rate": 0.34615384615384615
+            },
+            "f1": 0.286078986243794,
+            "certified_hit": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "certification_gap": {
+              "count": 99,
+              "rate": 0.34615384615384615
+            },
+            "complete_witness_rate": {
+              "count": 0,
+              "denominator": 208,
+              "rate": 0.0
+            },
+            "abstention": {
+              "count": 70,
+              "rate": 0.24475524475524477
+            }
+          }
+        }
+      }
+    },
+    "evidence_bounded_accuracy": {
+      "gnn": {
+        "count": 494,
+        "denominator": 1621,
+        "rate": 0.30475015422578655,
+        "k_certified_hit_count": 424,
+        "u_abstention_count": 70
+      }
+    }
+  },
+  "full_population_diagnostics": {
+    "gnn": {
+      "hit": {
+        "count": 915,
+        "rate": 0.562039312039312
+      },
+      "f1": 0.45466401277511165,
+      "certified_hit": {
+        "count": 424,
+        "rate": 0.26044226044226043
+      },
+      "certification_gap": {
+        "count": 491,
+        "rate": 0.3015970515970516
+      },
+      "complete_witness_rate": {
+        "count": 424,
+        "denominator": 1331,
+        "rate": 0.318557475582269
+      },
+      "abstention": {
+        "count": 246,
+        "rate": 0.1511056511056511
+      }
+    }
+  },
+  "protocol": {
+    "answer_and_evidence_adapter": "frozen CWQ reproduction.gnn_drag.evaluate.score_row",
+    "replay": "eva.evaluate.build_replay(webqsp); any supported official Complete parse",
+    "evidence_scope": "reader-selected visible paths, resolved to original directed source triples",
+    "population": "All registered rows evaluated once; post-hoc K/U join excludes seven X only from partition metrics",
+    "abstention": "Same frozen GNN JSON-list normalization and shared parser as CWQ",
+    "errors": "Retain fixed denominator; no correctness, support or Unknown credit"
+  },
+  "sources": {
+    "input": "supp-source-072",
+    "registration": "supp-source-073",
+    "predictions": "supp-source-074",
+    "evaluator": "supp-source-075"
+  }
+}

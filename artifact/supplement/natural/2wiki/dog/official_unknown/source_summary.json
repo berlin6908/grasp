@@ -1,0 +1,200 @@
+{
+  "status": "evaluated",
+  "dataset": "2wiki",
+  "method": "dog",
+  "smoke": false,
+  "denominator": 4016,
+  "prediction_rows": 4016,
+  "missing_rows": 0,
+  "paper_metrics": {
+    "Hit@1": {
+      "count": 1093,
+      "rate": 0.7903109182935647,
+      "denominator": 1383
+    },
+    "EvidenceHit@1": {
+      "count": 380,
+      "rate": 0.274765003615329,
+      "denominator": 1383
+    },
+    "EvidenceGap": {
+      "count": 713,
+      "denominator": 1093,
+      "rate": 0.6523330283623056
+    },
+    "CAR_I": {
+      "count": 1811,
+      "rate": 0.6928079571537873,
+      "denominator": 2614
+    },
+    "OAR_S": {
+      "count": 127,
+      "rate": 0.0918293564714389,
+      "denominator": 1383
+    },
+    "EBA": {
+      "count": 2191,
+      "denominator": 3997,
+      "rate": 0.5481611208406305,
+      "k_certified_hit_count": 380,
+      "u_abstention_count": 1811
+    }
+  },
+  "full_population_diagnostics": {
+    "hit": {
+      "count": 1499,
+      "rate": 0.3732569721115538
+    },
+    "f1": 0.3732569721115538,
+    "certified_hit": {
+      "count": 380,
+      "rate": 0.0946215139442231
+    },
+    "certification_gap": {
+      "count": 1119,
+      "rate": 0.27863545816733065
+    },
+    "complete_witness_rate": {
+      "count": 380,
+      "denominator": 2072,
+      "rate": 0.1833976833976834
+    },
+    "abstention": {
+      "count": 1944,
+      "rate": 0.48406374501992033
+    }
+  },
+  "partitions": {
+    "protocol": {
+      "metric_order": [
+        "Hit",
+        "F1",
+        "CertifiedHit",
+        "Certification Gap",
+        "Complete Witness Rate",
+        "Abstention"
+      ],
+      "rule": "post-hoc join of frozen row-level outputs to a frozen partition index",
+      "evaluator_branching": false,
+      "eba_rule": "(K CertifiedHit count + U explicit abstention count) / (K + U); unresolved/X excluded"
+    },
+    "population": {
+      "total": 4016,
+      "partitions": {
+        "K": 1383,
+        "U": 2614,
+        "X": 19
+      }
+    },
+    "partitions": {
+      "K": {
+        "denominator": 1383,
+        "metrics": {
+          "dog": {
+            "hit": {
+              "count": 1093,
+              "rate": 0.7903109182935647
+            },
+            "f1": 0.7903109182935647,
+            "certified_hit": {
+              "count": 380,
+              "rate": 0.274765003615329
+            },
+            "certification_gap": {
+              "count": 713,
+              "rate": 0.5155459146782357
+            },
+            "complete_witness_rate": {
+              "count": 380,
+              "denominator": 1256,
+              "rate": 0.30254777070063693
+            },
+            "abstention": {
+              "count": 127,
+              "rate": 0.0918293564714389
+            }
+          }
+        }
+      },
+      "U": {
+        "denominator": 2614,
+        "metrics": {
+          "dog": {
+            "hit": {
+              "count": 401,
+              "rate": 0.15340474368783474
+            },
+            "f1": 0.15340474368783474,
+            "certified_hit": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "certification_gap": {
+              "count": 401,
+              "rate": 0.15340474368783474
+            },
+            "complete_witness_rate": {
+              "count": 0,
+              "denominator": 803,
+              "rate": 0.0
+            },
+            "abstention": {
+              "count": 1811,
+              "rate": 0.6928079571537873
+            }
+          }
+        }
+      }
+    },
+    "evidence_bounded_accuracy": {
+      "dog": {
+        "count": 2191,
+        "denominator": 3997,
+        "rate": 0.5481611208406305,
+        "k_certified_hit_count": 380,
+        "u_abstention_count": 1811
+      }
+    }
+  },
+  "answer_status_counts": {
+    "abstention": 1944,
+    "answer": 2072
+  },
+  "sources": {
+    "predictions": [
+      "supp-source-192",
+      "supp-source-193",
+      "supp-source-194",
+      "supp-source-195",
+      "supp-source-196",
+      "supp-source-197",
+      "supp-source-198",
+      "supp-source-199",
+      "supp-source-200",
+      "supp-source-201",
+      "supp-source-202",
+      "supp-source-203",
+      "supp-source-204",
+      "supp-source-205",
+      "supp-source-206",
+      "supp-source-207",
+      "supp-source-208",
+      "supp-source-209",
+      "supp-source-210",
+      "supp-source-211",
+      "supp-source-212",
+      "supp-source-213",
+      "supp-source-214",
+      "supp-source-215",
+      "supp-source-216",
+      "supp-source-217",
+      "supp-source-218",
+      "supp-source-219",
+      "supp-source-220",
+      "supp-source-221",
+      "supp-source-222",
+      "supp-source-223"
+    ],
+    "input": "supp-source-224"
+  }
+}

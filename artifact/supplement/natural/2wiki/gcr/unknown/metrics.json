@@ -1,0 +1,45 @@
+{
+  "directory": "supplement/natural/2wiki/gcr/unknown",
+  "benchmark": "2wiki",
+  "system": "GCR*",
+  "model": "Qwen2.5-7B paths / GPT-OSS-120B answers",
+  "condition": "Unknown",
+  "evaluation_rows": 3997,
+  "source_rows": 4016,
+  "availability": "per_question_evaluation",
+  "evidence_hit_field": "certified_hit",
+  "source": "supp-source-120",
+  "note": "Method-specific native retrieval and output budgets; see supplement/README.md.",
+  "metrics": {
+    "Hit@1": {
+      "count": 624,
+      "denominator": 1383,
+      "rate": 0.4511930585683297
+    },
+    "EvidenceHit@1": {
+      "count": 505,
+      "denominator": 1383,
+      "rate": 0.36514822848879247
+    },
+    "EvidenceGap": {
+      "count": 119,
+      "denominator": 624,
+      "rate": 0.1907051282051282
+    },
+    "CAR_I": {
+      "count": 2284,
+      "denominator": 2614,
+      "rate": 0.8737566947207345
+    },
+    "OAR_S": {
+      "count": 721,
+      "denominator": 1383,
+      "rate": 0.5213304410701374
+    },
+    "EBA": {
+      "count": 2789,
+      "denominator": 3997,
+      "rate": 0.6977733299974981
+    }
+  }
+}

@@ -287,3 +287,133 @@ interventions/binding_mismatch/gcr_multi/qwen/outcomes.jsonl	source-047	apply th
 interventions/binding_mismatch/gcr_multi/gemma/outcomes.jsonl	source-045	apply the recorded reviewed classifications used by the paper
 interventions/binding_mismatch/gcr_multi/llama/outcomes.jsonl	source-046	apply the recorded reviewed classifications used by the paper
 interventions/progressive/gcr_multi/outcomes.jsonl	source-047	apply the recorded reviewed classifications used by the paper
+supplement/prompt_controls/cwq/cot_qwen/default/details.jsonl.gz	supp-source-001	Select the frozen paper S/I IDs; preserve predictions, evidence, errors and evaluator fields.
+supplement/prompt_controls/cwq/cot_qwen/default/source_summary.json	supp-source-006	Retain canonical source summary; replace private path metadata with anonymous source identifiers.
+supplement/prompt_controls/cwq/cot_qwen/default/metrics.json	supp-source-006	Export six S/I metrics from canonical integer counts, verified against the selected evaluation rows.
+supplement/prompt_controls/cwq/cot_qwen/default/missing_condition.jsonl.gz	supp-source-007	Preserve canonical original/critical/sham pairs and four outcome states.
+supplement/prompt_controls/cwq/cot_qwen/default/binding_conflict.jsonl.gz	supp-source-008	Preserve canonical original/critical/sham pairs and four outcome states.
+supplement/prompt_controls/cwq/cot_qwen/default/progressive.jsonl.gz	supp-source-009	Preserve canonical paired k=0,1,2 records and four outcome states.
+supplement/prompt_controls/cwq/cot_qwen/control/details.jsonl.gz	supp-source-010	Select the frozen paper S/I IDs; preserve predictions, evidence, errors and evaluator fields.
+supplement/prompt_controls/cwq/cot_qwen/control/source_summary.json	supp-source-011	Retain canonical source summary; replace private path metadata with anonymous source identifiers.
+supplement/prompt_controls/cwq/cot_qwen/control/metrics.json	supp-source-011	Export six S/I metrics from canonical integer counts, verified against the selected evaluation rows.
+supplement/prompt_controls/cwq/cot_qwen/control/missing_condition.jsonl.gz	supp-source-012	Preserve canonical original/critical/sham pairs and four outcome states.
+supplement/prompt_controls/cwq/cot_qwen/control/binding_conflict.jsonl.gz	supp-source-013	Preserve canonical original/critical/sham pairs and four outcome states.
+supplement/prompt_controls/cwq/cot_qwen/control/progressive.jsonl.gz	supp-source-014	Preserve canonical paired k=0,1,2 records and four outcome states.
+supplement/prompt_controls/cwq/dog_qwen/default/details.jsonl.gz	supp-source-015	Select the frozen paper S/I IDs; preserve predictions, evidence, errors and evaluator fields.
+supplement/prompt_controls/cwq/dog_qwen/default/source_summary.json	supp-source-017	Retain canonical source summary; replace private path metadata with anonymous source identifiers.
+supplement/prompt_controls/cwq/dog_qwen/default/metrics.json	supp-source-017	Export six S/I metrics from canonical integer counts, verified against the selected evaluation rows.
+supplement/prompt_controls/cwq/dog_qwen/default/missing_condition.jsonl.gz	supp-source-018	Preserve canonical original/critical/sham pairs and four outcome states.
+supplement/prompt_controls/cwq/dog_qwen/default/binding_conflict.jsonl.gz	supp-source-019	Preserve canonical original/critical/sham pairs and four outcome states.
+supplement/prompt_controls/cwq/dog_qwen/default/progressive.jsonl.gz	supp-source-020	Preserve canonical paired k=0,1,2 records and four outcome states.
+supplement/prompt_controls/cwq/dog_qwen/control/details.jsonl.gz	supp-source-021	Select the frozen paper S/I IDs; preserve predictions, evidence, errors and evaluator fields.
+supplement/prompt_controls/cwq/dog_qwen/control/source_summary.json	supp-source-022	Retain canonical source summary; replace private path metadata with anonymous source identifiers.
+supplement/prompt_controls/cwq/dog_qwen/control/metrics.json	supp-source-022	Export six S/I metrics from canonical integer counts, verified against the selected evaluation rows.
+supplement/prompt_controls/cwq/dog_qwen/control/missing_condition.jsonl.gz	supp-source-023	Preserve canonical original/critical/sham pairs and four outcome states.
+supplement/prompt_controls/cwq/dog_qwen/control/binding_conflict.jsonl.gz	supp-source-024	Preserve canonical original/critical/sham pairs and four outcome states.
+supplement/prompt_controls/cwq/dog_qwen/control/progressive.jsonl.gz	supp-source-025	Preserve canonical paired k=0,1,2 records and four outcome states.
+supplement/prompt_controls/cwq/gcr/default/details.jsonl.gz	supp-source-026	Select the frozen paper S/I IDs; preserve predictions, evidence, errors and evaluator fields.
+supplement/prompt_controls/cwq/gcr/default/source_summary.json	supp-source-029	Retain canonical source summary; replace private path metadata with anonymous source identifiers.
+supplement/prompt_controls/cwq/gcr/default/metrics.json	supp-source-029	Export six S/I metrics from canonical integer counts, verified against the selected evaluation rows.
+supplement/prompt_controls/cwq/gcr/default/missing_condition.jsonl.gz	supp-source-030	Preserve canonical original/critical/sham pairs and four outcome states.
+supplement/prompt_controls/cwq/gcr/default/binding_conflict.jsonl.gz	supp-source-031	Preserve canonical original/critical/sham pairs and four outcome states.
+supplement/prompt_controls/cwq/gcr/default/progressive.jsonl.gz	supp-source-032	Preserve canonical paired k=0,1,2 records and four outcome states.
+supplement/prompt_controls/cwq/gcr/control/details.jsonl.gz	supp-source-033	Select the frozen paper S/I IDs; preserve predictions, evidence, errors and evaluator fields.
+supplement/prompt_controls/cwq/gcr/control/source_summary.json	supp-source-034	Retain canonical source summary; replace private path metadata with anonymous source identifiers.
+supplement/prompt_controls/cwq/gcr/control/metrics.json	supp-source-034	Export six S/I metrics from canonical integer counts, verified against the selected evaluation rows.
+supplement/prompt_controls/cwq/gcr/control/missing_condition.jsonl.gz	supp-source-035	Preserve canonical original/critical/sham pairs and four outcome states.
+supplement/prompt_controls/cwq/gcr/control/binding_conflict.jsonl.gz	supp-source-036	Preserve canonical original/critical/sham pairs and four outcome states.
+supplement/prompt_controls/cwq/gcr/control/progressive.jsonl.gz	supp-source-037	Preserve canonical paired k=0,1,2 records and four outcome states.
+supplement/prompt_controls/cwq/cot_120b/default/details.jsonl.gz	supp-source-038	Select the frozen paper S/I IDs; preserve predictions, evidence, errors and evaluator fields.
+supplement/prompt_controls/cwq/cot_120b/default/source_summary.json	supp-source-040	Retain canonical source summary; replace private path metadata with anonymous source identifiers.
+supplement/prompt_controls/cwq/cot_120b/default/metrics.json	supp-source-040	Export six S/I metrics from canonical integer counts, verified against the selected evaluation rows.
+supplement/prompt_controls/cwq/cot_120b/default/missing_condition.jsonl.gz	supp-source-041	Preserve canonical original/critical/sham pairs and four outcome states.
+supplement/prompt_controls/cwq/cot_120b/default/binding_conflict.jsonl.gz	supp-source-042	Preserve canonical original/critical/sham pairs and four outcome states.
+supplement/prompt_controls/cwq/cot_120b/default/progressive.jsonl.gz	supp-source-043	Preserve canonical paired k=0,1,2 records and four outcome states.
+supplement/prompt_controls/cwq/cot_120b/control/details.jsonl.gz	supp-source-044	Select the frozen paper S/I IDs; preserve predictions, evidence, errors and evaluator fields.
+supplement/prompt_controls/cwq/cot_120b/control/source_summary.json	supp-source-045	Retain canonical source summary; replace private path metadata with anonymous source identifiers.
+supplement/prompt_controls/cwq/cot_120b/control/metrics.json	supp-source-045	Export six S/I metrics from canonical integer counts, verified against the selected evaluation rows.
+supplement/prompt_controls/cwq/cot_120b/control/missing_condition.jsonl.gz	supp-source-046	Preserve canonical original/critical/sham pairs and four outcome states.
+supplement/prompt_controls/cwq/cot_120b/control/binding_conflict.jsonl.gz	supp-source-047	Preserve canonical original/critical/sham pairs and four outcome states.
+supplement/prompt_controls/cwq/cot_120b/control/progressive.jsonl.gz	supp-source-048	Preserve canonical paired k=0,1,2 records and four outcome states.
+supplement/natural/cwq/gnn/original/details.jsonl.gz	supp-source-049	Select the frozen paper S/I IDs; preserve predictions, evidence, errors and evaluator fields.
+supplement/natural/cwq/gnn/original/source_summary.json	supp-source-050	Retain canonical source summary; replace private path metadata with anonymous source identifiers.
+supplement/natural/cwq/gnn/original/metrics.json	supp-source-050	Export six S/I metrics from canonical integer counts, verified against the selected evaluation rows.
+supplement/natural/cwq/gnn/unknown/details.jsonl.gz	supp-source-051	Select the frozen paper S/I IDs; preserve predictions, evidence, errors and evaluator fields.
+supplement/natural/cwq/gnn/unknown/source_summary.json	supp-source-053	Retain canonical source summary; replace private path metadata with anonymous source identifiers.
+supplement/natural/cwq/gnn/unknown/metrics.json	supp-source-053	Export six S/I metrics from canonical integer counts, verified against the selected evaluation rows.
+supplement/natural/cwq/subgraphrag/original/details.jsonl.gz	supp-source-054	Select the frozen paper S/I IDs; preserve predictions, evidence, errors and evaluator fields.
+supplement/natural/cwq/subgraphrag/original/source_summary.json	supp-source-050	Retain canonical source summary; replace private path metadata with anonymous source identifiers.
+supplement/natural/cwq/subgraphrag/original/metrics.json	supp-source-050	Export six S/I metrics from canonical integer counts, verified against the selected evaluation rows.
+supplement/natural/cwq/subgraphrag/unknown/details.jsonl.gz	supp-source-055	Select the frozen paper S/I IDs; preserve predictions, evidence, errors and evaluator fields.
+supplement/natural/cwq/subgraphrag/unknown/source_summary.json	supp-source-057	Retain canonical source summary; replace private path metadata with anonymous source identifiers.
+supplement/natural/cwq/subgraphrag/unknown/metrics.json	supp-source-057	Export six S/I metrics from canonical integer counts, verified against the selected evaluation rows.
+supplement/natural/cwq/rje/original/details.jsonl.gz	supp-source-059	Select the frozen paper S/I IDs; preserve predictions, evidence, errors and evaluator fields.
+supplement/natural/cwq/rje/original/source_summary.json	supp-source-067	Retain canonical source summary; replace private path metadata with anonymous source identifiers.
+supplement/natural/cwq/rje/original/metrics.json	supp-source-067	Export six S/I metrics from canonical integer counts, verified against the selected evaluation rows.
+supplement/natural/cwq/rje/unknown/details.jsonl.gz	supp-source-068	Select the frozen paper S/I IDs; preserve predictions, evidence, errors and evaluator fields.
+supplement/natural/cwq/rje/unknown/source_summary.json	supp-source-070	Retain canonical source summary; replace private path metadata with anonymous source identifiers.
+supplement/natural/cwq/rje/unknown/metrics.json	supp-source-070	Export six S/I metrics from canonical integer counts, verified against the selected evaluation rows.
+supplement/natural/webqsp/gnn/original/details.jsonl.gz	supp-source-071	Select the frozen paper S/I IDs; preserve predictions, evidence, errors and evaluator fields.
+supplement/natural/webqsp/gnn/original/source_summary.json	supp-source-076	Retain canonical source summary; replace private path metadata with anonymous source identifiers.
+supplement/natural/webqsp/gnn/original/metrics.json	supp-source-076	Export six S/I metrics from canonical integer counts, verified against the selected evaluation rows.
+supplement/natural/webqsp/subgraphrag/original/details.jsonl.gz	supp-source-077	Select the frozen paper S/I IDs; preserve predictions, evidence, errors and evaluator fields.
+supplement/natural/webqsp/subgraphrag/original/source_summary.json	supp-source-085	Retain canonical source summary; replace private path metadata with anonymous source identifiers.
+supplement/natural/webqsp/subgraphrag/original/metrics.json	supp-source-085	Export six S/I metrics from canonical integer counts, verified against the selected evaluation rows.
+supplement/natural/webqsp/rje/original/details.jsonl.gz	supp-source-088	Select the frozen paper S/I IDs; preserve predictions, evidence, errors and evaluator fields.
+supplement/natural/webqsp/rje/original/source_summary.json	supp-source-091	Retain canonical source summary; replace private path metadata with anonymous source identifiers.
+supplement/natural/webqsp/rje/original/metrics.json	supp-source-091	Export six S/I metrics from canonical integer counts, verified against the selected evaluation rows.
+supplement/natural/webqsp/cot/unknown/details.jsonl.gz	supp-source-092	Select the frozen paper S/I IDs; preserve predictions, evidence, errors and evaluator fields.
+supplement/natural/webqsp/cot/unknown/source_summary.json	supp-source-098	Retain canonical source summary; replace private path metadata with anonymous source identifiers.
+supplement/natural/webqsp/cot/unknown/metrics.json	supp-source-098	Export six S/I metrics from canonical integer counts, verified against the selected evaluation rows.
+supplement/natural/webqsp/gcr/unknown/details.jsonl.gz	supp-source-099	Select the frozen paper S/I IDs; preserve predictions, evidence, errors and evaluator fields.
+supplement/natural/webqsp/gcr/unknown/source_summary.json	supp-source-101	Retain canonical source summary; replace private path metadata with anonymous source identifiers.
+supplement/natural/webqsp/gcr/unknown/metrics.json	supp-source-101	Export six S/I metrics from canonical integer counts, verified against the selected evaluation rows.
+supplement/natural/webqsp/gnn/unknown/details.jsonl.gz	supp-source-102	Select the frozen paper S/I IDs; preserve predictions, evidence, errors and evaluator fields.
+supplement/natural/webqsp/gnn/unknown/source_summary.json	supp-source-104	Retain canonical source summary; replace private path metadata with anonymous source identifiers.
+supplement/natural/webqsp/gnn/unknown/metrics.json	supp-source-104	Export six S/I metrics from canonical integer counts, verified against the selected evaluation rows.
+supplement/natural/webqsp/subgraphrag/unknown/details.jsonl.gz	supp-source-105	Select the frozen paper S/I IDs; preserve predictions, evidence, errors and evaluator fields.
+supplement/natural/webqsp/subgraphrag/unknown/source_summary.json	supp-source-107	Retain canonical source summary; replace private path metadata with anonymous source identifiers.
+supplement/natural/webqsp/subgraphrag/unknown/metrics.json	supp-source-107	Export six S/I metrics from canonical integer counts, verified against the selected evaluation rows.
+supplement/natural/webqsp/rje/unknown/details.jsonl.gz	supp-source-108	Select the frozen paper S/I IDs; preserve predictions, evidence, errors and evaluator fields.
+supplement/natural/webqsp/rje/unknown/source_summary.json	supp-source-110	Retain canonical source summary; replace private path metadata with anonymous source identifiers.
+supplement/natural/webqsp/rje/unknown/metrics.json	supp-source-110	Export six S/I metrics from canonical integer counts, verified against the selected evaluation rows.
+supplement/natural/2wiki/cot/unknown/details.jsonl.gz	supp-source-111	Select the frozen paper S/I IDs; preserve predictions, evidence, errors and evaluator fields.
+supplement/natural/2wiki/cot/unknown/source_summary.json	supp-source-117	Retain canonical source summary; replace private path metadata with anonymous source identifiers.
+supplement/natural/2wiki/cot/unknown/metrics.json	supp-source-117	Export six S/I metrics from canonical integer counts, verified against the selected evaluation rows.
+supplement/natural/2wiki/gcr/unknown/details.jsonl.gz	supp-source-118	Select the frozen paper S/I IDs; preserve predictions, evidence, errors and evaluator fields.
+supplement/natural/2wiki/gcr/unknown/source_summary.json	supp-source-120	Retain canonical source summary; replace private path metadata with anonymous source identifiers.
+supplement/natural/2wiki/gcr/unknown/metrics.json	supp-source-120	Export six S/I metrics from canonical integer counts, verified against the selected evaluation rows.
+supplement/natural/cwq/dog/official_unknown/details.jsonl.gz	supp-source-121	Select the frozen paper S/I IDs; preserve predictions, evidence, errors and evaluator fields.
+supplement/natural/cwq/dog/official_unknown/source_summary.json	supp-source-155	Retain canonical source summary; replace private path metadata with anonymous source identifiers.
+supplement/natural/cwq/dog/official_unknown/metrics.json	supp-source-155	Export six S/I metrics from canonical integer counts, verified against the selected evaluation rows.
+supplement/natural/webqsp/dog/official_unknown/details.jsonl.gz	supp-source-156	Select the frozen paper S/I IDs; preserve predictions, evidence, errors and evaluator fields.
+supplement/natural/webqsp/dog/official_unknown/source_summary.json	supp-source-190	Retain canonical source summary; replace private path metadata with anonymous source identifiers.
+supplement/natural/webqsp/dog/official_unknown/metrics.json	supp-source-190	Export six S/I metrics from canonical integer counts, verified against the selected evaluation rows.
+supplement/natural/2wiki/dog/official_unknown/details.jsonl.gz	supp-source-191	Select the frozen paper S/I IDs; preserve predictions, evidence, errors and evaluator fields.
+supplement/natural/2wiki/dog/official_unknown/source_summary.json	supp-source-225	Retain canonical source summary; replace private path metadata with anonymous source identifiers.
+supplement/natural/2wiki/dog/official_unknown/metrics.json	supp-source-225	Export six S/I metrics from canonical integer counts, verified against the selected evaluation rows.
+supplement/natural/webqsp/grasp/reused_reference/details.jsonl.gz	supp-source-226	Select the frozen paper S/I IDs; preserve predictions, evidence, errors and evaluator fields.
+supplement/natural/webqsp/grasp/reused_reference/source_summary.json	supp-source-228	Retain canonical source summary; replace private path metadata with anonymous source identifiers.
+supplement/natural/webqsp/grasp/reused_reference/metrics.json	supp-source-228	Export six S/I metrics from canonical integer counts, verified against the selected evaluation rows.
+supplement/natural/2wiki/grasp/reused_reference/details.jsonl.gz	supp-source-229	Select the frozen paper S/I IDs; preserve predictions, evidence, errors and evaluator fields.
+supplement/natural/2wiki/grasp/reused_reference/source_summary.json	supp-source-232	Retain canonical source summary; replace private path metadata with anonymous source identifiers.
+supplement/natural/2wiki/grasp/reused_reference/metrics.json	supp-source-232	Export six S/I metrics from canonical integer counts, verified against the selected evaluation rows.
+supplement/specification_audit/audits.jsonl.gz	supp-source-233	Retain all 8,756 audit records; no confidence cutoff or label reassignment.
+supplement/specification_audit/joined_outcomes.jsonl.gz	supp-source-234	Retain all 8,756 audit records; no confidence cutoff or label reassignment.
+supplement/specification_audit/summary.json	supp-source-235	Preserve the completed v4.1 audit summary and downstream stratum counts.
+supplement/specification_audit/specification_quality.csv	supp-source-236	Copy the selected audit protocol or report unchanged.
+supplement/specification_audit/stratified_downstream.csv	supp-source-237	Copy the selected audit protocol or report unchanged.
+supplement/specification_audit/specification_errors.csv	supp-source-238	Copy the selected audit protocol or report unchanged.
+supplement/specification_audit/confidence_distribution.csv	supp-source-239	Copy the selected audit protocol or report unchanged.
+supplement/specification_audit/threshold_sensitivity.csv	supp-source-240	Copy the selected audit protocol or report unchanged.
+supplement/specification_audit/question_confidence.csv	supp-source-241	Copy the selected audit protocol or report unchanged.
+supplement/specification_audit/judge_prompt.txt	supp-source-242	Copy the selected audit protocol or report unchanged.
+supplement/specification_audit/rubric.md	supp-source-243	Copy the selected audit protocol or report unchanged.
+supplement/specification_audit/decision.schema.json	supp-source-244	Copy the selected audit protocol or report unchanged.
+supplement/diagnostics/complexity_counts.csv	supp-source-250	Retain completed current-condition diagnostic counts and rates.
+supplement/diagnostics/relaxation_metrics.csv	supp-source-251	Retain completed current-condition diagnostic counts and rates.
+supplement/diagnostics/complexity_data.json	supp-source-252	Retain stratum definitions and counts; anonymize private source metadata.
+supplement/diagnostics/relaxation_verification.json	supp-source-266	Retain completed fixed-S replay verification; anonymize private source metadata.
+supplement/natural_metrics.csv	supp-source-267	Collect the verified existing counts; natural metric display values are percentages.
+supplement/support_removal.csv	supp-source-267	Collect the verified existing counts; natural metric display values are percentages.
+supplement/progressive.csv	supp-source-267	Collect the verified existing counts; natural metric display values are percentages.

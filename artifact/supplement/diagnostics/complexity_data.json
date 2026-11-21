@@ -1,0 +1,1426 @@
+{
+  "protocol": {
+    "name": "thesis-cwq-rq1-diagnostics-20261012",
+    "population": "Fixed curated CWQ-S, N_S=1679",
+    "formula": "EvidenceGap (%) = 100 * (H - C) / H; undefined at H=0",
+    "interpretation": "proportion of Hit rows whose system-reported evidence fails the frozen benchmark replay",
+    "point_denominator": "Hit rows within each stratum",
+    "interval": "two-sided 95% Wilson interval",
+    "systems": [
+      "Original/CoT",
+      "Original/GCR*",
+      "Original/DoG",
+      "Original/Codex",
+      "Original/GNN-RAG",
+      "Original/SubgraphRAG",
+      "Original/RJE",
+      "Unknown/CoT",
+      "Unknown/GCR*",
+      "Unknown/DoG",
+      "Unknown/GNN-RAG",
+      "Unknown/SubgraphRAG",
+      "Unknown/RJE",
+      "Full/Grasp"
+    ],
+    "gold_query_size": "maximum distinct positive triple-pattern count over gold-SPARQL UNION branches; FILTER, ORDER BY, and NOT EXISTS add no count",
+    "contract_structure": {
+      "overlapping": true,
+      "chain": "every UNION alternative is a connected acyclic positive-pattern graph with maximum undirected degree at most two",
+      "branching_dag": "at least one UNION alternative is a connected acyclic positive-pattern graph with maximum undirected degree at least three",
+      "intersection": "the frozen original CWQ compositionality_type is conjunction",
+      "comparison": "the parsed gold query contains an ordered comparison (<, >, <=, or >=) or an optional temporal comparison",
+      "aggregation": "the parsed gold query contains ORDER BY ... LIMIT 1 or an aggregate function; the observed rows use ordering/selection"
+    },
+    "selection": "Final mismatch=no IDs intersected with original stored K labels",
+    "scope_notes": [
+      "Original CoT and DoG use Qwen2.5-7B; GCR* uses Qwen2.5-7B retrieval and GPT-OSS-120B answering.",
+      "New Unknown conditions use GPT-OSS-120B answering; Original and Unknown are separate configurations.",
+      "Codex GPT-6 xhigh is the same original reference in both panels.",
+      "Grasp (full) is one reference configuration repeated in both panels, not two prompt conditions; its Qwen2.5-7B relation scorer uses GPT-OSS-120B planning and answering.",
+      "SubgraphRAG uses the author's independently cached graph, grouped by the common frozen CWQ-S IDs.",
+      "RJE evidence is the recovered actual terminal answer context, including displayed initial/exploration triples.",
+      "DoG Unknown uses the current official-source numbered-triple output, without answer prefill.",
+      "Structural strata overlap; errors remain in the fixed population with zero answer/support credit."
+    ]
+  },
+  "gold_query_size": {
+    "order": [
+      "2",
+      "3",
+      "4",
+      "5+"
+    ],
+    "strata": {
+      "2": {
+        "rows": 796,
+        "systems": {
+          "Original/CoT": {
+            "count": 271,
+            "denominator": 545,
+            "rate": 0.4972477064220184,
+            "ci95": [
+              0.4554369469997026,
+              0.5390969936278036
+            ]
+          },
+          "Original/GCR*": {
+            "count": 287,
+            "denominator": 600,
+            "rate": 0.47833333333333333,
+            "ci95": [
+              0.4386282562988837,
+              0.5183140840783768
+            ]
+          },
+          "Original/DoG": {
+            "count": 184,
+            "denominator": 492,
+            "rate": 0.37398373983739835,
+            "ci95": [
+              0.33236000087244694,
+              0.41756006370843596
+            ]
+          },
+          "Original/Codex": {
+            "count": 144,
+            "denominator": 691,
+            "rate": 0.20839363241678727,
+            "ci95": [
+              0.17976312675197567,
+              0.2402484530348958
+            ]
+          },
+          "Original/GNN-RAG": {
+            "count": 265,
+            "denominator": 672,
+            "rate": 0.3943452380952381,
+            "ci95": [
+              0.35809605325819077,
+              0.43179549875197726
+            ]
+          },
+          "Original/SubgraphRAG": {
+            "count": 187,
+            "denominator": 677,
+            "rate": 0.276218611521418,
+            "ci95": [
+              0.24387174380929547,
+              0.31109072788736736
+            ]
+          },
+          "Original/RJE": {
+            "count": 111,
+            "denominator": 675,
+            "rate": 0.16444444444444445,
+            "ci95": [
+              0.1383943304509771,
+              0.19429227241655161
+            ]
+          },
+          "Unknown/CoT": {
+            "count": 168,
+            "denominator": 570,
+            "rate": 0.29473684210526313,
+            "ci95": [
+              0.25878253160272896,
+              0.33343933315954316
+            ]
+          },
+          "Unknown/GCR*": {
+            "count": 224,
+            "denominator": 543,
+            "rate": 0.4125230202578269,
+            "ci95": [
+              0.37187222499407574,
+              0.45440283431676215
+            ]
+          },
+          "Unknown/DoG": {
+            "count": 169,
+            "denominator": 468,
+            "rate": 0.3611111111111111,
+            "ci95": [
+              0.3188876911432474,
+              0.40559603624069634
+            ]
+          },
+          "Unknown/GNN-RAG": {
+            "count": 237,
+            "denominator": 649,
+            "rate": 0.36517719568567025,
+            "ci95": [
+              0.32902834563545763,
+              0.40291269818837755
+            ]
+          },
+          "Unknown/SubgraphRAG": {
+            "count": 183,
+            "denominator": 646,
+            "rate": 0.28328173374613,
+            "ci95": [
+              0.2498951684030721,
+              0.3192305064836416
+            ]
+          },
+          "Unknown/RJE": {
+            "count": 60,
+            "denominator": 629,
+            "rate": 0.09538950715421304,
+            "ci95": [
+              0.07482753204056389,
+              0.12086359579969144
+            ]
+          },
+          "Full/Grasp": {
+            "count": 167,
+            "denominator": 644,
+            "rate": 0.2593167701863354,
+            "ci95": [
+              0.22696598350614697,
+              0.2945218808792041
+            ]
+          }
+        }
+      },
+      "3": {
+        "rows": 580,
+        "systems": {
+          "Original/CoT": {
+            "count": 202,
+            "denominator": 339,
+            "rate": 0.5958702064896755,
+            "ci95": [
+              0.5428406215098136,
+              0.6467513847300004
+            ]
+          },
+          "Original/GCR*": {
+            "count": 232,
+            "denominator": 386,
+            "rate": 0.6010362694300518,
+            "ci95": [
+              0.5514209763850437,
+              0.6486603598482987
+            ]
+          },
+          "Original/DoG": {
+            "count": 183,
+            "denominator": 346,
+            "rate": 0.5289017341040463,
+            "ci95": [
+              0.47627690893360264,
+              0.5808918442136642
+            ]
+          },
+          "Original/Codex": {
+            "count": 101,
+            "denominator": 533,
+            "rate": 0.1894934333958724,
+            "ci95": [
+              0.1584896515524982,
+              0.22494097854987152
+            ]
+          },
+          "Original/GNN-RAG": {
+            "count": 174,
+            "denominator": 449,
+            "rate": 0.38752783964365256,
+            "ci95": [
+              0.3436003986205079,
+              0.4333634856867555
+            ]
+          },
+          "Original/SubgraphRAG": {
+            "count": 213,
+            "denominator": 469,
+            "rate": 0.4541577825159915,
+            "ci95": [
+              0.4096513129067153,
+              0.4994091148585539
+            ]
+          },
+          "Original/RJE": {
+            "count": 166,
+            "denominator": 436,
+            "rate": 0.38073394495412843,
+            "ci95": [
+              0.3363852016000096,
+              0.42716596458872236
+            ]
+          },
+          "Unknown/CoT": {
+            "count": 104,
+            "denominator": 375,
+            "rate": 0.2773333333333333,
+            "ci95": [
+              0.23445410196690172,
+              0.3247282522562638
+            ]
+          },
+          "Unknown/GCR*": {
+            "count": 144,
+            "denominator": 302,
+            "rate": 0.4768211920529801,
+            "ci95": [
+              0.4211354518251539,
+              0.5330891975929362
+            ]
+          },
+          "Unknown/DoG": {
+            "count": 161,
+            "denominator": 312,
+            "rate": 0.5160256410256411,
+            "ci95": [
+              0.46071658461625287,
+              0.570944869954463
+            ]
+          },
+          "Unknown/GNN-RAG": {
+            "count": 161,
+            "denominator": 435,
+            "rate": 0.3701149425287356,
+            "ci95": [
+              0.3260631167587928,
+              0.41644070158219365
+            ]
+          },
+          "Unknown/SubgraphRAG": {
+            "count": 170,
+            "denominator": 415,
+            "rate": 0.40963855421686746,
+            "ci95": [
+              0.36336417171306606,
+              0.4575704601851876
+            ]
+          },
+          "Unknown/RJE": {
+            "count": 80,
+            "denominator": 352,
+            "rate": 0.22727272727272727,
+            "ci95": [
+              0.18657568417685955,
+              0.2738581825335752
+            ]
+          },
+          "Full/Grasp": {
+            "count": 111,
+            "denominator": 503,
+            "rate": 0.220675944333996,
+            "ci95": [
+              0.18662754495595113,
+              0.2589584561304168
+            ]
+          }
+        }
+      },
+      "4": {
+        "rows": 201,
+        "systems": {
+          "Original/CoT": {
+            "count": 76,
+            "denominator": 127,
+            "rate": 0.5984251968503937,
+            "ci95": [
+              0.5114888159154837,
+              0.679582120050311
+            ]
+          },
+          "Original/GCR*": {
+            "count": 92,
+            "denominator": 147,
+            "rate": 0.6258503401360545,
+            "ci95": [
+              0.5453560265404078,
+              0.699934626899785
+            ]
+          },
+          "Original/DoG": {
+            "count": 87,
+            "denominator": 130,
+            "rate": 0.6692307692307692,
+            "ci95": [
+              0.5845174799473007,
+              0.7442296839561224
+            ]
+          },
+          "Original/Codex": {
+            "count": 61,
+            "denominator": 181,
+            "rate": 0.3370165745856354,
+            "ci95": [
+              0.27217599323683483,
+              0.4086315464978896
+            ]
+          },
+          "Original/GNN-RAG": {
+            "count": 52,
+            "denominator": 131,
+            "rate": 0.3969465648854962,
+            "ci95": [
+              0.3172492244631891,
+              0.4825156235580464
+            ]
+          },
+          "Original/SubgraphRAG": {
+            "count": 95,
+            "denominator": 141,
+            "rate": 0.6737588652482269,
+            "ci95": [
+              0.592659017992865,
+              0.7456419104772034
+            ]
+          },
+          "Original/RJE": {
+            "count": 90,
+            "denominator": 158,
+            "rate": 0.569620253164557,
+            "ci95": [
+              0.49166789770569164,
+              0.6442676046081752
+            ]
+          },
+          "Unknown/CoT": {
+            "count": 57,
+            "denominator": 136,
+            "rate": 0.41911764705882354,
+            "ci95": [
+              0.33953024340942445,
+              0.5031487433121843
+            ]
+          },
+          "Unknown/GCR*": {
+            "count": 51,
+            "denominator": 106,
+            "rate": 0.4811320754716981,
+            "ci95": [
+              0.3883511832212952,
+              0.5752326944607227
+            ]
+          },
+          "Unknown/DoG": {
+            "count": 76,
+            "denominator": 117,
+            "rate": 0.6495726495726496,
+            "ci95": [
+              0.5596196597083499,
+              0.7300160360335676
+            ]
+          },
+          "Unknown/GNN-RAG": {
+            "count": 41,
+            "denominator": 119,
+            "rate": 0.3445378151260504,
+            "ci95": [
+              0.26522238947405374,
+              0.4335763682482301
+            ]
+          },
+          "Unknown/SubgraphRAG": {
+            "count": 55,
+            "denominator": 99,
+            "rate": 0.5555555555555556,
+            "ci95": [
+              0.4574214280657185,
+              0.6495393261489675
+            ]
+          },
+          "Unknown/RJE": {
+            "count": 43,
+            "denominator": 108,
+            "rate": 0.39814814814814814,
+            "ci95": [
+              0.31085681194636683,
+              0.49243616874274654
+            ]
+          },
+          "Full/Grasp": {
+            "count": 44,
+            "denominator": 149,
+            "rate": 0.2953020134228188,
+            "ci95": [
+              0.2279434141727399,
+              0.37295021461968014
+            ]
+          }
+        }
+      },
+      "5+": {
+        "rows": 102,
+        "systems": {
+          "Original/CoT": {
+            "count": 51,
+            "denominator": 59,
+            "rate": 0.864406779661017,
+            "ci95": [
+              0.7546033919346271,
+              0.9296582532746629
+            ]
+          },
+          "Original/GCR*": {
+            "count": 74,
+            "denominator": 78,
+            "rate": 0.9487179487179487,
+            "ci95": [
+              0.8754332345270551,
+              0.9798789875261039
+            ]
+          },
+          "Original/DoG": {
+            "count": 70,
+            "denominator": 72,
+            "rate": 0.9722222222222222,
+            "ci95": [
+              0.9042582477856177,
+              0.9923489780955054
+            ]
+          },
+          "Original/Codex": {
+            "count": 67,
+            "denominator": 98,
+            "rate": 0.6836734693877551,
+            "ci95": [
+              0.5861612171628963,
+              0.7673293987107721
+            ]
+          },
+          "Original/GNN-RAG": {
+            "count": 49,
+            "denominator": 59,
+            "rate": 0.8305084745762712,
+            "ci95": [
+              0.71536779263512,
+              0.9052416065081895
+            ]
+          },
+          "Original/SubgraphRAG": {
+            "count": 55,
+            "denominator": 70,
+            "rate": 0.7857142857142857,
+            "ci95": [
+              0.676088137365211,
+              0.8656129698289221
+            ]
+          },
+          "Original/RJE": {
+            "count": 62,
+            "denominator": 86,
+            "rate": 0.7209302325581395,
+            "ci95": [
+              0.6182540858816528,
+              0.8047132222944144
+            ]
+          },
+          "Unknown/CoT": {
+            "count": 65,
+            "denominator": 78,
+            "rate": 0.8333333333333334,
+            "ci95": [
+              0.7354442476924203,
+              0.8999305458327835
+            ]
+          },
+          "Unknown/GCR*": {
+            "count": 58,
+            "denominator": 61,
+            "rate": 0.9508196721311475,
+            "ci95": [
+              0.8650887247278409,
+              0.9831340173312375
+            ]
+          },
+          "Unknown/DoG": {
+            "count": 71,
+            "denominator": 72,
+            "rate": 0.9861111111111112,
+            "ci95": [
+              0.9254339785252386,
+              0.9975440481170943
+            ]
+          },
+          "Unknown/GNN-RAG": {
+            "count": 33,
+            "denominator": 43,
+            "rate": 0.7674418604651163,
+            "ci95": [
+              0.6225547970219101,
+              0.8684632152061551
+            ]
+          },
+          "Unknown/SubgraphRAG": {
+            "count": 38,
+            "denominator": 53,
+            "rate": 0.7169811320754716,
+            "ci95": [
+              0.5842971358358297,
+              0.8203370955366142
+            ]
+          },
+          "Unknown/RJE": {
+            "count": 42,
+            "denominator": 68,
+            "rate": 0.6176470588235294,
+            "ci95": [
+              0.4988071245222142,
+              0.7239055021789457
+            ]
+          },
+          "Full/Grasp": {
+            "count": 53,
+            "denominator": 69,
+            "rate": 0.7681159420289855,
+            "ci95": [
+              0.6560315295999074,
+              0.8519209551392967
+            ]
+          }
+        }
+      }
+    }
+  },
+  "contract_structure": {
+    "order": [
+      "chain",
+      "branching_dag",
+      "intersection",
+      "comparison",
+      "aggregation"
+    ],
+    "display_names": {
+      "chain": "Chain",
+      "branching_dag": "Branching DAG",
+      "intersection": "Intersection",
+      "comparison": "Comparison",
+      "aggregation": "Aggregation"
+    },
+    "strata": {
+      "chain": {
+        "rows": 1433,
+        "systems": {
+          "Original/CoT": {
+            "count": 491,
+            "denominator": 907,
+            "rate": 0.5413450937155457,
+            "ci95": [
+              0.5088103777892049,
+              0.5735310651410562
+            ]
+          },
+          "Original/GCR*": {
+            "count": 533,
+            "denominator": 1022,
+            "rate": 0.5215264187866928,
+            "ci95": [
+              0.4908771339221335,
+              0.5520144840970703
+            ]
+          },
+          "Original/DoG": {
+            "count": 372,
+            "denominator": 864,
+            "rate": 0.4305555555555556,
+            "ci95": [
+              0.39791813267059933,
+              0.4638077634820604
+            ]
+          },
+          "Original/Codex": {
+            "count": 260,
+            "denominator": 1265,
+            "rate": 0.20553359683794467,
+            "ci95": [
+              0.18417293111435967,
+              0.22867727580398206
+            ]
+          },
+          "Original/GNN-RAG": {
+            "count": 441,
+            "denominator": 1145,
+            "rate": 0.3851528384279476,
+            "ci95": [
+              0.35739462359925483,
+              0.41367909768690586
+            ]
+          },
+          "Original/SubgraphRAG": {
+            "count": 423,
+            "denominator": 1172,
+            "rate": 0.3609215017064846,
+            "ci95": [
+              0.33392117136452104,
+              0.3888305673546081
+            ]
+          },
+          "Original/RJE": {
+            "count": 286,
+            "denominator": 1149,
+            "rate": 0.24891209747606616,
+            "ci95": [
+              0.22477548608767245,
+              0.2747220418809647
+            ]
+          },
+          "Unknown/CoT": {
+            "count": 279,
+            "denominator": 968,
+            "rate": 0.2882231404958678,
+            "ci95": [
+              0.26057143476237676,
+              0.3175490536375266
+            ]
+          },
+          "Unknown/GCR*": {
+            "count": 372,
+            "denominator": 870,
+            "rate": 0.42758620689655175,
+            "ci95": [
+              0.39510112350509,
+              0.46070796093678884
+            ]
+          },
+          "Unknown/DoG": {
+            "count": 330,
+            "denominator": 801,
+            "rate": 0.41198501872659177,
+            "ci95": [
+              0.37839868458111625,
+              0.4464115330652233
+            ]
+          },
+          "Unknown/GNN-RAG": {
+            "count": 395,
+            "denominator": 1100,
+            "rate": 0.35909090909090907,
+            "ci95": [
+              0.33127646753073176,
+              0.387886101040308
+            ]
+          },
+          "Unknown/SubgraphRAG": {
+            "count": 358,
+            "denominator": 1066,
+            "rate": 0.33583489681050654,
+            "ci95": [
+              0.3081180351884418,
+              0.36473068728880126
+            ]
+          },
+          "Unknown/RJE": {
+            "count": 138,
+            "denominator": 1004,
+            "rate": 0.13745019920318724,
+            "ci95": [
+              0.11752949148573119,
+              0.16013467520586835
+            ]
+          },
+          "Full/Grasp": {
+            "count": 284,
+            "denominator": 1182,
+            "rate": 0.24027072758037224,
+            "ci95": [
+              0.21678029279151687,
+              0.26544391565316333
+            ]
+          }
+        }
+      },
+      "branching_dag": {
+        "rows": 244,
+        "systems": {
+          "Original/CoT": {
+            "count": 107,
+            "denominator": 161,
+            "rate": 0.6645962732919255,
+            "ci95": [
+              0.5885846757162543,
+              0.7329363808138909
+            ]
+          },
+          "Original/GCR*": {
+            "count": 151,
+            "denominator": 187,
+            "rate": 0.8074866310160428,
+            "ci95": [
+              0.7450174612641955,
+              0.857576968220064
+            ]
+          },
+          "Original/DoG": {
+            "count": 150,
+            "denominator": 174,
+            "rate": 0.8620689655172413,
+            "ci95": [
+              0.8029685535184531,
+              0.9055276589819038
+            ]
+          },
+          "Original/Codex": {
+            "count": 111,
+            "denominator": 236,
+            "rate": 0.4703389830508475,
+            "ci95": [
+              0.40764523731972274,
+              0.5339828695603874
+            ]
+          },
+          "Original/GNN-RAG": {
+            "count": 97,
+            "denominator": 164,
+            "rate": 0.5914634146341463,
+            "ci95": [
+              0.5149740015895365,
+              0.6637661035715436
+            ]
+          },
+          "Original/SubgraphRAG": {
+            "count": 125,
+            "denominator": 183,
+            "rate": 0.6830601092896175,
+            "ci95": [
+              0.6124744114085297,
+              0.7461183785583791
+            ]
+          },
+          "Original/RJE": {
+            "count": 143,
+            "denominator": 204,
+            "rate": 0.7009803921568627,
+            "ci95": [
+              0.6349128201146155,
+              0.7596186678054235
+            ]
+          },
+          "Unknown/CoT": {
+            "count": 113,
+            "denominator": 189,
+            "rate": 0.5978835978835979,
+            "ci95": [
+              0.5267021198245149,
+              0.6651653355778163
+            ]
+          },
+          "Unknown/GCR*": {
+            "count": 104,
+            "denominator": 140,
+            "rate": 0.7428571428571429,
+            "ci95": [
+              0.6646531891574827,
+              0.8080895135202311
+            ]
+          },
+          "Unknown/DoG": {
+            "count": 145,
+            "denominator": 166,
+            "rate": 0.8734939759036144,
+            "ci95": [
+              0.8143443230120763,
+              0.9157483225704718
+            ]
+          },
+          "Unknown/GNN-RAG": {
+            "count": 76,
+            "denominator": 145,
+            "rate": 0.5241379310344828,
+            "ci95": [
+              0.44328019271709546,
+              0.6037497145107875
+            ]
+          },
+          "Unknown/SubgraphRAG": {
+            "count": 87,
+            "denominator": 145,
+            "rate": 0.6,
+            "ci95": [
+              0.5186737027335638,
+              0.6761644843533797
+            ]
+          },
+          "Unknown/RJE": {
+            "count": 87,
+            "denominator": 151,
+            "rate": 0.5761589403973509,
+            "ci95": [
+              0.49641119119546434,
+              0.6521278381780184
+            ]
+          },
+          "Full/Grasp": {
+            "count": 89,
+            "denominator": 181,
+            "rate": 0.49171270718232046,
+            "ci95": [
+              0.41981403179381793,
+              0.5639558431079479
+            ]
+          }
+        }
+      },
+      "intersection": {
+        "rows": 956,
+        "systems": {
+          "Original/CoT": {
+            "count": 338,
+            "denominator": 574,
+            "rate": 0.5888501742160279,
+            "ci95": [
+              0.5481365151377582,
+              0.628382490971928
+            ]
+          },
+          "Original/GCR*": {
+            "count": 379,
+            "denominator": 629,
+            "rate": 0.6025437201907791,
+            "ci95": [
+              0.5637885701747594,
+              0.6400539534177889
+            ]
+          },
+          "Original/DoG": {
+            "count": 314,
+            "denominator": 579,
+            "rate": 0.542314335060449,
+            "ci95": [
+              0.50158787869849,
+              0.5824830110064827
+            ]
+          },
+          "Original/Codex": {
+            "count": 171,
+            "denominator": 878,
+            "rate": 0.1947608200455581,
+            "ci95": [
+              0.16991907405713674,
+              0.22226191875215517
+            ]
+          },
+          "Original/GNN-RAG": {
+            "count": 274,
+            "denominator": 742,
+            "rate": 0.3692722371967655,
+            "ci95": [
+              0.3353036926075772,
+              0.4045874093073687
+            ]
+          },
+          "Original/SubgraphRAG": {
+            "count": 315,
+            "denominator": 754,
+            "rate": 0.4177718832891247,
+            "ci95": [
+              0.38307264023044413,
+              0.45330474641588553
+            ]
+          },
+          "Original/RJE": {
+            "count": 336,
+            "denominator": 720,
+            "rate": 0.4666666666666667,
+            "ci95": [
+              0.430499439341274,
+              0.5031876969576013
+            ]
+          },
+          "Unknown/CoT": {
+            "count": 184,
+            "denominator": 628,
+            "rate": 0.2929936305732484,
+            "ci95": [
+              0.25874160833360893,
+              0.3297627603330511
+            ]
+          },
+          "Unknown/GCR*": {
+            "count": 212,
+            "denominator": 470,
+            "rate": 0.451063829787234,
+            "ci95": [
+              0.4066553483749559,
+              0.496265767657217
+            ]
+          },
+          "Unknown/DoG": {
+            "count": 271,
+            "denominator": 523,
+            "rate": 0.5181644359464627,
+            "ci95": [
+              0.4753648594209661,
+              0.5606991208939667
+            ]
+          },
+          "Unknown/GNN-RAG": {
+            "count": 237,
+            "denominator": 699,
+            "rate": 0.33905579399141633,
+            "ci95": [
+              0.3049268696268629,
+              0.37494403557339373
+            ]
+          },
+          "Unknown/SubgraphRAG": {
+            "count": 216,
+            "denominator": 636,
+            "rate": 0.33962264150943394,
+            "ci95": [
+              0.3038779285615074,
+              0.37729309093448304
+            ]
+          },
+          "Unknown/RJE": {
+            "count": 154,
+            "denominator": 544,
+            "rate": 0.28308823529411764,
+            "ci95": [
+              0.24685485771113075,
+              0.3223635791190734
+            ]
+          },
+          "Full/Grasp": {
+            "count": 204,
+            "denominator": 821,
+            "rate": 0.24847746650426308,
+            "ci95": [
+              0.22013542827021612,
+              0.2791622906023523
+            ]
+          }
+        }
+      },
+      "comparison": {
+        "rows": 0,
+        "systems": {
+          "Original/CoT": {
+            "count": 0,
+            "denominator": 0,
+            "rate": null,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "Original/GCR*": {
+            "count": 0,
+            "denominator": 0,
+            "rate": null,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "Original/DoG": {
+            "count": 0,
+            "denominator": 0,
+            "rate": null,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "Original/Codex": {
+            "count": 0,
+            "denominator": 0,
+            "rate": null,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "Original/GNN-RAG": {
+            "count": 0,
+            "denominator": 0,
+            "rate": null,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "Original/SubgraphRAG": {
+            "count": 0,
+            "denominator": 0,
+            "rate": null,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "Original/RJE": {
+            "count": 0,
+            "denominator": 0,
+            "rate": null,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "Unknown/CoT": {
+            "count": 0,
+            "denominator": 0,
+            "rate": null,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "Unknown/GCR*": {
+            "count": 0,
+            "denominator": 0,
+            "rate": null,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "Unknown/DoG": {
+            "count": 0,
+            "denominator": 0,
+            "rate": null,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "Unknown/GNN-RAG": {
+            "count": 0,
+            "denominator": 0,
+            "rate": null,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "Unknown/SubgraphRAG": {
+            "count": 0,
+            "denominator": 0,
+            "rate": null,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "Unknown/RJE": {
+            "count": 0,
+            "denominator": 0,
+            "rate": null,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "Full/Grasp": {
+            "count": 0,
+            "denominator": 0,
+            "rate": null,
+            "ci95": [
+              null,
+              null
+            ]
+          }
+        }
+      },
+      "aggregation": {
+        "rows": 0,
+        "systems": {
+          "Original/CoT": {
+            "count": 0,
+            "denominator": 0,
+            "rate": null,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "Original/GCR*": {
+            "count": 0,
+            "denominator": 0,
+            "rate": null,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "Original/DoG": {
+            "count": 0,
+            "denominator": 0,
+            "rate": null,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "Original/Codex": {
+            "count": 0,
+            "denominator": 0,
+            "rate": null,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "Original/GNN-RAG": {
+            "count": 0,
+            "denominator": 0,
+            "rate": null,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "Original/SubgraphRAG": {
+            "count": 0,
+            "denominator": 0,
+            "rate": null,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "Original/RJE": {
+            "count": 0,
+            "denominator": 0,
+            "rate": null,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "Unknown/CoT": {
+            "count": 0,
+            "denominator": 0,
+            "rate": null,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "Unknown/GCR*": {
+            "count": 0,
+            "denominator": 0,
+            "rate": null,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "Unknown/DoG": {
+            "count": 0,
+            "denominator": 0,
+            "rate": null,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "Unknown/GNN-RAG": {
+            "count": 0,
+            "denominator": 0,
+            "rate": null,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "Unknown/SubgraphRAG": {
+            "count": 0,
+            "denominator": 0,
+            "rate": null,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "Unknown/RJE": {
+            "count": 0,
+            "denominator": 0,
+            "rate": null,
+            "ci95": [
+              null,
+              null
+            ]
+          },
+          "Full/Grasp": {
+            "count": 0,
+            "denominator": 0,
+            "rate": null,
+            "ci95": [
+              null,
+              null
+            ]
+          }
+        }
+      }
+    },
+    "diagnostics": {
+      "topology_unclassified_rows": 2,
+      "true_aggregate_function_rows": 0
+    }
+  },
+  "sources": {
+    "Original/CoT": {
+      "method": "CoT",
+      "condition": "Original",
+      "model": "Qwen2.5-7B",
+      "path": "supp-source-245",
+      "supported_field": "certified_hit",
+      "expected_H": 1070,
+      "expected_C": 470,
+      "count_source": "supp-source-246"
+    },
+    "Original/GCR*": {
+      "method": "GCR*",
+      "condition": "Original",
+      "model": "Qwen2.5-7B + GPT-OSS-120B",
+      "path": "supp-source-247",
+      "supported_field": "certified_hit",
+      "expected_H": 1211,
+      "expected_C": 526,
+      "count_source": "supp-source-246"
+    },
+    "Original/DoG": {
+      "method": "DoG",
+      "condition": "Original",
+      "model": "Qwen2.5-7B",
+      "path": "tmp/dog_model_metrics_20260907_cwq_k/original_logic/qwen_2_5_7b_details.jsonl",
+      "supported_field": "supported_hit",
+      "expected_H": 1040,
+      "expected_C": 516,
+      "count_source": "supp-source-246"
+    },
+    "Original/Codex": {
+      "method": "Codex",
+      "condition": "Original",
+      "model": "GPT-6 xhigh",
+      "path": "supp-source-248",
+      "supported_field": "certified_hit",
+      "expected_H": 1503,
+      "expected_C": 1130,
+      "count_source": "supp-source-246"
+    },
+    "Original/GNN-RAG": {
+      "method": "GNN-RAG",
+      "condition": "Original",
+      "model": "ReaRev + GPT-OSS-120B",
+      "path": "supp-source-049",
+      "supported_field": "certified_hit",
+      "expected_H": 1311,
+      "expected_C": 771,
+      "count_source": "supp-source-050"
+    },
+    "Original/SubgraphRAG": {
+      "method": "SubgraphRAG",
+      "condition": "Original",
+      "model": "MLP + GPT-OSS-120B",
+      "path": "supp-source-054",
+      "supported_field": "certified_hit",
+      "expected_H": 1357,
+      "expected_C": 807,
+      "count_source": "supp-source-050"
+    },
+    "Original/RJE": {
+      "method": "RJE",
+      "condition": "Original",
+      "model": "RoBERTa + GPT-OSS-120B",
+      "path": "supp-source-059",
+      "supported_field": "certified_hit",
+      "expected_H": 1355,
+      "expected_C": 926,
+      "count_source": "supp-source-067"
+    },
+    "Unknown/CoT": {
+      "method": "CoT",
+      "condition": "Unknown",
+      "model": "GPT-OSS-120B",
+      "path": "supp-source-044",
+      "supported_field": "certified_hit",
+      "expected_H": 1159,
+      "expected_C": 765,
+      "count_source": "supp-source-045"
+    },
+    "Unknown/GCR*": {
+      "method": "GCR*",
+      "condition": "Unknown",
+      "model": "Qwen2.5-7B + GPT-OSS-120B",
+      "path": "supp-source-033",
+      "supported_field": "certified_hit",
+      "expected_H": 1012,
+      "expected_C": 535,
+      "count_source": "supp-source-034"
+    },
+    "Unknown/DoG": {
+      "method": "DoG",
+      "condition": "Unknown",
+      "model": "GPT-OSS-120B",
+      "path": "supp-source-121",
+      "supported_field": "certified_hit",
+      "expected_H": 969,
+      "expected_C": 492,
+      "count_source": "supp-source-155"
+    },
+    "Unknown/GNN-RAG": {
+      "method": "GNN-RAG",
+      "condition": "Unknown",
+      "model": "ReaRev + GPT-OSS-120B",
+      "path": "supp-source-051",
+      "supported_field": "certified_hit",
+      "expected_H": 1246,
+      "expected_C": 774,
+      "count_source": "supp-source-053"
+    },
+    "Unknown/SubgraphRAG": {
+      "method": "SubgraphRAG",
+      "condition": "Unknown",
+      "model": "MLP + GPT-OSS-120B",
+      "path": "supp-source-055",
+      "supported_field": "certified_hit",
+      "expected_H": 1213,
+      "expected_C": 767,
+      "count_source": "supp-source-057"
+    },
+    "Unknown/RJE": {
+      "method": "RJE",
+      "condition": "Unknown",
+      "model": "RoBERTa + GPT-OSS-120B",
+      "path": "supp-source-068",
+      "supported_field": "certified_hit",
+      "expected_H": 1157,
+      "expected_C": 932,
+      "count_source": "supp-source-070"
+    },
+    "Full/Grasp": {
+      "method": "Grasp",
+      "condition": "Full",
+      "model": "Qwen2.5-7B relation scorer + GPT-OSS-120B planner/answer",
+      "path": "supp-source-249",
+      "supported_field": "certified_hit",
+      "expected_H": 1365,
+      "expected_C": 990,
+      "count_source": "supp-source-050"
+    }
+  },
+  "panels": {
+    "Original": [
+      "Original/CoT",
+      "Original/GCR*",
+      "Original/DoG",
+      "Original/GNN-RAG",
+      "Original/SubgraphRAG",
+      "Original/RJE",
+      "Original/Codex",
+      "Full/Grasp"
+    ],
+    "Unknown": [
+      "Unknown/CoT",
+      "Unknown/GCR*",
+      "Unknown/DoG",
+      "Unknown/GNN-RAG",
+      "Unknown/SubgraphRAG",
+      "Unknown/RJE",
+      "Original/Codex",
+      "Full/Grasp"
+    ]
+  },
+  "verification": {
+    "canonical_overall_H_C_match": true,
+    "original_four_curves_match_frozen_strata": true,
+    "N_S": 1679
+  }
+}

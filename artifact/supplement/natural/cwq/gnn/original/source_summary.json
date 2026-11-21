@@ -1,0 +1,39 @@
+{
+  "metrics": {
+    "N_K": 1679,
+    "N_U": 1459,
+    "Hit@1": {
+      "count": 1311,
+      "denominator": 1679,
+      "percent": 78.08219178082192
+    },
+    "EvidenceHit@1": {
+      "count": 771,
+      "denominator": 1679,
+      "percent": 45.92019058963669
+    },
+    "EvidenceGap": {
+      "count": 540,
+      "denominator": 1311,
+      "percent": 41.18993135011441
+    },
+    "CAR_U": {
+      "count": 266,
+      "denominator": 1459,
+      "percent": 18.231665524331735
+    },
+    "OAR_K": {
+      "count": 52,
+      "denominator": 1679,
+      "percent": 3.0970815961882074
+    },
+    "EBA": {
+      "count": 1037,
+      "denominator": 3138,
+      "percent": 33.046526449968134
+    },
+    "K_error_or_unparsed": 43,
+    "U_error_or_unparsed": 27
+  },
+  "source": "supp-source-049"
+}

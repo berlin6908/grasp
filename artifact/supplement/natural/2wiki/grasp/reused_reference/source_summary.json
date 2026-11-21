@@ -1,0 +1,166 @@
+{
+  "status": "reused_evaluated",
+  "dataset": "2wiki",
+  "method": "grasp",
+  "denominator": 4016,
+  "prediction_rows": 4016,
+  "paper_metrics": {
+    "Hit@1": {
+      "count": 1254,
+      "rate": 0.9067245119305857,
+      "denominator": 1383
+    },
+    "EvidenceHit@1": {
+      "count": 1178,
+      "rate": 0.8517715112075199,
+      "denominator": 1383
+    },
+    "EvidenceGap": {
+      "count": 76,
+      "denominator": 1254,
+      "rate": 0.06060606060606055
+    },
+    "CAR_I": {
+      "count": 1831,
+      "rate": 0.7004590665646518,
+      "denominator": 2614
+    },
+    "OAR_S": {
+      "count": 96,
+      "rate": 0.06941431670281996,
+      "denominator": 1383
+    },
+    "EBA": {
+      "count": 3009,
+      "denominator": 3997,
+      "rate": 0.7528146109582187,
+      "k_certified_hit_count": 1178,
+      "u_abstention_count": 1831
+    }
+  },
+  "full_population_diagnostics": {
+    "hit": {
+      "count": 1725,
+      "rate": 0.42953187250996017
+    },
+    "f1": 0.42362217795484786,
+    "certified_hit": {
+      "count": 1178,
+      "rate": 0.29332669322709165
+    },
+    "certification_gap": {
+      "count": 547,
+      "rate": 0.13620517928286852
+    },
+    "complete_witness_rate": {
+      "count": 1178,
+      "denominator": 2061,
+      "rate": 0.5715672003881611
+    },
+    "abstention": {
+      "count": 1939,
+      "rate": 0.4828187250996016
+    }
+  },
+  "partitions": {
+    "protocol": {
+      "metric_order": [
+        "Hit",
+        "F1",
+        "CertifiedHit",
+        "Certification Gap",
+        "Complete Witness Rate",
+        "Abstention"
+      ],
+      "rule": "post-hoc join of frozen row-level outputs to a frozen partition index",
+      "evaluator_branching": false,
+      "eba_rule": "(K CertifiedHit count + U explicit abstention count) / (K + U); unresolved/X excluded"
+    },
+    "population": {
+      "total": 4016,
+      "partitions": {
+        "K": 1383,
+        "U": 2614,
+        "X": 19
+      }
+    },
+    "partitions": {
+      "K": {
+        "denominator": 1383,
+        "metrics": {
+          "grasp": {
+            "hit": {
+              "count": 1254,
+              "rate": 0.9067245119305857
+            },
+            "f1": 0.8963123644251626,
+            "certified_hit": {
+              "count": 1178,
+              "rate": 0.8517715112075199
+            },
+            "certification_gap": {
+              "count": 76,
+              "rate": 0.0549530007230658
+            },
+            "complete_witness_rate": {
+              "count": 1178,
+              "denominator": 1283,
+              "rate": 0.9181605611847233
+            },
+            "abstention": {
+              "count": 96,
+              "rate": 0.06941431670281996
+            }
+          }
+        }
+      },
+      "U": {
+        "denominator": 2614,
+        "metrics": {
+          "grasp": {
+            "hit": {
+              "count": 468,
+              "rate": 0.17903596021423107
+            },
+            "f1": 0.175465442489161,
+            "certified_hit": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "certification_gap": {
+              "count": 468,
+              "rate": 0.17903596021423107
+            },
+            "complete_witness_rate": {
+              "count": 0,
+              "denominator": 771,
+              "rate": 0.0
+            },
+            "abstention": {
+              "count": 1831,
+              "rate": 0.7004590665646518
+            }
+          }
+        }
+      }
+    },
+    "evidence_bounded_accuracy": {
+      "grasp": {
+        "count": 3009,
+        "denominator": 3997,
+        "rate": 0.7528146109582187,
+        "k_certified_hit_count": 1178,
+        "u_abstention_count": 1831
+      }
+    }
+  },
+  "sources": {
+    "method": "Grasp (full)",
+    "details_source": "supp-source-230",
+    "model": "gpt-oss:120b",
+    "model_provenance": "Frozen final_qwen_relation_only_gptoss_2485268.jsonl, Final version 13; historical runtime digest is not retained locally",
+    "provenance_source": "supp-source-231",
+    "answer_contract": "sufficient=false returns empty answers (Unknown)",
+    "state": "existing_evaluated_results"
+  }
+}

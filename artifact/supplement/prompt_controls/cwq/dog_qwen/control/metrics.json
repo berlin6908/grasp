@@ -1,0 +1,45 @@
+{
+  "directory": "supplement/prompt_controls/cwq/dog_qwen/control",
+  "benchmark": "cwq",
+  "system": "DoG",
+  "model": "Qwen2.5-7B",
+  "condition": "Unknown",
+  "evaluation_rows": 3138,
+  "source_rows": 3138,
+  "availability": "per_question_evaluation",
+  "evidence_hit_field": "certified_hit",
+  "source": "supp-source-022",
+  "note": "Matched prompt comparison. References are the same arm's paired G+ and progressive k=0 outputs, not its separate natural-input predictions. See supplement/README.md.",
+  "metrics": {
+    "Hit@1": {
+      "count": 1015,
+      "denominator": 1679,
+      "rate": 0.604526503871352
+    },
+    "EvidenceHit@1": {
+      "count": 507,
+      "denominator": 1679,
+      "rate": 0.3019654556283502
+    },
+    "EvidenceGap": {
+      "count": 508,
+      "denominator": 1015,
+      "rate": 0.5004926108374385
+    },
+    "CAR_I": {
+      "count": 496,
+      "denominator": 1459,
+      "rate": 0.3399588759424263
+    },
+    "OAR_S": {
+      "count": 87,
+      "denominator": 1679,
+      "rate": 0.051816557474687316
+    },
+    "EBA": {
+      "count": 1003,
+      "denominator": 3138,
+      "rate": 0.31963033779477373
+    }
+  }
+}

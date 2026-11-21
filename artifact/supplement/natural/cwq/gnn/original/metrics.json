@@ -1,0 +1,45 @@
+{
+  "directory": "supplement/natural/cwq/gnn/original",
+  "benchmark": "cwq",
+  "system": "GNN-RAG",
+  "model": "GPT-OSS-120B",
+  "condition": "Original",
+  "evaluation_rows": 3138,
+  "source_rows": 3531,
+  "availability": "per_question_evaluation",
+  "evidence_hit_field": "certified_hit",
+  "source": "supp-source-050",
+  "note": "Native ReaRev retrieval and cited-evidence answering.",
+  "metrics": {
+    "Hit@1": {
+      "count": 1311,
+      "denominator": 1679,
+      "rate": 0.7808219178082192
+    },
+    "EvidenceHit@1": {
+      "count": 771,
+      "denominator": 1679,
+      "rate": 0.4592019058963669
+    },
+    "EvidenceGap": {
+      "count": 540,
+      "denominator": 1311,
+      "rate": 0.41189931350114417
+    },
+    "CAR_I": {
+      "count": 266,
+      "denominator": 1459,
+      "rate": 0.18231665524331733
+    },
+    "OAR_S": {
+      "count": 52,
+      "denominator": 1679,
+      "rate": 0.030970815961882073
+    },
+    "EBA": {
+      "count": 1037,
+      "denominator": 3138,
+      "rate": 0.33046526449968133
+    }
+  }
+}

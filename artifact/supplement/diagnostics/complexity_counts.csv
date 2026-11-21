@@ -1,0 +1,141 @@
+condition,method,model,stratum_kind,stratum,N,H,C,EvidenceGap_percent,source,count_source
+Original,CoT,Qwen2.5-7B,overall,all,1679,1070,470,56.074766355140184,supp-source-245,supp-source-246
+Original,CoT,Qwen2.5-7B,gold_query_size,2,796,545,274,49.72477064220183,supp-source-245,supp-source-246
+Original,CoT,Qwen2.5-7B,gold_query_size,3,580,339,137,59.58702064896755,supp-source-245,supp-source-246
+Original,CoT,Qwen2.5-7B,gold_query_size,4,201,127,51,59.84251968503937,supp-source-245,supp-source-246
+Original,CoT,Qwen2.5-7B,gold_query_size,5+,102,59,8,86.44067796610169,supp-source-245,supp-source-246
+Original,CoT,Qwen2.5-7B,contract_structure,chain,1433,907,416,54.13450937155458,supp-source-245,supp-source-246
+Original,CoT,Qwen2.5-7B,contract_structure,branching_dag,244,161,54,66.45962732919254,supp-source-245,supp-source-246
+Original,CoT,Qwen2.5-7B,contract_structure,intersection,956,574,236,58.88501742160279,supp-source-245,supp-source-246
+Original,CoT,Qwen2.5-7B,contract_structure,comparison,0,0,0,,supp-source-245,supp-source-246
+Original,CoT,Qwen2.5-7B,contract_structure,aggregation,0,0,0,,supp-source-245,supp-source-246
+Original,GCR*,Qwen2.5-7B + GPT-OSS-120B,overall,all,1679,1211,526,56.56482246077622,supp-source-247,supp-source-246
+Original,GCR*,Qwen2.5-7B + GPT-OSS-120B,gold_query_size,2,796,600,313,47.833333333333336,supp-source-247,supp-source-246
+Original,GCR*,Qwen2.5-7B + GPT-OSS-120B,gold_query_size,3,580,386,154,60.10362694300518,supp-source-247,supp-source-246
+Original,GCR*,Qwen2.5-7B + GPT-OSS-120B,gold_query_size,4,201,147,55,62.585034013605444,supp-source-247,supp-source-246
+Original,GCR*,Qwen2.5-7B + GPT-OSS-120B,gold_query_size,5+,102,78,4,94.87179487179488,supp-source-247,supp-source-246
+Original,GCR*,Qwen2.5-7B + GPT-OSS-120B,contract_structure,chain,1433,1022,489,52.15264187866928,supp-source-247,supp-source-246
+Original,GCR*,Qwen2.5-7B + GPT-OSS-120B,contract_structure,branching_dag,244,187,36,80.74866310160428,supp-source-247,supp-source-246
+Original,GCR*,Qwen2.5-7B + GPT-OSS-120B,contract_structure,intersection,956,629,250,60.2543720190779,supp-source-247,supp-source-246
+Original,GCR*,Qwen2.5-7B + GPT-OSS-120B,contract_structure,comparison,0,0,0,,supp-source-247,supp-source-246
+Original,GCR*,Qwen2.5-7B + GPT-OSS-120B,contract_structure,aggregation,0,0,0,,supp-source-247,supp-source-246
+Original,DoG,Qwen2.5-7B,overall,all,1679,1040,516,50.38461538461539,tmp/dog_model_metrics_20260907_cwq_k/original_logic/qwen_2_5_7b_details.jsonl,supp-source-246
+Original,DoG,Qwen2.5-7B,gold_query_size,2,796,492,308,37.39837398373984,tmp/dog_model_metrics_20260907_cwq_k/original_logic/qwen_2_5_7b_details.jsonl,supp-source-246
+Original,DoG,Qwen2.5-7B,gold_query_size,3,580,346,163,52.89017341040462,tmp/dog_model_metrics_20260907_cwq_k/original_logic/qwen_2_5_7b_details.jsonl,supp-source-246
+Original,DoG,Qwen2.5-7B,gold_query_size,4,201,130,43,66.92307692307692,tmp/dog_model_metrics_20260907_cwq_k/original_logic/qwen_2_5_7b_details.jsonl,supp-source-246
+Original,DoG,Qwen2.5-7B,gold_query_size,5+,102,72,2,97.22222222222223,tmp/dog_model_metrics_20260907_cwq_k/original_logic/qwen_2_5_7b_details.jsonl,supp-source-246
+Original,DoG,Qwen2.5-7B,contract_structure,chain,1433,864,492,43.05555555555556,tmp/dog_model_metrics_20260907_cwq_k/original_logic/qwen_2_5_7b_details.jsonl,supp-source-246
+Original,DoG,Qwen2.5-7B,contract_structure,branching_dag,244,174,24,86.20689655172414,tmp/dog_model_metrics_20260907_cwq_k/original_logic/qwen_2_5_7b_details.jsonl,supp-source-246
+Original,DoG,Qwen2.5-7B,contract_structure,intersection,956,579,265,54.23143350604491,tmp/dog_model_metrics_20260907_cwq_k/original_logic/qwen_2_5_7b_details.jsonl,supp-source-246
+Original,DoG,Qwen2.5-7B,contract_structure,comparison,0,0,0,,tmp/dog_model_metrics_20260907_cwq_k/original_logic/qwen_2_5_7b_details.jsonl,supp-source-246
+Original,DoG,Qwen2.5-7B,contract_structure,aggregation,0,0,0,,tmp/dog_model_metrics_20260907_cwq_k/original_logic/qwen_2_5_7b_details.jsonl,supp-source-246
+Original,Codex,GPT-6 xhigh,overall,all,1679,1503,1130,24.81703260146374,supp-source-248,supp-source-246
+Original,Codex,GPT-6 xhigh,gold_query_size,2,796,691,547,20.839363241678726,supp-source-248,supp-source-246
+Original,Codex,GPT-6 xhigh,gold_query_size,3,580,533,432,18.94934333958724,supp-source-248,supp-source-246
+Original,Codex,GPT-6 xhigh,gold_query_size,4,201,181,120,33.70165745856354,supp-source-248,supp-source-246
+Original,Codex,GPT-6 xhigh,gold_query_size,5+,102,98,31,68.36734693877551,supp-source-248,supp-source-246
+Original,Codex,GPT-6 xhigh,contract_structure,chain,1433,1265,1005,20.553359683794465,supp-source-248,supp-source-246
+Original,Codex,GPT-6 xhigh,contract_structure,branching_dag,244,236,125,47.03389830508475,supp-source-248,supp-source-246
+Original,Codex,GPT-6 xhigh,contract_structure,intersection,956,878,707,19.47608200455581,supp-source-248,supp-source-246
+Original,Codex,GPT-6 xhigh,contract_structure,comparison,0,0,0,,supp-source-248,supp-source-246
+Original,Codex,GPT-6 xhigh,contract_structure,aggregation,0,0,0,,supp-source-248,supp-source-246
+Original,GNN-RAG,ReaRev + GPT-OSS-120B,overall,all,1679,1311,771,41.18993135011441,supp-source-049,supp-source-050
+Original,GNN-RAG,ReaRev + GPT-OSS-120B,gold_query_size,2,796,672,407,39.43452380952381,supp-source-049,supp-source-050
+Original,GNN-RAG,ReaRev + GPT-OSS-120B,gold_query_size,3,580,449,275,38.75278396436526,supp-source-049,supp-source-050
+Original,GNN-RAG,ReaRev + GPT-OSS-120B,gold_query_size,4,201,131,79,39.69465648854962,supp-source-049,supp-source-050
+Original,GNN-RAG,ReaRev + GPT-OSS-120B,gold_query_size,5+,102,59,10,83.05084745762711,supp-source-049,supp-source-050
+Original,GNN-RAG,ReaRev + GPT-OSS-120B,contract_structure,chain,1433,1145,704,38.51528384279476,supp-source-049,supp-source-050
+Original,GNN-RAG,ReaRev + GPT-OSS-120B,contract_structure,branching_dag,244,164,67,59.146341463414636,supp-source-049,supp-source-050
+Original,GNN-RAG,ReaRev + GPT-OSS-120B,contract_structure,intersection,956,742,468,36.92722371967655,supp-source-049,supp-source-050
+Original,GNN-RAG,ReaRev + GPT-OSS-120B,contract_structure,comparison,0,0,0,,supp-source-049,supp-source-050
+Original,GNN-RAG,ReaRev + GPT-OSS-120B,contract_structure,aggregation,0,0,0,,supp-source-049,supp-source-050
+Original,SubgraphRAG,MLP + GPT-OSS-120B,overall,all,1679,1357,807,40.530582166543844,supp-source-054,supp-source-050
+Original,SubgraphRAG,MLP + GPT-OSS-120B,gold_query_size,2,796,677,490,27.6218611521418,supp-source-054,supp-source-050
+Original,SubgraphRAG,MLP + GPT-OSS-120B,gold_query_size,3,580,469,256,45.41577825159915,supp-source-054,supp-source-050
+Original,SubgraphRAG,MLP + GPT-OSS-120B,gold_query_size,4,201,141,46,67.37588652482269,supp-source-054,supp-source-050
+Original,SubgraphRAG,MLP + GPT-OSS-120B,gold_query_size,5+,102,70,15,78.57142857142857,supp-source-054,supp-source-050
+Original,SubgraphRAG,MLP + GPT-OSS-120B,contract_structure,chain,1433,1172,749,36.092150170648466,supp-source-054,supp-source-050
+Original,SubgraphRAG,MLP + GPT-OSS-120B,contract_structure,branching_dag,244,183,58,68.30601092896175,supp-source-054,supp-source-050
+Original,SubgraphRAG,MLP + GPT-OSS-120B,contract_structure,intersection,956,754,439,41.777188328912466,supp-source-054,supp-source-050
+Original,SubgraphRAG,MLP + GPT-OSS-120B,contract_structure,comparison,0,0,0,,supp-source-054,supp-source-050
+Original,SubgraphRAG,MLP + GPT-OSS-120B,contract_structure,aggregation,0,0,0,,supp-source-054,supp-source-050
+Original,RJE,RoBERTa + GPT-OSS-120B,overall,all,1679,1355,926,31.660516605166052,supp-source-059,supp-source-067
+Original,RJE,RoBERTa + GPT-OSS-120B,gold_query_size,2,796,675,564,16.444444444444443,supp-source-059,supp-source-067
+Original,RJE,RoBERTa + GPT-OSS-120B,gold_query_size,3,580,436,270,38.07339449541284,supp-source-059,supp-source-067
+Original,RJE,RoBERTa + GPT-OSS-120B,gold_query_size,4,201,158,68,56.962025316455694,supp-source-059,supp-source-067
+Original,RJE,RoBERTa + GPT-OSS-120B,gold_query_size,5+,102,86,24,72.09302325581395,supp-source-059,supp-source-067
+Original,RJE,RoBERTa + GPT-OSS-120B,contract_structure,chain,1433,1149,863,24.891209747606613,supp-source-059,supp-source-067
+Original,RJE,RoBERTa + GPT-OSS-120B,contract_structure,branching_dag,244,204,61,70.09803921568627,supp-source-059,supp-source-067
+Original,RJE,RoBERTa + GPT-OSS-120B,contract_structure,intersection,956,720,384,46.666666666666664,supp-source-059,supp-source-067
+Original,RJE,RoBERTa + GPT-OSS-120B,contract_structure,comparison,0,0,0,,supp-source-059,supp-source-067
+Original,RJE,RoBERTa + GPT-OSS-120B,contract_structure,aggregation,0,0,0,,supp-source-059,supp-source-067
+Unknown,CoT,GPT-OSS-120B,overall,all,1679,1159,765,33.994823123382226,supp-source-044,supp-source-045
+Unknown,CoT,GPT-OSS-120B,gold_query_size,2,796,570,402,29.473684210526315,supp-source-044,supp-source-045
+Unknown,CoT,GPT-OSS-120B,gold_query_size,3,580,375,271,27.733333333333334,supp-source-044,supp-source-045
+Unknown,CoT,GPT-OSS-120B,gold_query_size,4,201,136,79,41.911764705882355,supp-source-044,supp-source-045
+Unknown,CoT,GPT-OSS-120B,gold_query_size,5+,102,78,13,83.33333333333333,supp-source-044,supp-source-045
+Unknown,CoT,GPT-OSS-120B,contract_structure,chain,1433,968,689,28.822314049586776,supp-source-044,supp-source-045
+Unknown,CoT,GPT-OSS-120B,contract_structure,branching_dag,244,189,76,59.78835978835979,supp-source-044,supp-source-045
+Unknown,CoT,GPT-OSS-120B,contract_structure,intersection,956,628,444,29.29936305732484,supp-source-044,supp-source-045
+Unknown,CoT,GPT-OSS-120B,contract_structure,comparison,0,0,0,,supp-source-044,supp-source-045
+Unknown,CoT,GPT-OSS-120B,contract_structure,aggregation,0,0,0,,supp-source-044,supp-source-045
+Unknown,GCR*,Qwen2.5-7B + GPT-OSS-120B,overall,all,1679,1012,535,47.134387351778656,supp-source-033,supp-source-034
+Unknown,GCR*,Qwen2.5-7B + GPT-OSS-120B,gold_query_size,2,796,543,319,41.25230202578269,supp-source-033,supp-source-034
+Unknown,GCR*,Qwen2.5-7B + GPT-OSS-120B,gold_query_size,3,580,302,158,47.682119205298015,supp-source-033,supp-source-034
+Unknown,GCR*,Qwen2.5-7B + GPT-OSS-120B,gold_query_size,4,201,106,55,48.113207547169814,supp-source-033,supp-source-034
+Unknown,GCR*,Qwen2.5-7B + GPT-OSS-120B,gold_query_size,5+,102,61,3,95.08196721311475,supp-source-033,supp-source-034
+Unknown,GCR*,Qwen2.5-7B + GPT-OSS-120B,contract_structure,chain,1433,870,498,42.758620689655174,supp-source-033,supp-source-034
+Unknown,GCR*,Qwen2.5-7B + GPT-OSS-120B,contract_structure,branching_dag,244,140,36,74.28571428571429,supp-source-033,supp-source-034
+Unknown,GCR*,Qwen2.5-7B + GPT-OSS-120B,contract_structure,intersection,956,470,258,45.1063829787234,supp-source-033,supp-source-034
+Unknown,GCR*,Qwen2.5-7B + GPT-OSS-120B,contract_structure,comparison,0,0,0,,supp-source-033,supp-source-034
+Unknown,GCR*,Qwen2.5-7B + GPT-OSS-120B,contract_structure,aggregation,0,0,0,,supp-source-033,supp-source-034
+Unknown,DoG,GPT-OSS-120B,overall,all,1679,969,492,49.22600619195047,supp-source-121,supp-source-155
+Unknown,DoG,GPT-OSS-120B,gold_query_size,2,796,468,299,36.111111111111114,supp-source-121,supp-source-155
+Unknown,DoG,GPT-OSS-120B,gold_query_size,3,580,312,151,51.6025641025641,supp-source-121,supp-source-155
+Unknown,DoG,GPT-OSS-120B,gold_query_size,4,201,117,41,64.95726495726495,supp-source-121,supp-source-155
+Unknown,DoG,GPT-OSS-120B,gold_query_size,5+,102,72,1,98.61111111111111,supp-source-121,supp-source-155
+Unknown,DoG,GPT-OSS-120B,contract_structure,chain,1433,801,471,41.19850187265918,supp-source-121,supp-source-155
+Unknown,DoG,GPT-OSS-120B,contract_structure,branching_dag,244,166,21,87.34939759036145,supp-source-121,supp-source-155
+Unknown,DoG,GPT-OSS-120B,contract_structure,intersection,956,523,252,51.81644359464627,supp-source-121,supp-source-155
+Unknown,DoG,GPT-OSS-120B,contract_structure,comparison,0,0,0,,supp-source-121,supp-source-155
+Unknown,DoG,GPT-OSS-120B,contract_structure,aggregation,0,0,0,,supp-source-121,supp-source-155
+Unknown,GNN-RAG,ReaRev + GPT-OSS-120B,overall,all,1679,1246,774,37.881219903691814,supp-source-051,supp-source-053
+Unknown,GNN-RAG,ReaRev + GPT-OSS-120B,gold_query_size,2,796,649,412,36.517719568567024,supp-source-051,supp-source-053
+Unknown,GNN-RAG,ReaRev + GPT-OSS-120B,gold_query_size,3,580,435,274,37.01149425287356,supp-source-051,supp-source-053
+Unknown,GNN-RAG,ReaRev + GPT-OSS-120B,gold_query_size,4,201,119,78,34.45378151260504,supp-source-051,supp-source-053
+Unknown,GNN-RAG,ReaRev + GPT-OSS-120B,gold_query_size,5+,102,43,10,76.74418604651163,supp-source-051,supp-source-053
+Unknown,GNN-RAG,ReaRev + GPT-OSS-120B,contract_structure,chain,1433,1100,705,35.90909090909091,supp-source-051,supp-source-053
+Unknown,GNN-RAG,ReaRev + GPT-OSS-120B,contract_structure,branching_dag,244,145,69,52.41379310344828,supp-source-051,supp-source-053
+Unknown,GNN-RAG,ReaRev + GPT-OSS-120B,contract_structure,intersection,956,699,462,33.90557939914163,supp-source-051,supp-source-053
+Unknown,GNN-RAG,ReaRev + GPT-OSS-120B,contract_structure,comparison,0,0,0,,supp-source-051,supp-source-053
+Unknown,GNN-RAG,ReaRev + GPT-OSS-120B,contract_structure,aggregation,0,0,0,,supp-source-051,supp-source-053
+Unknown,SubgraphRAG,MLP + GPT-OSS-120B,overall,all,1679,1213,767,36.76834295136026,supp-source-055,supp-source-057
+Unknown,SubgraphRAG,MLP + GPT-OSS-120B,gold_query_size,2,796,646,463,28.328173374613,supp-source-055,supp-source-057
+Unknown,SubgraphRAG,MLP + GPT-OSS-120B,gold_query_size,3,580,415,245,40.963855421686745,supp-source-055,supp-source-057
+Unknown,SubgraphRAG,MLP + GPT-OSS-120B,gold_query_size,4,201,99,44,55.55555555555556,supp-source-055,supp-source-057
+Unknown,SubgraphRAG,MLP + GPT-OSS-120B,gold_query_size,5+,102,53,15,71.69811320754717,supp-source-055,supp-source-057
+Unknown,SubgraphRAG,MLP + GPT-OSS-120B,contract_structure,chain,1433,1066,708,33.58348968105066,supp-source-055,supp-source-057
+Unknown,SubgraphRAG,MLP + GPT-OSS-120B,contract_structure,branching_dag,244,145,58,60.0,supp-source-055,supp-source-057
+Unknown,SubgraphRAG,MLP + GPT-OSS-120B,contract_structure,intersection,956,636,420,33.9622641509434,supp-source-055,supp-source-057
+Unknown,SubgraphRAG,MLP + GPT-OSS-120B,contract_structure,comparison,0,0,0,,supp-source-055,supp-source-057
+Unknown,SubgraphRAG,MLP + GPT-OSS-120B,contract_structure,aggregation,0,0,0,,supp-source-055,supp-source-057
+Unknown,RJE,RoBERTa + GPT-OSS-120B,overall,all,1679,1157,932,19.44684528954192,supp-source-068,supp-source-070
+Unknown,RJE,RoBERTa + GPT-OSS-120B,gold_query_size,2,796,629,569,9.538950715421304,supp-source-068,supp-source-070
+Unknown,RJE,RoBERTa + GPT-OSS-120B,gold_query_size,3,580,352,272,22.727272727272727,supp-source-068,supp-source-070
+Unknown,RJE,RoBERTa + GPT-OSS-120B,gold_query_size,4,201,108,65,39.81481481481482,supp-source-068,supp-source-070
+Unknown,RJE,RoBERTa + GPT-OSS-120B,gold_query_size,5+,102,68,26,61.76470588235294,supp-source-068,supp-source-070
+Unknown,RJE,RoBERTa + GPT-OSS-120B,contract_structure,chain,1433,1004,866,13.745019920318725,supp-source-068,supp-source-070
+Unknown,RJE,RoBERTa + GPT-OSS-120B,contract_structure,branching_dag,244,151,64,57.615894039735096,supp-source-068,supp-source-070
+Unknown,RJE,RoBERTa + GPT-OSS-120B,contract_structure,intersection,956,544,390,28.308823529411764,supp-source-068,supp-source-070
+Unknown,RJE,RoBERTa + GPT-OSS-120B,contract_structure,comparison,0,0,0,,supp-source-068,supp-source-070
+Unknown,RJE,RoBERTa + GPT-OSS-120B,contract_structure,aggregation,0,0,0,,supp-source-068,supp-source-070
+Full,Grasp (full),Qwen2.5-7B relation scorer + GPT-OSS-120B planner/answer,overall,all,1679,1365,990,27.47252747252747,supp-source-249,supp-source-050
+Full,Grasp (full),Qwen2.5-7B relation scorer + GPT-OSS-120B planner/answer,gold_query_size,2,796,644,477,25.93167701863354,supp-source-249,supp-source-050
+Full,Grasp (full),Qwen2.5-7B relation scorer + GPT-OSS-120B planner/answer,gold_query_size,3,580,503,392,22.067594433399602,supp-source-249,supp-source-050
+Full,Grasp (full),Qwen2.5-7B relation scorer + GPT-OSS-120B planner/answer,gold_query_size,4,201,149,105,29.530201342281877,supp-source-249,supp-source-050
+Full,Grasp (full),Qwen2.5-7B relation scorer + GPT-OSS-120B planner/answer,gold_query_size,5+,102,69,16,76.81159420289855,supp-source-249,supp-source-050
+Full,Grasp (full),Qwen2.5-7B relation scorer + GPT-OSS-120B planner/answer,contract_structure,chain,1433,1182,898,24.027072758037225,supp-source-249,supp-source-050
+Full,Grasp (full),Qwen2.5-7B relation scorer + GPT-OSS-120B planner/answer,contract_structure,branching_dag,244,181,92,49.171270718232044,supp-source-249,supp-source-050
+Full,Grasp (full),Qwen2.5-7B relation scorer + GPT-OSS-120B planner/answer,contract_structure,intersection,956,821,617,24.84774665042631,supp-source-249,supp-source-050
+Full,Grasp (full),Qwen2.5-7B relation scorer + GPT-OSS-120B planner/answer,contract_structure,comparison,0,0,0,,supp-source-249,supp-source-050
+Full,Grasp (full),Qwen2.5-7B relation scorer + GPT-OSS-120B planner/answer,contract_structure,aggregation,0,0,0,,supp-source-249,supp-source-050

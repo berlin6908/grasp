@@ -1,0 +1,519 @@
+{
+  "system": "cot",
+  "condition": "control",
+  "smoke": false,
+  "natural": {
+    "N_S": 1679,
+    "N_I": 1459,
+    "metrics": {
+      "Hit@1": {
+        "count": 631,
+        "denominator": 1679,
+        "rate": 0.3758189398451459,
+        "percent": 37.58189398451459
+      },
+      "EvidenceHit@1": {
+        "count": 137,
+        "denominator": 1679,
+        "rate": 0.08159618820726623,
+        "percent": 8.159618820726623
+      },
+      "EvidenceGap": {
+        "count": 494,
+        "denominator": 631,
+        "rate": 0.7828843106180665,
+        "percent": 78.28843106180666
+      },
+      "CAR_I": {
+        "count": 433,
+        "denominator": 1459,
+        "rate": 0.2967786154900617,
+        "percent": 29.67786154900617
+      },
+      "OAR_S": {
+        "count": 172,
+        "denominator": 1679,
+        "rate": 0.10244192972007148,
+        "percent": 10.244192972007147
+      },
+      "EBA": {
+        "count": 570,
+        "denominator": 3138,
+        "rate": 0.18164435946462715,
+        "percent": 18.164435946462714
+      }
+    },
+    "status_counts": {
+      "answer": 2153,
+      "error": 380,
+      "abstention": 605
+    },
+    "errors": {
+      "S": 209,
+      "I": 171
+    }
+  },
+  "families": {
+    "missing_condition": {
+      "denominator": 295,
+      "original_status_counts": {
+        "answered": 256,
+        "insufficient": 15,
+        "error": 24
+      },
+      "critical": {
+        "transitions": {
+          "same_answer": {
+            "count": 108,
+            "rate": 0.36610169491525424
+          },
+          "other_answer": {
+            "count": 95,
+            "rate": 0.3220338983050847
+          },
+          "abstention": {
+            "count": 53,
+            "rate": 0.17966101694915254
+          },
+          "error": {
+            "count": 39,
+            "rate": 0.13220338983050847
+          }
+        },
+        "apr": {
+          "count": 108,
+          "rate": 0.36610169491525424
+        },
+        "car": {
+          "count": 53,
+          "rate": 0.17966101694915254
+        },
+        "far": {
+          "count": 203,
+          "rate": 0.688135593220339
+        }
+      },
+      "sham": {
+        "transitions": {
+          "same_answer": {
+            "count": 232,
+            "rate": 0.7864406779661017
+          },
+          "other_answer": {
+            "count": 17,
+            "rate": 0.0576271186440678
+          },
+          "abstention": {
+            "count": 17,
+            "rate": 0.0576271186440678
+          },
+          "error": {
+            "count": 29,
+            "rate": 0.09830508474576272
+          }
+        },
+        "persistence": {
+          "count": 232,
+          "rate": 0.7864406779661017
+        },
+        "abstention": {
+          "count": 17,
+          "rate": 0.0576271186440678
+        }
+      },
+      "paired_contrasts": {
+        "persistence": {
+          "direction": "sham_minus_critical",
+          "estimate": 0.42033898305084744,
+          "critical_only": 3,
+          "sham_only": 127,
+          "both": 105,
+          "neither": 60,
+          "discordant": 130,
+          "confidence_interval": {
+            "method": "Bonett-Price adjusted-Wald",
+            "level": 0.95,
+            "adjusted_estimate": 0.4175084175084175,
+            "lower": 0.3583989274390241,
+            "upper": 0.4766179075778109
+          },
+          "exact_mcnemar_p": 5.381942110522302e-34
+        },
+        "abstention": {
+          "direction": "critical_minus_sham",
+          "estimate": 0.12203389830508475,
+          "critical_only": 43,
+          "sham_only": 7,
+          "both": 10,
+          "neither": 235,
+          "discordant": 50,
+          "confidence_interval": {
+            "method": "Bonett-Price adjusted-Wald",
+            "level": 0.95,
+            "adjusted_estimate": 0.1212121212121212,
+            "lower": 0.07566499896685329,
+            "upper": 0.16675924345738913
+          },
+          "exact_mcnemar_p": 2.098677427397888e-07
+        }
+      },
+      "confidence_intervals": {
+        "method": "Bonett-Price adjusted-Wald paired risk difference",
+        "level": 0.95,
+        "multiplicity": "marginal_unadjusted"
+      }
+    },
+    "binding_conflict": {
+      "denominator": 120,
+      "original_status_counts": {
+        "answered": 96,
+        "error": 14,
+        "insufficient": 10
+      },
+      "critical": {
+        "transitions": {
+          "same_answer": {
+            "count": 49,
+            "rate": 0.4083333333333333
+          },
+          "other_answer": {
+            "count": 29,
+            "rate": 0.24166666666666667
+          },
+          "abstention": {
+            "count": 14,
+            "rate": 0.11666666666666667
+          },
+          "error": {
+            "count": 28,
+            "rate": 0.23333333333333334
+          }
+        },
+        "apr": {
+          "count": 49,
+          "rate": 0.4083333333333333
+        },
+        "car": {
+          "count": 14,
+          "rate": 0.11666666666666667
+        },
+        "far": {
+          "count": 78,
+          "rate": 0.65
+        }
+      },
+      "sham": {
+        "transitions": {
+          "same_answer": {
+            "count": 94,
+            "rate": 0.7833333333333333
+          },
+          "other_answer": {
+            "count": 1,
+            "rate": 0.008333333333333333
+          },
+          "abstention": {
+            "count": 9,
+            "rate": 0.075
+          },
+          "error": {
+            "count": 16,
+            "rate": 0.13333333333333333
+          }
+        },
+        "persistence": {
+          "count": 94,
+          "rate": 0.7833333333333333
+        },
+        "abstention": {
+          "count": 9,
+          "rate": 0.075
+        }
+      },
+      "paired_contrasts": {
+        "persistence": {
+          "direction": "sham_minus_critical",
+          "estimate": 0.375,
+          "critical_only": 0,
+          "sham_only": 45,
+          "both": 49,
+          "neither": 26,
+          "discordant": 45,
+          "confidence_interval": {
+            "method": "Bonett-Price adjusted-Wald",
+            "level": 0.95,
+            "adjusted_estimate": 0.3688524590163934,
+            "lower": 0.2802722375686918,
+            "upper": 0.457432680464095
+          },
+          "exact_mcnemar_p": 5.684341886080802e-14
+        },
+        "abstention": {
+          "direction": "critical_minus_sham",
+          "estimate": 0.041666666666666664,
+          "critical_only": 9,
+          "sham_only": 4,
+          "both": 5,
+          "neither": 102,
+          "discordant": 13,
+          "confidence_interval": {
+            "method": "Bonett-Price adjusted-Wald",
+            "level": 0.95,
+            "adjusted_estimate": 0.040983606557377046,
+            "lower": -0.020810484448750242,
+            "upper": 0.10277769756350433
+          },
+          "exact_mcnemar_p": 0.266845703125
+        }
+      },
+      "confidence_intervals": {
+        "method": "Bonett-Price adjusted-Wald paired risk difference",
+        "level": 0.95,
+        "multiplicity": "marginal_unadjusted"
+      }
+    }
+  },
+  "pooled": {
+    "denominator": 415,
+    "critical": {
+      "transitions": {
+        "same_answer": {
+          "count": 157,
+          "rate": 0.3783132530120482
+        },
+        "other_answer": {
+          "count": 124,
+          "rate": 0.2987951807228916
+        },
+        "abstention": {
+          "count": 67,
+          "rate": 0.1614457831325301
+        },
+        "error": {
+          "count": 67,
+          "rate": 0.1614457831325301
+        }
+      },
+      "apr": {
+        "count": 157,
+        "rate": 0.3783132530120482
+      },
+      "car": {
+        "count": 67,
+        "rate": 0.1614457831325301
+      },
+      "far": {
+        "count": 281,
+        "rate": 0.6771084337349398
+      }
+    },
+    "sham": {
+      "transitions": {
+        "same_answer": {
+          "count": 326,
+          "rate": 0.7855421686746988
+        },
+        "other_answer": {
+          "count": 18,
+          "rate": 0.043373493975903614
+        },
+        "abstention": {
+          "count": 26,
+          "rate": 0.06265060240963856
+        },
+        "error": {
+          "count": 45,
+          "rate": 0.10843373493975904
+        }
+      },
+      "persistence": {
+        "count": 326,
+        "rate": 0.7855421686746988
+      },
+      "abstention": {
+        "count": 26,
+        "rate": 0.06265060240963856
+      }
+    },
+    "paired_contrasts": {
+      "persistence": {
+        "direction": "sham_minus_critical",
+        "estimate": 0.4072289156626506,
+        "critical_only": 3,
+        "sham_only": 172,
+        "both": 154,
+        "neither": 86,
+        "discordant": 175,
+        "confidence_interval": {
+          "method": "Bonett-Price adjusted-Wald",
+          "level": 0.95,
+          "adjusted_estimate": 0.4052757793764988,
+          "lower": 0.356315520840239,
+          "upper": 0.4542360379127586
+        },
+        "exact_mcnemar_p": 3.730912258817696e-47
+      },
+      "abstention": {
+        "direction": "critical_minus_sham",
+        "estimate": 0.09879518072289156,
+        "critical_only": 52,
+        "sham_only": 11,
+        "both": 15,
+        "neither": 337,
+        "discordant": 63,
+        "confidence_interval": {
+          "method": "Bonett-Price adjusted-Wald",
+          "level": 0.95,
+          "adjusted_estimate": 0.09832134292565946,
+          "lower": 0.061621352708021444,
+          "upper": 0.13502133314329748
+        },
+        "exact_mcnemar_p": 1.6734991187261627e-07
+      }
+    },
+    "confidence_intervals": {
+      "method": "Bonett-Price adjusted-Wald paired risk difference",
+      "level": 0.95,
+      "multiplicity": "marginal_unadjusted"
+    }
+  },
+  "progressive": {
+    "system": "cot",
+    "denominator": 268,
+    "levels": {
+      "0": {
+        "transitions": {
+          "same_answer": {
+            "count": 235,
+            "rate": 0.8768656716417911
+          },
+          "other_answer": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "abstention": {
+            "count": 0,
+            "rate": 0.0
+          },
+          "error": {
+            "count": 33,
+            "rate": 0.12313432835820895
+          }
+        },
+        "apr": {
+          "count": 235,
+          "rate": 0.8768656716417911,
+          "confidence_interval": {
+            "method": "Wilson",
+            "level": 0.95,
+            "lower": 0.8321174492114181,
+            "upper": 0.9109627302296386
+          }
+        },
+        "car": {
+          "count": 0,
+          "rate": 0.0
+        },
+        "far": {
+          "count": 235,
+          "rate": 0.8768656716417911
+        }
+      },
+      "1": {
+        "transitions": {
+          "same_answer": {
+            "count": 102,
+            "rate": 0.3805970149253731
+          },
+          "other_answer": {
+            "count": 85,
+            "rate": 0.31716417910447764
+          },
+          "abstention": {
+            "count": 48,
+            "rate": 0.1791044776119403
+          },
+          "error": {
+            "count": 33,
+            "rate": 0.12313432835820895
+          }
+        },
+        "apr": {
+          "count": 102,
+          "rate": 0.3805970149253731,
+          "confidence_interval": {
+            "method": "Wilson",
+            "level": 0.95,
+            "lower": 0.3245418949465282,
+            "upper": 0.4400267610721468
+          }
+        },
+        "car": {
+          "count": 48,
+          "rate": 0.1791044776119403
+        },
+        "far": {
+          "count": 187,
+          "rate": 0.6977611940298507
+        }
+      },
+      "2": {
+        "transitions": {
+          "same_answer": {
+            "count": 51,
+            "rate": 0.19029850746268656
+          },
+          "other_answer": {
+            "count": 104,
+            "rate": 0.3880597014925373
+          },
+          "abstention": {
+            "count": 82,
+            "rate": 0.30597014925373134
+          },
+          "error": {
+            "count": 31,
+            "rate": 0.11567164179104478
+          }
+        },
+        "apr": {
+          "count": 51,
+          "rate": 0.19029850746268656,
+          "confidence_interval": {
+            "method": "Wilson",
+            "level": 0.95,
+            "lower": 0.1478074339535901,
+            "upper": 0.2415425175948485
+          }
+        },
+        "car": {
+          "count": 82,
+          "rate": 0.30597014925373134
+        },
+        "far": {
+          "count": 155,
+          "rate": 0.5783582089552238
+        }
+      }
+    },
+    "original_status_counts": {
+      "answered": 235,
+      "error": 20,
+      "insufficient": 13
+    }
+  },
+  "sources": {
+    "data_root": "supp-source-002",
+    "original_rq2_registry": "supp-source-003",
+    "frozen_adapter": "supp-source-004",
+    "native_outputs": "supp-source-005"
+  },
+  "protocol": {
+    "natural_evidence": "CoT cited indices; DoG official consecutive numbered triples; GCR selected paths",
+    "CoT_semantic_background": "Frozen original input graph G_q, matching the existing citation evaluator",
+    "DoG_semantic_background": "Frozen native pruned graph, matching its registered official-source evaluator",
+    "removal_pairing": "Each prompt arm's own native original answer; no historical answer substitution or cohort reselection",
+    "errors": "Fixed denominators; explicit abstention only; no manual classification"
+  },
+  "state": "evaluated"
+}

@@ -1,0 +1,169 @@
+{
+  "status": "evaluated",
+  "dataset": "webqsp",
+  "method": "rje",
+  "smoke": false,
+  "denominator": 1628,
+  "prediction_rows": 1628,
+  "missing_rows": 0,
+  "paper_metrics": {
+    "Hit@1": {
+      "count": 1100,
+      "rate": 0.8239700374531835,
+      "denominator": 1335
+    },
+    "EvidenceHit@1": {
+      "count": 906,
+      "rate": 0.6786516853932584,
+      "denominator": 1335
+    },
+    "EvidenceGap": {
+      "count": 194,
+      "denominator": 1100,
+      "rate": 0.1763636363636364
+    },
+    "CAR_I": {
+      "count": 116,
+      "rate": 0.40559440559440557,
+      "denominator": 286
+    },
+    "OAR_S": {
+      "count": 109,
+      "rate": 0.08164794007490636,
+      "denominator": 1335
+    },
+    "EBA": {
+      "count": 1022,
+      "denominator": 1621,
+      "rate": 0.6304750154225787,
+      "k_certified_hit_count": 906,
+      "u_abstention_count": 116
+    }
+  },
+  "full_population_diagnostics": {
+    "hit": {
+      "count": 1230,
+      "rate": 0.7555282555282555
+    },
+    "f1": 0.6119565252206872,
+    "certified_hit": {
+      "count": 906,
+      "rate": 0.5565110565110565
+    },
+    "certification_gap": {
+      "count": 324,
+      "rate": 0.19901719901719903
+    },
+    "complete_witness_rate": {
+      "count": 906,
+      "denominator": 1401,
+      "rate": 0.6466809421841542
+    },
+    "abstention": {
+      "count": 227,
+      "rate": 0.13943488943488944
+    }
+  },
+  "partitions": {
+    "protocol": {
+      "metric_order": [
+        "Hit",
+        "F1",
+        "CertifiedHit",
+        "Certification Gap",
+        "Complete Witness Rate",
+        "Abstention"
+      ],
+      "rule": "post-hoc join of frozen row-level outputs to a frozen partition index",
+      "evaluator_branching": false,
+      "eba_rule": "(K CertifiedHit count + U explicit abstention count) / (K + U); unresolved/X excluded"
+    },
+    "population": {
+      "total": 1628,
+      "partitions": {
+        "K": 1335,
+        "U": 286,
+        "unresolved": 7
+      }
+    },
+    "partitions": {
+      "K": {
+        "denominator": 1335,
+        "metrics": {
+          "rje": {
+            "hit": {
+              "count": 1100,
+              "rate": 0.8239700374531835
+            },
+            "f1": 0.6678592757634642,
+            "certified_hit": {
+              "count": 906,
+              "rate": 0.6786516853932584
+            },
+            "certification_gap": {
+              "count": 194,
+              "rate": 0.1453183520599251
+            },
+            "complete_witness_rate": {
+              "count": 906,
+              "denominator": 1226,
+              "rate": 0.7389885807504079
+            },
+            "abstention": {
+              "count": 109,
+              "rate": 0.08164794007490636
+            }
+          }
+        }
+      },
+      "U": {
+        "denominator": 286,
+        "metrics": {
+          "rje": {
+            "hit": {
+              "count": 125,
+              "rate": 0.4370629370629371
+            },
+            "f1": 0.3546178635058519,
+            "certified_hit": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "certification_gap": {
+              "count": 125,
+              "rate": 0.4370629370629371
+            },
+            "complete_witness_rate": {
+              "count": 0,
+              "denominator": 170,
+              "rate": 0.0
+            },
+            "abstention": {
+              "count": 116,
+              "rate": 0.40559440559440557
+            }
+          }
+        }
+      }
+    },
+    "evidence_bounded_accuracy": {
+      "rje": {
+        "count": 1022,
+        "denominator": 1621,
+        "rate": 0.6304750154225787,
+        "k_certified_hit_count": 906,
+        "u_abstention_count": 116
+      }
+    }
+  },
+  "answer_status_counts": {
+    "answer": 1401,
+    "abstention": 227
+  },
+  "sources": {
+    "predictions": [
+      "supp-source-109"
+    ],
+    "input": "supp-source-097"
+  }
+}

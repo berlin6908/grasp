@@ -1,0 +1,194 @@
+{
+  "denominator": 3138,
+  "evidence_status_counts": {
+    "empty": 7,
+    "not_generated": 2,
+    "valid": 3129
+  },
+  "evidence_unavailable_ids": [],
+  "excluded": 393,
+  "metrics": {
+    "abstention": {
+      "count": 1664,
+      "rate": 0.5302740599107711
+    },
+    "certification_gap": {
+      "count": 349,
+      "rate": 0.11121733588272785
+    },
+    "certified_hit": {
+      "count": 932,
+      "rate": 0.29700446144040793
+    },
+    "complete_witness_rate": {
+      "count": 932,
+      "denominator": 1472,
+      "rate": 0.6331521739130435
+    },
+    "f1": 0.3727232185278377,
+    "hit": {
+      "count": 1281,
+      "rate": 0.40822179732313574
+    }
+  },
+  "paper_metrics": {
+    "CAR_I": {
+      "count": 1243,
+      "denominator": 1459,
+      "rate": 0.8519533927347498
+    },
+    "EBA": {
+      "count": 2175,
+      "denominator": 3138,
+      "k_certified_hit_count": 932,
+      "rate": 0.6931166347992351,
+      "u_abstention_count": 1243
+    },
+    "EvidenceGap": {
+      "count": 225,
+      "denominator": 1157,
+      "rate": 0.19446845289541914
+    },
+    "EvidenceHit_at_1": {
+      "count": 932,
+      "denominator": 1679,
+      "rate": 0.5550923168552709
+    },
+    "Hit_at_1": {
+      "count": 1157,
+      "denominator": 1679,
+      "rate": 0.6891006551518761
+    },
+    "N_I": 1459,
+    "N_S": 1679,
+    "OAR_S": {
+      "count": 421,
+      "denominator": 1679,
+      "rate": 0.25074449076831445
+    }
+  },
+  "partitions": {
+    "evidence_bounded_accuracy": {
+      "RJE": {
+        "count": 2175,
+        "denominator": 3138,
+        "k_certified_hit_count": 932,
+        "rate": 0.6931166347992351,
+        "u_abstention_count": 1243
+      }
+    },
+    "partitions": {
+      "K": {
+        "denominator": 1679,
+        "metrics": {
+          "RJE": {
+            "abstention": {
+              "count": 421,
+              "rate": 0.25074449076831445
+            },
+            "certification_gap": {
+              "count": 225,
+              "rate": 0.13400833829660513
+            },
+            "certified_hit": {
+              "count": 932,
+              "rate": 0.5550923168552709
+            },
+            "complete_witness_rate": {
+              "count": 932,
+              "denominator": 1257,
+              "rate": 0.741447891805887
+            },
+            "f1": 0.631488314266691,
+            "hit": {
+              "count": 1157,
+              "rate": 0.6891006551518761
+            }
+          }
+        }
+      },
+      "U": {
+        "denominator": 1459,
+        "metrics": {
+          "RJE": {
+            "abstention": {
+              "count": 1243,
+              "rate": 0.8519533927347498
+            },
+            "certification_gap": {
+              "count": 124,
+              "rate": 0.08498971898560657
+            },
+            "certified_hit": {
+              "count": 0,
+              "rate": 0.0
+            },
+            "complete_witness_rate": {
+              "count": 0,
+              "denominator": 215,
+              "rate": 0.0
+            },
+            "f1": 0.0749393969064977,
+            "hit": {
+              "count": 124,
+              "rate": 0.08498971898560657
+            }
+          }
+        }
+      }
+    },
+    "population": {
+      "partitions": {
+        "K": 1679,
+        "U": 1459
+      },
+      "total": 3138
+    },
+    "protocol": {
+      "eba_rule": "(K CertifiedHit count + U explicit abstention count) / (K + U); unresolved/X excluded",
+      "evaluator_branching": false,
+      "metric_order": [
+        "Hit",
+        "F1",
+        "CertifiedHit",
+        "Certification Gap",
+        "Complete Witness Rate",
+        "Abstention"
+      ],
+      "rule": "post-hoc join of frozen row-level outputs to a frozen partition index"
+    }
+  },
+  "prediction_rows": 3138,
+  "protocol": {
+    "abstention": "Empty native Answer list or shared is_abstention; Sufficient=No alone is not Unknown.",
+    "answer_extraction": "Native terminal JSON/Python-literal Answer only; string or string list.",
+    "answer_scorer": "pipeline_optimized.eva.answer_metrics.score_prediction",
+    "curation": "Post-hoc retain final mismatch=no IDs; no inference or answer rescoring changes.",
+    "direction": "Prepared paths follow directed input edges. Exploration triples use native reasoning_chain_directions True=outgoing, False=incoming. Each restored edge is validated against the input kg.",
+    "evidence": "Union of graph triples actually shown in the terminal answer call: prepared initial top10 paths and displayed native exploration triples; exact author-rendered input matching.",
+    "evidence_missing": "A completed row missing recovered evidence or provenance makes aggregate evidence metrics unavailable; a recovered empty context receives zero support credit.",
+    "evidence_replay": "pipeline_optimized.eva.cwq_study_metrics.replay_gold_query: frozen CWQ gold query and shared semantic-background policy.",
+    "population": "Every registered input scored once; errors and missing/unparsed outputs keep zero credit in the denominator. K/U joined afterward.",
+    "rate_units": "fraction",
+    "stored_split_mapping": "S=K, I=U",
+    "trace_boundary": "Recovered final shown context is an explicit evidence-reporting extension, not native answer-selected citations. Author examples, unshown candidates, other input edges and prior-only contexts are excluded. Historical native-chain scores remain separate."
+  },
+  "resolved_reverse": 6385,
+  "sources": {
+    "curation": "supp-source-060",
+    "input": "supp-source-061",
+    "original_cwq": "supp-source-062",
+    "partition_root": "supp-source-063",
+    "predictions": "supp-source-069",
+    "reverse_properties": "supp-source-065",
+    "witness_details": "supp-source-066"
+  },
+  "status": "completed",
+  "status_counts": {
+    "abstention": 1664,
+    "answer": 1472,
+    "answer_parse_error": 1,
+    "error": 1
+  },
+  "system": "RJE"
+}

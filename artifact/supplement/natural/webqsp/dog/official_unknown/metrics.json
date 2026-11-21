@@ -1,0 +1,45 @@
+{
+  "directory": "supplement/natural/webqsp/dog/official_unknown",
+  "benchmark": "webqsp",
+  "system": "DoG",
+  "model": "GPT-OSS-120B",
+  "condition": "Official + Unknown",
+  "evaluation_rows": 1621,
+  "source_rows": 1628,
+  "availability": "per_question_evaluation",
+  "evidence_hit_field": "certified_hit",
+  "source": "supp-source-190",
+  "note": "Official-source native constrained decoding with one Unknown instruction; evidence is the complete numbered triple prefix, including free final generation.",
+  "metrics": {
+    "Hit@1": {
+      "count": 895,
+      "denominator": 1335,
+      "rate": 0.6704119850187266
+    },
+    "EvidenceHit@1": {
+      "count": 697,
+      "denominator": 1335,
+      "rate": 0.5220973782771535
+    },
+    "EvidenceGap": {
+      "count": 198,
+      "denominator": 895,
+      "rate": 0.2212290502793296
+    },
+    "CAR_I": {
+      "count": 80,
+      "denominator": 286,
+      "rate": 0.27972027972027974
+    },
+    "OAR_S": {
+      "count": 80,
+      "denominator": 1335,
+      "rate": 0.0599250936329588
+    },
+    "EBA": {
+      "count": 777,
+      "denominator": 1621,
+      "rate": 0.4793337446020975
+    }
+  }
+}
